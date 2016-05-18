@@ -1,74 +1,229 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/* Importing base styles */
+/* SVG with fallback */
+/* Icon inside button */
+/* Icon inside list */
+/* REM font */
+/* Remove Appearance */
+/* Give space for 30 px icon */
+/* Padding remove/add on med screen */
+/* Remove list stylings */
+/* Border Radius cross browser */
+/* Centered Box Shadow */
+/* inset Box Shadow */
+/* Bottom box shadow */
+/* Card styles */
+/* Css Elipsis */
+/* Trip representation vehicles */
+/* Breakpoints */
+/* CSS rotate */
+/* Add before element */
+/* Add after element */
+/* line 1, ../sass/base/_layout.sass */
+#nav {
+  display: inline-block;
+}
+/* line 3, ../sass/base/_layout.sass */
+#nav li {
+  display: inline-block;
+  list-style-type: none;
 }
 
-/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
+/* line 1, ../sass/base/_typography.sass */
+body, div, p, a {
+  font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-/* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
+/* line 6, ../sass/base/_typography.sass */
+h1 {
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
-/* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+/* line 12, ../sass/base/_typography.sass */
+h2 {
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 400;
+  color: #00D097;
 }
 
-/* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
+/* line 17, ../sass/base/_typography.sass */
+h3 {
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 22, ../sass/base/_typography.sass */
+h4 {
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* line 27, ../sass/base/_typography.sass */
+h5 {
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+/* line 35, ../sass/base/_typography.sass */
+h6 {
+  font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+/* line 41, ../sass/base/_typography.sass */
+a {
+  color: #00D097;
+  font-weight: 400;
+}
+/* line 44, ../sass/base/_typography.sass */
+a:hover, a:focus {
+  color: #009d72;
+  text-decoration: none;
+}
+/* line 48, ../sass/base/_typography.sass */
+a:active {
+  color: #00845f;
+}
+
+/* line 51, ../sass/base/_typography.sass */
+p {
+  color: #3C3C3C;
+}
+
+/* line 56, ../sass/base/_typography.sass */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 59, ../sass/base/_typography.sass */
+.text-align-left {
   text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
+/* line 62, ../sass/base/_typography.sass */
+.text-align-right {
+  text-align: right;
 }
-/* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
+
+/* line 1, ../sass/base/_buttons.sass */
+.btn {
+  font-family: Raleway, "Raleway", sans-serif;
+  overflow: hidden;
+}
+/* line 4, ../sass/base/_buttons.sass */
+.btn:not(.btn-lg) {
+  -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+/* line 227, ../sass/base/_mixins.sass */
+.btn:not(.btn-lg):after {
   content: "";
-  content: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+}
+/* line 10, ../sass/base/_buttons.sass */
+.btn:not(.btn-lg):after {
+  margin-top: -3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 13, ../sass/base/_buttons.sass */
+.btn:not(.btn-lg):hover {
+  -webkit-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.05);
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+}
+/* line 14, ../sass/base/_buttons.sass */
+.btn:not(.btn-lg):hover:after {
+  display: none;
+}
+/* line 19, ../sass/base/_buttons.sass */
+.btn.btn-lg {
+  -webkit-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 5px -4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+/* line 227, ../sass/base/_mixins.sass */
+.btn.btn-lg:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 5px;
+}
+/* line 25, ../sass/base/_buttons.sass */
+.btn.btn-lg:after {
+  margin-top: -5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 28, ../sass/base/_buttons.sass */
+.btn.btn-lg:hover {
+  -webkit-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+/* line 29, ../sass/base/_buttons.sass */
+.btn.btn-lg:hover:after {
+  display: none;
 }
 
-/* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
+/* line 37, ../sass/base/_buttons.sass */
+.btn-primary {
+  background-color: #00D097;
+  border: #009d72;
+  color: #FFFFFF;
+}
+/* line 41, ../sass/base/_buttons.sass */
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #009d72;
+}
+/* line 44, ../sass/base/_buttons.sass */
+.btn-primary:active {
+  background-color: #00eaaa;
+  border-color: #00D097;
+}
+/* line 47, ../sass/base/_buttons.sass */
+.btn-primary:active:hover, .btn-primary:active:focus {
+  background-color: #00eaaa;
+  border-color: #00D097;
 }
 
-/* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+/* Importing page styles */
+/* line 4, ../sass/pages/index.sass */
+.index #widget-container {
+  background-color: #4B515E;
+  color: #FFFFFF;
+  padding: 80px 0px;
+  width: 100%;
   display: block;
 }
-
-/* Importing base styles */
-/* line 1, ../sass/base/_typography.sass */
-body, div, p, a, * {
-  font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
+/* line 10, ../sass/pages/index.sass */
+.index #widget-container h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
 }

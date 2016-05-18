@@ -1,0 +1,14 @@
+/* line 4, ../../sass/pages/index.sass */
+.index #widget-container {
+  background-color: #4B515E;
+  color: #FFFFFF;
+  padding: 80px 0px;
+  width: 100%;
+  display: block;
+}
+/* line 10, ../../sass/pages/index.sass */
+.index #widget-container h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+}

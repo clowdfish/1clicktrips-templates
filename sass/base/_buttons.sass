@@ -1,0 +1,50 @@
+.btn
+  font-family: Raleway, "Raleway", sans-serif
+  overflow: hidden
+  &:not(.btn-lg)
+    +box-shadow-low(5px,rgba(black,0.2))
+    +after(3px, 100%, absolute, 0, 100%, block)
+    position: relative
+    padding-top: 7px
+    padding-bottom: 8px
+    &:after
+      margin-top: -3px
+      background-color: rgba(black, 0.2)
+    &:hover
+      &:after
+        display: none
+      +box-shadow-low(2px,rgba(black,0.05))
+      padding-top: 6.5px
+      padding-bottom: 6.5px
+  &.btn-lg
+    +box-shadow-low(5px,rgba(black,0.2))
+    +after(5px, 100%, absolute, 0, 100%, block)
+    position: relative
+    padding-top: 10px
+    padding-bottom: 14px
+    &:after
+      margin-top: -5px
+      background-color: rgba(black, 0.3)
+    &:hover
+      &:after
+        display: none
+      +box-shadow-low(2px,rgba(black,0.1))
+      padding-top: 12px
+      padding-bottom: 12px
+
+
+
+.btn-primary
+  background-color: $color-primary
+  border: darken($color-primary, 10)
+  color: $color-lightest
+  &:hover,
+  &:focus
+    background-color: darken($color-primary, 10)
+  &:active
+    background-color: lighten($color-primary, 5)
+    border-color: $color-primary
+    &:hover,
+    &:focus
+      background-color: lighten($color-primary, 5)
+      border-color: $color-primary

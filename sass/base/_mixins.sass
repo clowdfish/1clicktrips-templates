@@ -1,0 +1,238 @@
+/* SVG with fallback
+= svg-bg-with-fallback($file_name,$previous_path:"")
+  background-repeat: no-repeat
+  background-position: 0 50%
+  background-size: auto 100%
+  background-image: asset-data-url('#{$previous_path}svg/#{$file_name}.svg')
+  html.no-svg &
+    background-image: asset-url('#{$previous_path}png/#{$file_name}.png')
+
+/* Icon inside button
+= icon-for-button($file_name,$previous_path:"",$paddingleft:45px,$top:'50%',$size: 30px)
+  background-repeat: no-repeat
+  padding-left: $paddingleft
+  background-position: 5px $top
+  background-size: auto $size
+  background-image: asset-data-url('#{$previous_path}svg/#{$file_name}.svg')
+  html.no-svg &
+    background-image: asset-url('#{$previous_path}png/#{$file_name}.png')
+
+/* Icon inside list
+= icon-for-list($fix,$file_name,$previous_path:"",$paddingleft:35px,$top: "50%")
+  background-repeat: no-repeat
+  padding-left: $paddingleft
+  @if $fix
+    background-size: $fix auto
+    background-position: left -4px top $top
+  @else
+    background-size: 18px auto
+    background-position: left top $top
+  background-image: asset-data-url('#{$previous_path}svg/#{$file_name}.svg')
+  html.no-svg &
+    background-image: asset-url('#{$previous_path}png/#{$file_name}.png')
+
+/* REM font
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+= font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+/* Remove Appearance
+= remove-appearance
+  -webkit-appearance: none !important
+  -moz-appearance: none !important
+  -ms-appearance: none !important
+  -o-appearance: none !important
+  appearance: none !important
+  border: none
+  outline: none
+  background: none
+
+/* Give space for 30 px icon
+= box-has-icon($padding:35px)
+  padding-left: $padding
+  overflow: hidden
+  background-size: ($padding) auto
+  background-position: left center
+
+/* Padding remove/add on med screen
+
+= widget-padding($top:0px,$right:0px,$bottom:0px,$left:0px)
+  @media only screen and (min-width: $screen-md)
+    padding: $top $right $bottom $left
+    background: white
+
+/* Remove list stylings
+
+= remove-list-style
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+/* Border Radius cross browser
+= border-radius($radius)
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+= border-top-radius($radius)
+  -webkit-border-top-right-radius: $radius
+  border-top-right-radius: $radius
+  -webkit-border-top-left-radius: $radius
+  border-top-left-radius: $radius
+  background-clip: padding-box
+
+= border-right-radius($radius)
+  -webkit-border-bottom-right-radius: $radius
+  border-bottom-right-radius: $radius
+  -webkit-border-top-right-radius: $radius
+  border-top-right-radius: $radius
+  background-clip: padding-box
+
+= border-bottom-radius($radius)
+  -webkit-border-bottom-right-radius: $radius
+  border-bottom-right-radius: $radius
+  -webkit-border-bottom-left-radius: $radius
+  border-bottom-left-radius: $radius
+  background-clip: padding-box
+
+= border-left-radius($radius)
+  -webkit-border-bottom-left-radius: $radius
+  border-bottom-left-radius: $radius
+  -webkit-border-top-left-radius: $radius
+  border-top-left-radius: $radius
+  background-clip: padding-box
+
+/* Centered Box Shadow
+= box-shadow-centered($blur:5px,$shadowcolor:rgba(black,0.05))
+  -webkit-box-shadow: 0px 0px $blur 0px $shadowcolor
+  -moz-box-shadow: 0px 0px $blur 0px $shadowcolor
+  box-shadow: 0px 0px $blur 0px $shadowcolor
+
+/* inset Box Shadow
+= box-shadow-inset($blur:5px,$shadowcolor:rgba(black,0.4), $x:0px, $y:0px)
+  -webkit-box-shadow: inset $x $y $blur $shadowcolor
+  -moz-box-shadow: inset $x $y $blur $shadowcolor
+  box-shadow: inset $x $y $blur $shadowcolor
+
+/* Bottom box shadow
+= box-shadow-low($blur:5px,$shadowcolor:rgba(black,0.2))
+  -webkit-box-shadow: 0px 6px $blur -4px $shadowcolor
+  -moz-box-shadow: 0px 6px $blur -4px $shadowcolor
+  box-shadow: 0px 6px $blur -4px $shadowcolor
+
+/* Card styles
+= make-card($padded:true)
+  background-color: $color-lightest
+  display: block
+  width: 100%
+  +border-radius(3px)
+  +box-shadow-centered(7px)
+  overflow: hidden
+  border: 1px solid $color-light-gray
+  margin-bottom: 15px
+  @if $padded
+    padding: 0px 15px 0px 15px
+  @else
+    padding: 0px
+
+/* Css Elipsis
+= elipsis($width:100% )
+  width: $width
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+/* Trip representation vehicles
+= vehicle-pill($bgcolor:$color-light-gray, $bdcolor:color-gray, $txtcolor:$color-darkest, $icon:'icon-train')
+  +border-radius(15px)
+  padding: 2px 5px
+  position: absolute
+  top: -12px
+  background-color: $bgcolor
+  border: 1px solid $bdcolor
+  color: $txtcolor
+  +svg-bg-with-fallback($icon,'base/icons/')
+  +box-has-icon(28px)
+  background-position: left top -2px
+
+/* Breakpoints
+@mixin breakpoint($point, $min:true)
+  @if $min
+    @if $point == lg
+      @media (min-width: $screen-lg)
+        @content
+
+    @else if $point == md
+      @media (min-width: $screen-md)
+        @content
+
+    @else if $point == sm
+      @media (min-width: $screen-sm)
+        @content
+
+    @else if $point == xs
+      @media (min-width: $screen-xs)
+        @content
+  @else
+    @if $point == lg
+      @media (max-width: ($screen-lg))
+        @content
+
+    @else if $point == md
+      @media (max-width: ($screen-md))
+        @content
+
+    @else if $point == sm
+      @media (max-width: ($screen-sm))
+        @content
+
+    @else if $point == xs
+      @media (max-width: ($screen-xs))
+        @content
+
+/* CSS rotate
+@mixin rotate-div($angle:180deg)
+  -webkit-transition : all 0.5s ease
+  -moz-transition : all 0.5s ease
+  -o-transition : all 0.5s ease
+  transition : all 0.5s ease
+  -webkit-transform: rotate($angle)
+  -moz-transform: rotate($angle)
+  -o-transform: rotate($angle)
+  -ms-transform: rotate($angle)
+  transform: rotate($angle)
+
+/* Add before element
+@mixin before($height:100%, $width: 100%, $position:absolute, $left:0, $top:0, $display:inline-block, $image: false, $name:'', $path:'base/icons/', $size: 100% auto, $bgpos:center center)
+  &:before
+    content: ''
+    position: $position
+    left: $left
+    $display: $display
+    top: $top
+    width: $width
+    height: $height
+    @if $image
+      +svg-bg-with-fallback($name,$path)
+      background-size: $size
+      background-position: $bgpos
+
+/* Add after element
+@mixin after($height:100%, $width: 100%, $position:absolute, $left:0, $top:0, $display:inline-block, $image: false, $name:'', $path:'base/icons/', $size: 100% auto, $bgpos:center center)
+  &:after
+    content: ''
+    position: $position
+    left: $left
+    $display: $display
+    top: $top
+    width: $width
+    height: $height
+    @if $image
+      +svg-bg-with-fallback($name,$path)
+      background-size: $size
+      background-position: $bgpos
