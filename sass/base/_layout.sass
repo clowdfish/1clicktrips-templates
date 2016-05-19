@@ -1,5 +1,80 @@
 #nav
   display: inline-block
+  text-align: center
+  ul
+    display: table
+    margin: 0
+    padding: 0
+    table-layout: fixed
+    text-align: center
+    width: 100%
   li
-    display: inline-block
+    display: table-cell
     list-style-type: none
+    text-transform: uppercase
+    font-size: 14px
+    margin: 0
+    padding: 0
+    a
+      display: block
+      font-family: Raleway, "Raleway", sans-serif
+      color: $color-darkest
+      font-weight: 400
+    &.active
+      border-bottom: 3px solid $color-primary
+      a
+        color: $color-primary
+        font-weight: 600
+
+#logo
+  min-height: 40px
+  padding-top: 10px
+  padding-bottom: 10px
+  a
+    display: inline-block
+    min-height: 30px
+    width: 100%
+    +svg-bg-with-fallback('logo', 'base/logo/')
+    background-position: center center
+
+
+.card
+  overflow: hidden
+  color: $color-darkest
+  .card-title
+    color: $color-darkest
+  label
+    color: $color-darkest
+    font-size: 12px
+    font-weight: 400
+
+
+.card-widget
+  &.open
+    background: $color-light-gray
+  &.closed
+    line-height: 1.2
+    padding-top: 5px
+    padding-bottom: 5px
+    a
+      color: $color-darkest
+      font-family: Raleway, "Raleway", sans-serif
+      text-transform: uppercase
+  .card-header
+    background: $color-lightest
+    color: $color-darkest
+    font-family: Raleway, "Raleway", sans-serif
+    text-transform: uppercase
+    font-weight: 600
+    small
+      font-weight: 400
+      display: block
+
+.no-padding
+  padding: 0
+
+.date-selector
+  .date
+    padding-right: 5px
+  .time
+    padding-left: 5px

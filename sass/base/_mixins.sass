@@ -3,9 +3,9 @@
   background-repeat: no-repeat
   background-position: 0 50%
   background-size: auto 100%
-  background-image: asset-data-url('#{$previous_path}svg/#{$file_name}.svg')
+  background-image: url('../images/#{$previous_path}svg/#{$file_name}.svg')
   html.no-svg &
-    background-image: asset-url('#{$previous_path}png/#{$file_name}.png')
+    background-image: url('../images/#{$previous_path}png/#{$file_name}.png')
 
 /* Icon inside button
 = icon-for-button($file_name,$previous_path:"",$paddingleft:45px,$top:'50%',$size: 30px)
