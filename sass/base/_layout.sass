@@ -41,6 +41,7 @@
 .card
   overflow: hidden
   color: $color-darkest
+  position: relative
   .card-title
     color: $color-darkest
   label
@@ -54,12 +55,17 @@
     background: $color-light-gray
   &.closed
     line-height: 1.2
-    padding-top: 5px
-    padding-bottom: 5px
+    padding: 15px 0px
+    p
+      font-family: Raleway, "Raleway", sans-serif
+      margin: 0
     a
       color: $color-darkest
       font-family: Raleway, "Raleway", sans-serif
       text-transform: uppercase
+      font-weight: 600
+      font-size: 13px
+      cursor: pointer
   .card-header
     background: $color-lightest
     color: $color-darkest
@@ -69,6 +75,9 @@
     small
       font-weight: 400
       display: block
+  &.card-appointment
+    .appointment-date
+      font-weight: 600
 
 .no-padding
   padding: 0

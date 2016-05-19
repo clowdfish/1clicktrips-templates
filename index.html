@@ -65,7 +65,7 @@
                                     <!--Departure location card-->
                                         <div class="card card-widget closed">
                                                 <div class="col-xs-9 location-icon">
-                                                    Departing from Palma de Mallorca
+                                                    <p>Departing from Palma de Mallorca, Spain</p>
                                                 </div>
                                                 <div class="card-edit col-xs-3 text-align-right">
                                                     <a>edit</a>
@@ -73,8 +73,24 @@
                                         </div>
                                     <!--Departure location card-->
 
+                                    <!--Filled appointment location card-->
+                                        <div class="card card-widget card-appointment closed">
+                                                <div class="col-xs-12 col-lg-3 calendar-icon">
+                                                    <p class="appointment-date">Tuesday 12.08</p>
+                                                    <p class="appointment-time">11:30 - 15:50</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <h4>Appointment name</h4>
+                                                    <h6>Appointment address goes here, 1024, Berlin</h6>
+                                                </div>
+                                                <div class="card-edit col-xs-3 col-lg-1 text-align-right">
+                                                    <a>edit</a>
+                                                </div>
+                                        </div>
+                                    <!--Filled appointment location card-->
+
                                     <!--New appointment card-->
-                                    <div class="card card-widget open">
+                                    <div class="card card-widget card-appointment open">
                                         <div class="card-header calendar-icon">
                                             Appointment 1 of 2
                                             <small>Fill the form or drop your ICS calendar file</small>
@@ -87,10 +103,10 @@
                                                         <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-xs-12 col-md-6">
+                                                <div class="col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="row">
-                                                        <div class="col-xs-12 col-md-6">
-                                                            <fieldset class="form-group date-selector time-icon">
+                                                        <div class="col-xs-12 col-md-6 col-lg-6">
+                                                            <fieldset class="form-group date-selector">
                                                                 <label for="appointment1-start">Start</label>
                                                                 <div class="row">
                                                                     <div class="col-xs-7 date">
@@ -106,9 +122,26 @@
                                                                 </div>
                                                             </fieldset>
                                                         </div>
+                                                        <div class="col-xs-12 col-md-6 col-lg-6">
+                                                            <fieldset class="form-group date-selector">
+                                                                <label for="appointment1-end">End</label>
+                                                                <div class="row">
+                                                                    <div class="col-xs-7 date">
+                                                                        <select id="appointment1-end" class="form-control">
+                                                                            <option>Wed 12.04</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-xs-5 time">
+                                                                        <select class="form-control">
+                                                                            <option>20:00</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-xs-12 col-md-6">
+                                                <div class="col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="row">
                                                         <div class="col-xs-12">
                                                             <fieldset class="form-group location-icon">
