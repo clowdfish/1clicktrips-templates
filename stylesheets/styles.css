@@ -100,7 +100,7 @@ html.no-svg #logo a {
 
 /* line 54, ../sass/base/_layout.sass */
 .card-widget.open {
-  background: #F8F8F8;
+  background-color: #F8F8F8;
 }
 /* line 56, ../sass/base/_layout.sass */
 .card-widget.closed {
@@ -123,7 +123,7 @@ html.no-svg #logo a {
 }
 /* line 69, ../sass/base/_layout.sass */
 .card-widget .card-header {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #3C3C3C;
   font-family: Raleway, "Raleway", sans-serif;
   text-transform: uppercase;
@@ -134,21 +134,49 @@ html.no-svg #logo a {
   font-weight: 400;
   display: block;
 }
-/* line 79, ../sass/base/_layout.sass */
+/* line 78, ../sass/base/_layout.sass */
+.card-widget.card-appointment {
+  padding-bottom: 10px;
+}
+/* line 80, ../sass/base/_layout.sass */
 .card-widget.card-appointment .appointment-date {
   font-weight: 600;
 }
-
 /* line 82, ../sass/base/_layout.sass */
+.card-widget.card-appointment.open {
+  border: 2px solid green;
+}
+/* line 84, ../sass/base/_layout.sass */
+.card-widget.card-appointment.closed {
+  background-color: #F8F8F8;
+  padding-top: 0px;
+}
+@media (min-width: 992px) {
+  /* line 84, ../sass/base/_layout.sass */
+  .card-widget.card-appointment.closed {
+    padding-top: 15px;
+    background-color: #FFFFFF;
+  }
+}
+
+/* line 91, ../sass/base/_layout.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 86, ../sass/base/_layout.sass */
+/* line 94, ../sass/base/_layout.sass */
+i {
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  position: relative;
+}
+
+/* line 101, ../sass/base/_layout.sass */
 .date-selector .date {
   padding-right: 5px;
 }
-/* line 88, ../sass/base/_layout.sass */
+/* line 103, ../sass/base/_layout.sass */
 .date-selector .time {
   padding-left: 5px;
 }
@@ -273,9 +301,11 @@ input[type="url"] {
   background: none;
   color: #FFFFFF;
   border: 2px dashed rgba(255, 255, 255, 0.7);
+  line-height: 28px;
+  vertical-align: middle;
 }
 
-/* line 19, ../sass/base/_forms.sass */
+/* line 21, ../sass/base/_forms.sass */
 select {
   min-height: 38px;
   height: 38px;
@@ -380,6 +410,86 @@ select {
   border-color: #00D097;
 }
 
+/* line 1, ../sass/base/_icons.sass */
+.location-icon {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-location.svg");
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .location-icon {
+  background-image: url("../images/base/icons/png/icon-location.png");
+}
+
+/* line 4, ../sass/base/_icons.sass */
+.input-location {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-location.svg");
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .input-location {
+  background-image: url("../images/base/icons/png/icon-location.png");
+}
+
+/* line 7, ../sass/base/_icons.sass */
+.pencil-icon {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-pencil.svg");
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .pencil-icon {
+  background-image: url("../images/base/icons/png/icon-pencil.png");
+}
+
+/* line 10, ../sass/base/_icons.sass */
+.time-icon {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-time.svg");
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .time-icon {
+  background-image: url("../images/base/icons/png/icon-time.png");
+}
+
+/* line 13, ../sass/base/_icons.sass */
+.calendar-icon {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-calendar.svg");
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .calendar-icon {
+  background-image: url("../images/base/icons/png/icon-calendar.png");
+}
+
+/* line 16, ../sass/base/_icons.sass */
+.icon-plus {
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-position: 5px 30%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-plus-white.svg");
+  float: left;
+  height: 28px;
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .icon-plus {
+  background-image: url("../images/base/icons/png/icon-plus-white.png");
+}
+
 /* Importing page styles */
 /* SVG with fallback */
 /* Icon inside button */
@@ -424,4 +534,23 @@ select {
 /* line 19, ../sass/pages/index.sass */
 .index #widget-container #widget-form {
   margin-top: 20px;
+}
+/* line 21, ../sass/pages/index.sass */
+.index #widget-container .appointment-card-side {
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  background-position: left 5px top 40%;
+  background-color: #FFFFFF;
+  padding-top: 15px;
+}
+@media (min-width: 992px) {
+  /* line 21, ../sass/pages/index.sass */
+  .index #widget-container .appointment-card-side {
+    padding-top: 0px;
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-right: 1px solid #E2E2E2;
+  }
 }

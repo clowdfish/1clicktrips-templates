@@ -75,7 +75,7 @@
 
                                     <!--Filled appointment location card-->
                                         <div class="card card-widget card-appointment closed">
-                                                <div class="col-xs-12 col-lg-3 calendar-icon">
+                                                <div class="col-xs-12 col-lg-3 appointment-card-side calendar-icon">
                                                     <p class="appointment-date">Tuesday 12.08</p>
                                                     <p class="appointment-time">11:30 - 15:50</p>
                                                 </div>
@@ -97,13 +97,13 @@
                                         </div>
                                         <div class="card-block">
                                             <div class="row">
-                                                <div class="col-xs-12">
-                                                    <fieldset class="form-group pencil-icon">
+                                                <div class="col-xs-12  pencil-icon">
+                                                    <fieldset class="form-group">
                                                         <label for="appointment1-name">Appointment name</label>
                                                         <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-xs-12 col-sm-12 col-lg-6">
+                                                <div class="col-xs-12 col-sm-12 col-lg-6 time-icon">
                                                     <div class="row">
                                                         <div class="col-xs-12 col-md-6 col-lg-6">
                                                             <fieldset class="form-group date-selector">
@@ -143,8 +143,8 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="row">
-                                                        <div class="col-xs-12">
-                                                            <fieldset class="form-group location-icon">
+                                                        <div class="col-xs-12 location-icon">
+                                                            <fieldset class="form-group ">
                                                                 <label for="appointment1-location">Appointment location</label>
                                                                 <input id="appointment1-location" type="text" placeholder="Type a name for your appointment" class="form-control"/>
                                                             </fieldset>
@@ -161,7 +161,7 @@
 
                                     <!--Drop area for ICS file-->
                                     <fieldset class="form-group drop-zone">
-                                        <input type="button" id="drop-ics-area" class="form-control input-lg drop-button" value="Or drop your ICS Calendar File Here"/>
+                                        <button id="drop-ics-area" class="form-control input-lg drop-button"/><i class="icon-plus"></i>Or drop your ICS Calendar File Here</button>
                                     </fieldset>
                                     <!--Drop area for ICS file-->
 

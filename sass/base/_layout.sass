@@ -52,7 +52,7 @@
 
 .card-widget
   &.open
-    background: $color-light-gray
+    background-color: $color-light-gray
   &.closed
     line-height: 1.2
     padding: 15px 0px
@@ -67,7 +67,7 @@
       font-size: 13px
       cursor: pointer
   .card-header
-    background: $color-lightest
+    background-color: $color-lightest
     color: $color-darkest
     font-family: Raleway, "Raleway", sans-serif
     text-transform: uppercase
@@ -76,11 +76,26 @@
       font-weight: 400
       display: block
   &.card-appointment
+    padding-bottom: 10px
     .appointment-date
       font-weight: 600
+    &.open
+      border: 2px solid green
+    &.closed
+      background-color: $color-light-gray
+      padding-top: 0px
+      +breakpoint(lg)
+        padding-top: 15px
+        background-color: $color-lightest
 
 .no-padding
   padding: 0
+
+i
+  display: inline-block
+  height: 22px
+  width: 22px
+  position: relative
 
 .date-selector
   .date
