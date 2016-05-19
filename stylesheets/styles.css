@@ -381,30 +381,31 @@ select {
   -webkit-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 6px 2px -4px rgba(0, 0, 0, 0.1);
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-top: 2px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 /* line 30, ../sass/base/_buttons.sass */
 .btn.btn-lg:hover:after {
   display: none;
 }
 
-/* line 38, ../sass/base/_buttons.sass */
+/* line 39, ../sass/base/_buttons.sass */
 .btn-primary {
   background-color: #00D097;
   border: #009d72;
   color: #FFFFFF;
 }
-/* line 42, ../sass/base/_buttons.sass */
+/* line 43, ../sass/base/_buttons.sass */
 .btn-primary:hover, .btn-primary:focus {
   background-color: #009d72;
 }
-/* line 45, ../sass/base/_buttons.sass */
+/* line 46, ../sass/base/_buttons.sass */
 .btn-primary:active {
   background-color: #00eaaa;
   border-color: #00D097;
 }
-/* line 48, ../sass/base/_buttons.sass */
+/* line 49, ../sass/base/_buttons.sass */
 .btn-primary:active:hover, .btn-primary:active:focus {
   background-color: #00eaaa;
   border-color: #00D097;
