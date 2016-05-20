@@ -1,0 +1,120 @@
+/* SVG with fallback */
+/* Icon inside button */
+/* Icon inside list */
+/* REM font */
+/* Remove Appearance */
+/* Give space for 30 px icon */
+/* Padding remove/add on med screen */
+/* Remove list stylings */
+/* Border Radius cross browser */
+/* Centered Box Shadow */
+/* inset Box Shadow */
+/* Bottom box shadow */
+/* Card styles */
+/* Css Elipsis */
+/* Trip representation vehicles */
+/* Breakpoints */
+/* CSS rotate */
+/* Add before element */
+/* Add after element */
+/* line 7, ../../sass/pages/itinerary.sass */
+.info-bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 8, ../../sass/pages/itinerary.sass */
+.info-bar div, .info-bar p, .info-bar a {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 12, ../../sass/pages/itinerary.sass */
+.info-bar b {
+  font-weight: 600;
+}
+/* line 14, ../../sass/pages/itinerary.sass */
+.info-bar .cta-container {
+  margin-top: 5px;
+}
+/* line 16, ../../sass/pages/itinerary.sass */
+.info-bar .btn {
+  background: #4B515E;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: Raleway, "Raleway", sans-serif;
+}
+
+/* line 23, ../../sass/pages/itinerary.sass */
+.content-box {
+  margin-top: 10px;
+  padding: 0px 15px;
+  background: #4B515E;
+  color: #FFFFFF;
+}
+/* line 28, ../../sass/pages/itinerary.sass */
+.content-box .content-box-title {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 37, ../../sass/pages/itinerary.sass */
+.itinerary-box {
+  padding-left: 0px;
+  background-color: #FFFFFF;
+  color: #3C3C3C;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+/* line 43, ../../sass/pages/itinerary.sass */
+.itinerary-box .appointment-name {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 45, ../../sass/pages/itinerary.sass */
+.itinerary-box .appointment-time {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* line 49, ../../sass/pages/itinerary.sass */
+.itinerary-box .appointment-location {
+  font-size: 14px;
+  color: #666666;
+}
+/* line 52, ../../sass/pages/itinerary.sass */
+.itinerary-box .card {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
+/* line 54, ../../sass/pages/itinerary.sass */
+.itinerary-box .card .card-header {
+  background: #FFFFFF;
+}
+/* line 56, ../../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card {
+  text-align: center;
+}
+/* line 57, ../../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card div {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 59, ../../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card small {
+  color: #666666;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 56, ../../sass/pages/itinerary.sass */
+  .itinerary-box .itinerary-card {
+    text-align: left;
+  }
+}
+/* line 65, ../../sass/pages/itinerary.sass */
+.itinerary-box .price {
+  font-size: 18px;
+  color: #00D097;
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 600;
+}

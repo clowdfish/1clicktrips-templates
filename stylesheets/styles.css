@@ -20,66 +20,73 @@
 /* Add before element */
 /* Add after element */
 /* line 1, ../sass/base/_layout.sass */
-#nav {
-  display: inline-block;
-  text-align: center;
-}
-/* line 4, ../sass/base/_layout.sass */
-#nav ul {
-  display: table;
-  margin: 0;
-  padding: 0;
-  table-layout: fixed;
-  text-align: center;
-  width: 100%;
-}
-/* line 11, ../sass/base/_layout.sass */
-#nav li {
-  display: table-cell;
-  list-style-type: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-/* line 18, ../sass/base/_layout.sass */
-#nav li a {
-  display: block;
-  font-family: Raleway, "Raleway", sans-serif;
-  color: #3C3C3C;
-  font-weight: 400;
-}
-/* line 23, ../sass/base/_layout.sass */
-#nav li.active {
-  border-bottom: 3px solid #00D097;
-}
-/* line 25, ../sass/base/_layout.sass */
-#nav li.active a {
-  color: #00D097;
-  font-weight: 600;
-}
-@media (min-width: 544px) {
-  /* line 29, ../sass/base/_layout.sass */
-  #nav li {
-    height: 50px;
-    position: relative;
-  }
-  /* line 32, ../sass/base/_layout.sass */
-  #nav li a {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    padding-bottom: 5px;
-  }
+body {
+  background-color: #EDEDED;
 }
 
-/* line 39, ../sass/base/_layout.sass */
+/* line 3, ../sass/base/_layout.sass */
+#wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* line 7, ../sass/base/_layout.sass */
+header {
+  background-color: #FFFFFF;
+}
+
+/* line 9, ../sass/base/_layout.sass */
+#main {
+  flex: 1;
+}
+
+/* line 12, ../sass/base/_layout.sass */
+ol, ul, li {
+  margin: 0;
+}
+
+/* line 16, ../sass/base/_layout.sass */
+#nav a {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 18, ../sass/base/_layout.sass */
+#nav ul {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+}
+/* line 23, ../sass/base/_layout.sass */
+#nav ul li {
+  display: table-cell;
+  height: 56px;
+  position: relative;
+}
+/* line 27, ../sass/base/_layout.sass */
+#nav ul li a {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+}
+/* line 37, ../sass/base/_layout.sass */
+#nav ul li.active a {
+  border-bottom: 3px solid #00D097;
+}
+
+/* line 41, ../sass/base/_layout.sass */
 #logo {
   min-height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-left: -6px;
 }
-/* line 43, ../sass/base/_layout.sass */
+/* line 46, ../sass/base/_layout.sass */
 #logo a {
   display: inline-block;
   min-height: 30px;
@@ -95,161 +102,108 @@ html.no-svg #logo a {
   background-image: url("../images/base/logo/png/logo.png");
 }
 @media (min-width: 544px) {
-  /* line 39, ../sass/base/_layout.sass */
+  /* line 41, ../sass/base/_layout.sass */
   #logo {
     text-align: left;
   }
-  /* line 51, ../sass/base/_layout.sass */
+  /* line 54, ../sass/base/_layout.sass */
   #logo a {
     width: 136px;
   }
 }
 
-/* line 55, ../sass/base/_layout.sass */
-#footer {
+/* line 58, ../sass/base/_layout.sass */
+footer {
   background-color: #4B515E;
   color: #FFFFFF;
   padding-top: 40px;
   padding-bottom: 80px;
 }
-/* line 60, ../sass/base/_layout.sass */
-#footer a {
+/* line 63, ../sass/base/_layout.sass */
+footer a {
   color: #FFFFFF;
 }
-/* line 62, ../sass/base/_layout.sass */
-#footer a:hover {
+/* line 65, ../sass/base/_layout.sass */
+footer a:hover {
   color: #FFFFFF;
 }
-/* line 64, ../sass/base/_layout.sass */
-#footer .footer-info-area {
+/* line 67, ../sass/base/_layout.sass */
+footer .footer-info-area {
   text-align: center;
 }
-/* line 66, ../sass/base/_layout.sass */
-#footer .social-media-area {
+/* line 69, ../sass/base/_layout.sass */
+footer .social-media-area {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 69, ../sass/base/_layout.sass */
-  #footer .footer-info-area {
+  /* line 72, ../sass/base/_layout.sass */
+  footer .footer-info-area {
     text-align: left;
   }
-  /* line 71, ../sass/base/_layout.sass */
-  #footer .social-media-area {
+  /* line 74, ../sass/base/_layout.sass */
+  footer .social-media-area {
     text-align: right;
   }
 }
 
-/* line 75, ../sass/base/_layout.sass */
+/* line 78, ../sass/base/_layout.sass */
 .card {
   overflow: hidden;
   color: #3C3C3C;
   position: relative;
 }
-/* line 79, ../sass/base/_layout.sass */
+/* line 82, ../sass/base/_layout.sass */
 .card .card-title {
   color: #3C3C3C;
 }
-/* line 81, ../sass/base/_layout.sass */
+/* line 84, ../sass/base/_layout.sass */
 .card label {
   color: #3C3C3C;
   font-size: 12px;
   font-weight: 400;
 }
 
-/* line 88, ../sass/base/_layout.sass */
-.card-widget .card-edit {
-  position: absolute;
-  right: 5px;
-  top: 15px;
-}
-@media (min-width: 768px) {
-  /* line 88, ../sass/base/_layout.sass */
-  .card-widget .card-edit {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-}
-/* line 96, ../sass/base/_layout.sass */
-.card-widget.open {
-  background-color: #F8F8F8;
-}
-/* line 98, ../sass/base/_layout.sass */
-.card-widget.closed {
-  line-height: 1.2;
-  padding: 15px 0px;
-}
-/* line 101, ../sass/base/_layout.sass */
-.card-widget.closed p {
-  font-family: Raleway, "Raleway", sans-serif;
-  margin: 0;
-}
-/* line 104, ../sass/base/_layout.sass */
-.card-widget.closed a {
-  color: #3C3C3C;
-  font-family: Raleway, "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  cursor: pointer;
-}
-/* line 111, ../sass/base/_layout.sass */
-.card-widget .card-header {
-  background-color: #FFFFFF;
-  color: #3C3C3C;
-  font-family: Raleway, "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-/* line 117, ../sass/base/_layout.sass */
-.card-widget .card-header small {
-  font-weight: 400;
-  display: block;
-}
-/* line 120, ../sass/base/_layout.sass */
-.card-widget.card-appointment {
-  padding-bottom: 10px;
-}
-/* line 122, ../sass/base/_layout.sass */
-.card-widget.card-appointment .appointment-date {
-  font-weight: 600;
-}
-/* line 124, ../sass/base/_layout.sass */
-.card-widget.card-appointment.open {
-  border: 2px solid green;
-}
-/* line 126, ../sass/base/_layout.sass */
-.card-widget.card-appointment.closed {
-  background-color: #F8F8F8;
-  padding-top: 0px;
-}
-@media (min-width: 992px) {
-  /* line 126, ../sass/base/_layout.sass */
-  .card-widget.card-appointment.closed {
-    padding-top: 15px;
-    background-color: #FFFFFF;
-  }
-}
-
-/* line 133, ../sass/base/_layout.sass */
+/* line 89, ../sass/base/_layout.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 136, ../sass/base/_layout.sass */
+/* line 92, ../sass/base/_layout.sass */
 .separate {
   display: block;
   height: 40px;
   width: 100%;
 }
 
-/* line 141, ../sass/base/_layout.sass */
+/* line 97, ../sass/base/_layout.sass */
 .section-padding {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-/* line 145, ../sass/base/_layout.sass */
+/* line 101, ../sass/base/_layout.sass */
+.cta-container {
+  text-align: center;
+}
+/* line 102, ../sass/base/_layout.sass */
+.cta-container .btn {
+  display: inline-block;
+  width: auto;
+}
+/* line 106, ../sass/base/_layout.sass */
+.cta-container small {
+  display: block;
+  clear: both;
+  margin-top: 5px;
+}
+@media (min-width: 768px) {
+  /* line 101, ../sass/base/_layout.sass */
+  .cta-container {
+    text-align: right;
+  }
+}
+
+/* line 114, ../sass/base/_layout.sass */
 i {
   display: inline-block;
   height: 22px;
@@ -257,11 +211,11 @@ i {
   position: relative;
 }
 
-/* line 152, ../sass/base/_layout.sass */
+/* line 121, ../sass/base/_layout.sass */
 .date-selector .date {
   padding-right: 5px;
 }
-/* line 154, ../sass/base/_layout.sass */
+/* line 123, ../sass/base/_layout.sass */
 .date-selector .time {
   padding-left: 5px;
 }
@@ -269,9 +223,16 @@ i {
 /* line 1, ../sass/base/_typography.sass */
 body, div, p, a {
   font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
-/* line 6, ../sass/base/_typography.sass */
+/* line 13, ../sass/base/_typography.sass */
 h1 {
   font-family: Raleway, "Raleway", sans-serif;
   text-transform: uppercase;
@@ -280,34 +241,34 @@ h1 {
   font-size: 2rem;
 }
 @media (min-width: 768px) {
-  /* line 6, ../sass/base/_typography.sass */
+  /* line 13, ../sass/base/_typography.sass */
   h1 {
     font-size: 2.5rem;
   }
 }
 
-/* line 15, ../sass/base/_typography.sass */
+/* line 22, ../sass/base/_typography.sass */
 h2 {
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 400;
   color: #00D097;
 }
 
-/* line 20, ../sass/base/_typography.sass */
+/* line 27, ../sass/base/_typography.sass */
 h3 {
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-/* line 25, ../sass/base/_typography.sass */
+/* line 32, ../sass/base/_typography.sass */
 h4 {
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
 
-/* line 30, ../sass/base/_typography.sass */
+/* line 37, ../sass/base/_typography.sass */
 h5 {
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 600;
@@ -317,7 +278,7 @@ h5 {
   margin-top: 0;
 }
 
-/* line 38, ../sass/base/_typography.sass */
+/* line 45, ../sass/base/_typography.sass */
 h6 {
   font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
@@ -325,42 +286,42 @@ h6 {
   margin-top: 0;
 }
 
-/* line 44, ../sass/base/_typography.sass */
+/* line 51, ../sass/base/_typography.sass */
 a {
   color: #00D097;
   font-weight: 400;
 }
-/* line 47, ../sass/base/_typography.sass */
+/* line 54, ../sass/base/_typography.sass */
 a:hover, a:focus {
   color: #009d72;
   text-decoration: none;
 }
-/* line 51, ../sass/base/_typography.sass */
+/* line 58, ../sass/base/_typography.sass */
 a:active {
   color: #00845f;
 }
 
-/* line 54, ../sass/base/_typography.sass */
+/* line 61, ../sass/base/_typography.sass */
 p {
   color: #3C3C3C;
 }
 
-/* line 57, ../sass/base/_typography.sass */
+/* line 64, ../sass/base/_typography.sass */
 label {
   font-family: Raleway, "Raleway", sans-serif;
 }
 
-/* line 62, ../sass/base/_typography.sass */
+/* line 69, ../sass/base/_typography.sass */
 .text-align-center {
   text-align: center;
 }
 
-/* line 65, ../sass/base/_typography.sass */
+/* line 72, ../sass/base/_typography.sass */
 .text-align-left {
   text-align: left;
 }
 
-/* line 68, ../sass/base/_typography.sass */
+/* line 75, ../sass/base/_typography.sass */
 .text-align-right {
   text-align: right;
 }
@@ -620,32 +581,39 @@ html.no-svg .icon-plus {
 /* CSS rotate */
 /* Add before element */
 /* Add after element */
-/* line 6, ../sass/pages/index.sass */
+/* line 5, ../sass/pages/index.sass */
+.index {
+  background-color: #FFFFFF;
+}
+/* line 7, ../sass/pages/index.sass */
+.index #header {
+  background-color: #FFFFFF;
+}
+/* line 9, ../sass/pages/index.sass */
 .index #widget-container {
-  margin-top: -6px;
   background-color: #4B515E;
   color: #FFFFFF;
   padding: 40px 0px;
   width: 100%;
   display: block;
 }
-/* line 13, ../sass/pages/index.sass */
+/* line 15, ../sass/pages/index.sass */
 .index #widget-container h2 {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 18px;
 }
 @media (min-width: 544px) {
-  /* line 6, ../sass/pages/index.sass */
+  /* line 9, ../sass/pages/index.sass */
   .index #widget-container {
     padding: 80px 0px;
   }
 }
-/* line 19, ../sass/pages/index.sass */
+/* line 21, ../sass/pages/index.sass */
 .index #widget-container #widget-form {
   margin-top: 20px;
 }
-/* line 21, ../sass/pages/index.sass */
+/* line 23, ../sass/pages/index.sass */
 .index #widget-container .appointment-card-side {
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 15px;
@@ -655,7 +623,7 @@ html.no-svg .icon-plus {
   padding-top: 15px;
 }
 @media (min-width: 992px) {
-  /* line 21, ../sass/pages/index.sass */
+  /* line 23, ../sass/pages/index.sass */
   .index #widget-container .appointment-card-side {
     padding-top: 0px;
     border: none;
@@ -664,32 +632,32 @@ html.no-svg .icon-plus {
     border-right: 1px solid #E2E2E2;
   }
 }
-/* line 35, ../sass/pages/index.sass */
+/* line 37, ../sass/pages/index.sass */
 .index #video-section {
   background: #F8F8F8;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 40, ../sass/pages/index.sass */
+/* line 42, ../sass/pages/index.sass */
 .index #contact-section {
   text-align: center;
 }
-/* line 42, ../sass/pages/index.sass */
+/* line 44, ../sass/pages/index.sass */
 .index #contact-section .btn {
   margin-top: 30px;
 }
 @media (min-width: 544px) {
-  /* line 40, ../sass/pages/index.sass */
+  /* line 42, ../sass/pages/index.sass */
   .index #contact-section {
     text-align: left;
   }
-  /* line 46, ../sass/pages/index.sass */
+  /* line 48, ../sass/pages/index.sass */
   .index #contact-section .btn {
     float: right;
     margin-top: -15px;
   }
 }
-/* line 50, ../sass/pages/index.sass */
+/* line 52, ../sass/pages/index.sass */
 .index .info-quote {
   background: #FFFFFF;
   color: #666666;
@@ -699,4 +667,200 @@ html.no-svg .icon-plus {
   padding: 20px 30px;
   font-weight: 200;
   letter-spacing: 0.3px;
+}
+
+/* line 64, ../sass/pages/index.sass */
+.card-widget .card-edit {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+@media (min-width: 768px) {
+  /* line 64, ../sass/pages/index.sass */
+  .card-widget .card-edit {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 72, ../sass/pages/index.sass */
+.card-widget.open {
+  background-color: #F8F8F8;
+}
+/* line 74, ../sass/pages/index.sass */
+.card-widget.closed {
+  line-height: 1.2;
+  padding: 15px 0px;
+}
+/* line 77, ../sass/pages/index.sass */
+.card-widget.closed p {
+  font-family: Raleway, "Raleway", sans-serif;
+  margin: 0;
+}
+/* line 80, ../sass/pages/index.sass */
+.card-widget.closed a {
+  color: #3C3C3C;
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+/* line 87, ../sass/pages/index.sass */
+.card-widget .card-header {
+  background-color: #FFFFFF;
+  color: #3C3C3C;
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 93, ../sass/pages/index.sass */
+.card-widget .card-header small {
+  font-weight: 400;
+  display: block;
+}
+/* line 96, ../sass/pages/index.sass */
+.card-widget.card-appointment {
+  padding-bottom: 10px;
+}
+/* line 98, ../sass/pages/index.sass */
+.card-widget.card-appointment .appointment-date {
+  font-weight: 600;
+}
+/* line 100, ../sass/pages/index.sass */
+.card-widget.card-appointment.open {
+  border: 2px solid green;
+}
+/* line 102, ../sass/pages/index.sass */
+.card-widget.card-appointment.closed {
+  background-color: #F8F8F8;
+  padding-top: 0px;
+}
+@media (min-width: 992px) {
+  /* line 102, ../sass/pages/index.sass */
+  .card-widget.card-appointment.closed {
+    padding-top: 15px;
+    background-color: #FFFFFF;
+  }
+}
+
+/* SVG with fallback */
+/* Icon inside button */
+/* Icon inside list */
+/* REM font */
+/* Remove Appearance */
+/* Give space for 30 px icon */
+/* Padding remove/add on med screen */
+/* Remove list stylings */
+/* Border Radius cross browser */
+/* Centered Box Shadow */
+/* inset Box Shadow */
+/* Bottom box shadow */
+/* Card styles */
+/* Css Elipsis */
+/* Trip representation vehicles */
+/* Breakpoints */
+/* CSS rotate */
+/* Add before element */
+/* Add after element */
+/* line 7, ../sass/pages/itinerary.sass */
+.info-bar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 8, ../sass/pages/itinerary.sass */
+.info-bar div, .info-bar p, .info-bar a {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 12, ../sass/pages/itinerary.sass */
+.info-bar b {
+  font-weight: 600;
+}
+/* line 14, ../sass/pages/itinerary.sass */
+.info-bar .cta-container {
+  margin-top: 5px;
+}
+/* line 16, ../sass/pages/itinerary.sass */
+.info-bar .btn {
+  background: #4B515E;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: Raleway, "Raleway", sans-serif;
+}
+
+/* line 23, ../sass/pages/itinerary.sass */
+.content-box {
+  margin-top: 10px;
+  padding: 0px 15px;
+  background: #4B515E;
+  color: #FFFFFF;
+}
+/* line 28, ../sass/pages/itinerary.sass */
+.content-box .content-box-title {
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 37, ../sass/pages/itinerary.sass */
+.itinerary-box {
+  padding-left: 0px;
+  background-color: #FFFFFF;
+  color: #3C3C3C;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+/* line 43, ../sass/pages/itinerary.sass */
+.itinerary-box .appointment-name {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 45, ../sass/pages/itinerary.sass */
+.itinerary-box .appointment-time {
+  font-weight: 200;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+/* line 49, ../sass/pages/itinerary.sass */
+.itinerary-box .appointment-location {
+  font-size: 14px;
+  color: #666666;
+}
+/* line 52, ../sass/pages/itinerary.sass */
+.itinerary-box .card {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
+/* line 54, ../sass/pages/itinerary.sass */
+.itinerary-box .card .card-header {
+  background: #FFFFFF;
+}
+/* line 56, ../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card {
+  text-align: center;
+}
+/* line 57, ../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card div {
+  font-family: Raleway, "Raleway", sans-serif;
+}
+/* line 59, ../sass/pages/itinerary.sass */
+.itinerary-box .itinerary-card small {
+  color: #666666;
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 56, ../sass/pages/itinerary.sass */
+  .itinerary-box .itinerary-card {
+    text-align: left;
+  }
+}
+/* line 65, ../sass/pages/itinerary.sass */
+.itinerary-box .price {
+  font-size: 18px;
+  color: #00D097;
+  font-family: Raleway, "Raleway", sans-serif;
+  font-weight: 600;
 }

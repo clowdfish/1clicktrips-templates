@@ -17,32 +17,39 @@
 /* CSS rotate */
 /* Add before element */
 /* Add after element */
-/* line 6, ../../sass/pages/index.sass */
+/* line 5, ../../sass/pages/index.sass */
+.index {
+  background-color: #FFFFFF;
+}
+/* line 7, ../../sass/pages/index.sass */
+.index #header {
+  background-color: #FFFFFF;
+}
+/* line 9, ../../sass/pages/index.sass */
 .index #widget-container {
-  margin-top: -6px;
   background-color: #4B515E;
   color: #FFFFFF;
   padding: 40px 0px;
   width: 100%;
   display: block;
 }
-/* line 13, ../../sass/pages/index.sass */
+/* line 15, ../../sass/pages/index.sass */
 .index #widget-container h2 {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 18px;
 }
 @media (min-width: 544px) {
-  /* line 6, ../../sass/pages/index.sass */
+  /* line 9, ../../sass/pages/index.sass */
   .index #widget-container {
     padding: 80px 0px;
   }
 }
-/* line 19, ../../sass/pages/index.sass */
+/* line 21, ../../sass/pages/index.sass */
 .index #widget-container #widget-form {
   margin-top: 20px;
 }
-/* line 21, ../../sass/pages/index.sass */
+/* line 23, ../../sass/pages/index.sass */
 .index #widget-container .appointment-card-side {
   border-bottom: 1px solid #E2E2E2;
   padding-bottom: 15px;
@@ -52,7 +59,7 @@
   padding-top: 15px;
 }
 @media (min-width: 992px) {
-  /* line 21, ../../sass/pages/index.sass */
+  /* line 23, ../../sass/pages/index.sass */
   .index #widget-container .appointment-card-side {
     padding-top: 0px;
     border: none;
@@ -61,32 +68,32 @@
     border-right: 1px solid #E2E2E2;
   }
 }
-/* line 35, ../../sass/pages/index.sass */
+/* line 37, ../../sass/pages/index.sass */
 .index #video-section {
   background: #F8F8F8;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-/* line 40, ../../sass/pages/index.sass */
+/* line 42, ../../sass/pages/index.sass */
 .index #contact-section {
   text-align: center;
 }
-/* line 42, ../../sass/pages/index.sass */
+/* line 44, ../../sass/pages/index.sass */
 .index #contact-section .btn {
   margin-top: 30px;
 }
 @media (min-width: 544px) {
-  /* line 40, ../../sass/pages/index.sass */
+  /* line 42, ../../sass/pages/index.sass */
   .index #contact-section {
     text-align: left;
   }
-  /* line 46, ../../sass/pages/index.sass */
+  /* line 48, ../../sass/pages/index.sass */
   .index #contact-section .btn {
     float: right;
     margin-top: -15px;
   }
 }
-/* line 50, ../../sass/pages/index.sass */
+/* line 52, ../../sass/pages/index.sass */
 .index .info-quote {
   background: #FFFFFF;
   color: #666666;
@@ -96,4 +103,79 @@
   padding: 20px 30px;
   font-weight: 200;
   letter-spacing: 0.3px;
+}
+
+/* line 64, ../../sass/pages/index.sass */
+.card-widget .card-edit {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+@media (min-width: 768px) {
+  /* line 64, ../../sass/pages/index.sass */
+  .card-widget .card-edit {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 72, ../../sass/pages/index.sass */
+.card-widget.open {
+  background-color: #F8F8F8;
+}
+/* line 74, ../../sass/pages/index.sass */
+.card-widget.closed {
+  line-height: 1.2;
+  padding: 15px 0px;
+}
+/* line 77, ../../sass/pages/index.sass */
+.card-widget.closed p {
+  font-family: Raleway, "Raleway", sans-serif;
+  margin: 0;
+}
+/* line 80, ../../sass/pages/index.sass */
+.card-widget.closed a {
+  color: #3C3C3C;
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+/* line 87, ../../sass/pages/index.sass */
+.card-widget .card-header {
+  background-color: #FFFFFF;
+  color: #3C3C3C;
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* line 93, ../../sass/pages/index.sass */
+.card-widget .card-header small {
+  font-weight: 400;
+  display: block;
+}
+/* line 96, ../../sass/pages/index.sass */
+.card-widget.card-appointment {
+  padding-bottom: 10px;
+}
+/* line 98, ../../sass/pages/index.sass */
+.card-widget.card-appointment .appointment-date {
+  font-weight: 600;
+}
+/* line 100, ../../sass/pages/index.sass */
+.card-widget.card-appointment.open {
+  border: 2px solid green;
+}
+/* line 102, ../../sass/pages/index.sass */
+.card-widget.card-appointment.closed {
+  background-color: #F8F8F8;
+  padding-top: 0px;
+}
+@media (min-width: 992px) {
+  /* line 102, ../../sass/pages/index.sass */
+  .card-widget.card-appointment.closed {
+    padding-top: 15px;
+    background-color: #FFFFFF;
+  }
 }

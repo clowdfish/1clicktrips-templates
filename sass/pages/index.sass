@@ -3,8 +3,10 @@
 @import base/_colors
 
 .index
+  background-color: $color-lightest
+  #header
+    background-color: $color-lightest
   #widget-container
-    margin-top: -6px
     background-color: $color-secondary
     color: $color-lightest
     padding: 40px 0px
@@ -56,3 +58,50 @@
     padding: 20px 30px
     font-weight: 200
     letter-spacing: 0.3px
+
+
+.card-widget
+  .card-edit
+    position: absolute
+    right: 5px
+    top: 15px
+    +breakpoint(md)
+      position: relative
+      top: 0
+      right: 0
+  &.open
+    background-color: $color-light-gray
+  &.closed
+    line-height: 1.2
+    padding: 15px 0px
+    p
+      font-family: Raleway, "Raleway", sans-serif
+      margin: 0
+    a
+      color: $color-darkest
+      font-family: Raleway, "Raleway", sans-serif
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 13px
+      cursor: pointer
+  .card-header
+    background-color: $color-lightest
+    color: $color-darkest
+    font-family: Raleway, "Raleway", sans-serif
+    text-transform: uppercase
+    font-weight: 600
+    small
+      font-weight: 400
+      display: block
+  &.card-appointment
+    padding-bottom: 10px
+    .appointment-date
+      font-weight: 600
+    &.open
+      border: 2px solid green
+    &.closed
+      background-color: $color-light-gray
+      padding-top: 0px
+      +breakpoint(lg)
+        padding-top: 15px
+        background-color: $color-lightest
