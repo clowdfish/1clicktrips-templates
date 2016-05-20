@@ -43,6 +43,7 @@
   &:hover,
   &:focus
     background-color: darken($color-primary, 10)
+    color: rgba($color-lightest, 0.8)
   &:active
     background-color: lighten($color-primary, 5)
     border-color: $color-primary
@@ -50,3 +51,20 @@
     &:focus
       background-color: lighten($color-primary, 5)
       border-color: $color-primary
+
+.btn-delete
+  background-color: $color-danger
+  margin-right: 5px
+  border: darken($color-danger, 10)
+  color: $color-lightest
+  &:hover,
+  &:focus
+    background-color: darken($color-danger, 10)
+    color: rgba($color-lightest, 0.8)
+  &:active
+    background-color: lighten($color-danger, 5)
+    border-color: $color-danger
+    &:hover,
+    &:focus
+      background-color: lighten($color-danger, 5)
+      border-color: $color-danger

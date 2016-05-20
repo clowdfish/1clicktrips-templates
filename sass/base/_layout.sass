@@ -25,6 +25,16 @@
       a
         color: $color-primary
         font-weight: 600
+  +breakpoint(sm)
+    li
+      height: 50px
+      position: relative
+      a
+        position: absolute
+        bottom: 5px
+        width: 100%
+        padding-bottom: 5px
+
 
 #logo
   min-height: 40px
@@ -36,6 +46,30 @@
     width: 100%
     +svg-bg-with-fallback('logo', 'base/logo/')
     background-position: center center
+  +breakpoint(sm)
+    text-align: left
+    a
+      width: 136px
+
+
+#footer
+  background-color: $color-secondary
+  color: $color-lightest
+  padding-top: 40px
+  padding-bottom: 80px
+  a
+    color: $color-lightest
+    &:hover
+      color: $color-lightest
+  .footer-info-area
+    text-align: center
+  .social-media-area
+    text-align: center
+  +breakpoint(md)
+    .footer-info-area
+      text-align: left
+    .social-media-area
+      text-align: right
 
 
 .card
@@ -51,6 +85,14 @@
 
 
 .card-widget
+  .card-edit
+    position: absolute
+    right: 5px
+    top: 15px
+    +breakpoint(md)
+      position: relative
+      top: 0
+      right: 0
   &.open
     background-color: $color-light-gray
   &.closed
@@ -90,6 +132,15 @@
 
 .no-padding
   padding: 0
+
+.separate
+  display: block
+  height: 40px
+  width: 100%
+
+.section-padding
+  padding-top: 80px
+  padding-bottom: 80px
 
 i
   display: inline-block

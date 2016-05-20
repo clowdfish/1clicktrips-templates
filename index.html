@@ -1,184 +1,229 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,600,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src="bower_components/modernizer/modernizr.js"></script>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:200,400,600,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<script src="bower_components/modernizer/modernizr.js"></script>
 </head>
 <body class="index">
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5">
-                        <div id="logo" class="logo">
-                            <a href="/index.html"></a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <div id="nav">
-                            <ul>
-                                <li class="top-menu-item active">
-                                    <a>Item</a>
-                                </li>
-                                <li class="top-menu-item">
-                                    <a>Item</a>
-                                </li>
-                                <li class="top-menu-item">
-                                    <a>Item</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-5">
+                <div id="logo" class="logo">
+                    <a href="/index.html"></a>
                 </div>
             </div>
+            <div class="col-xs-12 col-sm-6 col-sm-push-1 col-md-5 col-md-push-2">
+                <div id="nav">
+                    <ul>
+                        <li class="top-menu-item active">
+                            <a>Item</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a>Item</a>
+                        </li>
+                        <li class="top-menu-item">
+                            <a>Item</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!--Begin widget-->
-            <div id="widget-container" class="container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h1 class="text-align-center">Booking business trips made easy</h1>
-                            <h2 class="text-align-center">Enter your appointments. Get the perfect door-to-door itinerary.</h1>
-                            </div>
-                            <div id="widget-form" class="col-xs-12">
-                                <form>
-                                    <!--Departure location field-->
-                                    <fieldset class="form-group">
-                                        <label for="departure-location">Departure Location</label>
-                                        <input type="text" id="departure-location" class="form-control input-location input-departure" placeholder="Type a location"/>
-                                    </fieldset>
-                                    <!--Departure location field-->
+    <div id="widget-container" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-align-center">Booking business trips made easy</h1>
+                    <h2 class="text-align-center">Enter your appointments. Get the perfect door-to-door itinerary.</h1>
+                    </div>
+                    <div id="widget-form" class="col-xs-12">
+                        <form>
+                            <!--Departure location field-->
+                            <fieldset class="form-group">
+                                <label for="departure-location">Departure Location</label>
+                                <input type="text" id="departure-location" class="form-control input-location input-departure" placeholder="Type a location"/>
+                            </fieldset>
+                            <!--Departure location field-->
 
-                                    <!--Departure location card-->
-                                        <div class="card card-widget closed">
-                                                <div class="col-xs-9 location-icon">
-                                                    <p>Departing from Palma de Mallorca, Spain</p>
-                                                </div>
-                                                <div class="card-edit col-xs-3 text-align-right">
-                                                    <a>edit</a>
-                                                </div>
+                            <!--Departure location card-->
+                                <div class="card card-widget closed">
+                                        <div class="col-xs-9 location-icon">
+                                            <p>Departing from Palma de Mallorca, Spain</p>
                                         </div>
-                                    <!--Departure location card-->
+                                        <div class="card-edit col-xs-3 text-align-right">
+                                            <a>edit</a>
+                                        </div>
+                                </div>
+                            <!--Departure location card-->
 
-                                    <!--Filled appointment location card-->
-                                        <div class="card card-widget card-appointment closed">
-                                                <div class="col-xs-12 col-lg-3 appointment-card-side calendar-icon">
-                                                    <p class="appointment-date">Tuesday 12.08</p>
-                                                    <p class="appointment-time">11:30 - 15:50</p>
-                                                </div>
-                                                <div class="col-lg-8">
-                                                    <h4>Appointment name</h4>
-                                                    <h6>Appointment address goes here, 1024, Berlin</h6>
-                                                </div>
-                                                <div class="card-edit col-xs-3 col-lg-1 text-align-right">
-                                                    <a>edit</a>
-                                                </div>
+                            <!--Filled appointment location card-->
+                                <div class="card card-widget card-appointment closed">
+                                        <div class="col-xs-12 col-lg-3 appointment-card-side calendar-icon">
+                                            <p class="appointment-date">Tuesday 12.08</p>
+                                            <p class="appointment-time">11:30 - 15:50</p>
                                         </div>
-                                    <!--Filled appointment location card-->
+                                        <div class="col-lg-8">
+                                            <h4>Appointment name</h4>
+                                            <h6>Appointment address goes here, 1024, Berlin</h6>
+                                        </div>
+                                        <div class="card-edit col-xs-3 col-lg-1 text-align-right">
+                                            <a>edit</a>
+                                        </div>
+                                </div>
+                            <!--Filled appointment location card-->
 
-                                    <!--New appointment card-->
-                                    <div class="card card-widget card-appointment open">
-                                        <div class="card-header calendar-icon">
-                                            Appointment 1 of 2
-                                            <small>Fill the form or drop your ICS calendar file</small>
+                            <!--New appointment card-->
+                            <div class="card card-widget card-appointment open">
+                                <div class="card-header calendar-icon">
+                                    Appointment 1 of 2
+                                    <small>Fill the form or drop your ICS calendar file</small>
+                                </div>
+                                <div class="card-block">
+                                    <div class="row">
+                                        <div class="col-xs-12  pencil-icon">
+                                            <fieldset class="form-group">
+                                                <label for="appointment1-name">Appointment name</label>
+                                                <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                            </fieldset>
                                         </div>
-                                        <div class="card-block">
+                                        <div class="col-xs-12 col-sm-12 col-lg-6 time-icon">
                                             <div class="row">
-                                                <div class="col-xs-12  pencil-icon">
-                                                    <fieldset class="form-group">
-                                                        <label for="appointment1-name">Appointment name</label>
-                                                        <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                                <div class="col-xs-12 col-md-6 col-lg-6">
+                                                    <fieldset class="form-group date-selector">
+                                                        <label for="appointment1-start">Start</label>
+                                                        <div class="row">
+                                                            <div class="col-xs-7 date">
+                                                                <select id="appointment1-start" class="form-control">
+                                                                    <option>Wed 12.04</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-5 time">
+                                                                <select class="form-control">
+                                                                    <option>20:00</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-xs-12 col-sm-12 col-lg-6 time-icon">
-                                                    <div class="row">
-                                                        <div class="col-xs-12 col-md-6 col-lg-6">
-                                                            <fieldset class="form-group date-selector">
-                                                                <label for="appointment1-start">Start</label>
-                                                                <div class="row">
-                                                                    <div class="col-xs-7 date">
-                                                                        <select id="appointment1-start" class="form-control">
-                                                                            <option>Wed 12.04</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-xs-5 time">
-                                                                        <select class="form-control">
-                                                                            <option>20:00</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </fieldset>
+                                                <div class="col-xs-12 col-md-6 col-lg-6">
+                                                    <fieldset class="form-group date-selector">
+                                                        <label for="appointment1-end">End</label>
+                                                        <div class="row">
+                                                            <div class="col-xs-7 date">
+                                                                <select id="appointment1-end" class="form-control">
+                                                                    <option>Wed 12.04</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-xs-5 time">
+                                                                <select class="form-control">
+                                                                    <option>20:00</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
-                                                        <div class="col-xs-12 col-md-6 col-lg-6">
-                                                            <fieldset class="form-group date-selector">
-                                                                <label for="appointment1-end">End</label>
-                                                                <div class="row">
-                                                                    <div class="col-xs-7 date">
-                                                                        <select id="appointment1-end" class="form-control">
-                                                                            <option>Wed 12.04</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-xs-5 time">
-                                                                        <select class="form-control">
-                                                                            <option>20:00</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                            </fieldset>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-12 col-lg-6">
-                                                    <div class="row">
-                                                        <div class="col-xs-12 location-icon">
-                                                            <fieldset class="form-group ">
-                                                                <label for="appointment1-location">Appointment location</label>
-                                                                <input id="appointment1-location" type="text" placeholder="Type a name for your appointment" class="form-control"/>
-                                                            </fieldset>
-                                                        </div>
-                                                    </div>
+                                                    </fieldset>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card-footer text-align-right">
+                                        <div class="col-xs-12 col-sm-12 col-lg-6">
+                                            <div class="row">
+                                                <div class="col-xs-12 location-icon">
+                                                    <fieldset class="form-group ">
+                                                        <label for="appointment1-location">Appointment location</label>
+                                                        <input id="appointment1-location" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-xs-12 text-align-right">
+                                            <a href="#" class="btn btn-delete">Delete</a>
                                             <a href="#" class="btn btn-primary">Save</a>
                                         </div>
                                     </div>
-                                    <!--New appointment card-->
+                                </div>
+                            </div>
+                            <!--New appointment card-->
 
-                                    <!--Drop area for ICS file-->
-                                    <fieldset class="form-group drop-zone">
-                                        <button id="drop-ics-area" class="form-control input-lg drop-button"/><i class="icon-plus"></i>Or drop your ICS Calendar File Here</button>
-                                    </fieldset>
-                                    <!--Drop area for ICS file-->
+                            <!--Drop area for ICS file-->
+                            <fieldset class="form-group drop-zone">
+                                <button id="drop-ics-area" class="form-control input-lg drop-button"/><i class="icon-plus"></i>Or drop your ICS Calendar File Here</button>
+                            </fieldset>
+                            <!--Drop area for ICS file-->
 
-                                    <!--Submit Button-->
-                                    <fieldset class="form-group">
-                                        <button type="submit" id="search-btn" class="form-control btn btn-lg btn-primary" >Search</button>
-                                    </fieldset>
-                                    <!--Submit Button-->
-                                </form>
+                            <!--Submit Button-->
+                            <fieldset class="form-group">
+                                <button type="submit" id="search-btn" class="form-control btn btn-lg btn-primary" >Search</button>
+                            </fieldset>
+                            <!--Submit Button-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div id="contact-section" class="container section-padding">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <h3>Enjoy this major revolution in business travel management.</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 text-align-center">
+                            <a class="btn btn-secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video-section" class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-5">
+                                <div class="info-quote">
+                                    Booking business trips and corporate travel management has been highly manual, time consuming, not at all supported by algorithms and far too expensive for small businesses. With 1ClickTrips we bring affordable multimodal door-to-door business travel booking and management to every traveler.
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-7 text-align-center">
+                                Youtube video
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div>lala</div>
+                <div id="footer" class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 footer-info-area">
+                                Footer Info
+                            </div>
+                            <div class="col-xs-12 col-md-6 social-media-area">
+                                Social Media
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-                <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-            </body>
-            </html>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+</body>
+</html>

@@ -58,14 +58,28 @@
   color: #00D097;
   font-weight: 600;
 }
+@media (min-width: 544px) {
+  /* line 29, ../sass/base/_layout.sass */
+  #nav li {
+    height: 50px;
+    position: relative;
+  }
+  /* line 32, ../sass/base/_layout.sass */
+  #nav li a {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+}
 
-/* line 29, ../sass/base/_layout.sass */
+/* line 39, ../sass/base/_layout.sass */
 #logo {
   min-height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 33, ../sass/base/_layout.sass */
+/* line 43, ../sass/base/_layout.sass */
 #logo a {
   display: inline-block;
   min-height: 30px;
@@ -80,39 +94,97 @@
 html.no-svg #logo a {
   background-image: url("../images/base/logo/png/logo.png");
 }
+@media (min-width: 544px) {
+  /* line 39, ../sass/base/_layout.sass */
+  #logo {
+    text-align: left;
+  }
+  /* line 51, ../sass/base/_layout.sass */
+  #logo a {
+    width: 136px;
+  }
+}
 
-/* line 41, ../sass/base/_layout.sass */
+/* line 55, ../sass/base/_layout.sass */
+#footer {
+  background-color: #4B515E;
+  color: #FFFFFF;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+/* line 60, ../sass/base/_layout.sass */
+#footer a {
+  color: #FFFFFF;
+}
+/* line 62, ../sass/base/_layout.sass */
+#footer a:hover {
+  color: #FFFFFF;
+}
+/* line 64, ../sass/base/_layout.sass */
+#footer .footer-info-area {
+  text-align: center;
+}
+/* line 66, ../sass/base/_layout.sass */
+#footer .social-media-area {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 69, ../sass/base/_layout.sass */
+  #footer .footer-info-area {
+    text-align: left;
+  }
+  /* line 71, ../sass/base/_layout.sass */
+  #footer .social-media-area {
+    text-align: right;
+  }
+}
+
+/* line 75, ../sass/base/_layout.sass */
 .card {
   overflow: hidden;
   color: #3C3C3C;
   position: relative;
 }
-/* line 45, ../sass/base/_layout.sass */
+/* line 79, ../sass/base/_layout.sass */
 .card .card-title {
   color: #3C3C3C;
 }
-/* line 47, ../sass/base/_layout.sass */
+/* line 81, ../sass/base/_layout.sass */
 .card label {
   color: #3C3C3C;
   font-size: 12px;
   font-weight: 400;
 }
 
-/* line 54, ../sass/base/_layout.sass */
+/* line 88, ../sass/base/_layout.sass */
+.card-widget .card-edit {
+  position: absolute;
+  right: 5px;
+  top: 15px;
+}
+@media (min-width: 768px) {
+  /* line 88, ../sass/base/_layout.sass */
+  .card-widget .card-edit {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+/* line 96, ../sass/base/_layout.sass */
 .card-widget.open {
   background-color: #F8F8F8;
 }
-/* line 56, ../sass/base/_layout.sass */
+/* line 98, ../sass/base/_layout.sass */
 .card-widget.closed {
   line-height: 1.2;
   padding: 15px 0px;
 }
-/* line 59, ../sass/base/_layout.sass */
+/* line 101, ../sass/base/_layout.sass */
 .card-widget.closed p {
   font-family: Raleway, "Raleway", sans-serif;
   margin: 0;
 }
-/* line 62, ../sass/base/_layout.sass */
+/* line 104, ../sass/base/_layout.sass */
 .card-widget.closed a {
   color: #3C3C3C;
   font-family: Raleway, "Raleway", sans-serif;
@@ -121,7 +193,7 @@ html.no-svg #logo a {
   font-size: 13px;
   cursor: pointer;
 }
-/* line 69, ../sass/base/_layout.sass */
+/* line 111, ../sass/base/_layout.sass */
 .card-widget .card-header {
   background-color: #FFFFFF;
   color: #3C3C3C;
@@ -129,42 +201,55 @@ html.no-svg #logo a {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 75, ../sass/base/_layout.sass */
+/* line 117, ../sass/base/_layout.sass */
 .card-widget .card-header small {
   font-weight: 400;
   display: block;
 }
-/* line 78, ../sass/base/_layout.sass */
+/* line 120, ../sass/base/_layout.sass */
 .card-widget.card-appointment {
   padding-bottom: 10px;
 }
-/* line 80, ../sass/base/_layout.sass */
+/* line 122, ../sass/base/_layout.sass */
 .card-widget.card-appointment .appointment-date {
   font-weight: 600;
 }
-/* line 82, ../sass/base/_layout.sass */
+/* line 124, ../sass/base/_layout.sass */
 .card-widget.card-appointment.open {
   border: 2px solid green;
 }
-/* line 84, ../sass/base/_layout.sass */
+/* line 126, ../sass/base/_layout.sass */
 .card-widget.card-appointment.closed {
   background-color: #F8F8F8;
   padding-top: 0px;
 }
 @media (min-width: 992px) {
-  /* line 84, ../sass/base/_layout.sass */
+  /* line 126, ../sass/base/_layout.sass */
   .card-widget.card-appointment.closed {
     padding-top: 15px;
     background-color: #FFFFFF;
   }
 }
 
-/* line 91, ../sass/base/_layout.sass */
+/* line 133, ../sass/base/_layout.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 94, ../sass/base/_layout.sass */
+/* line 136, ../sass/base/_layout.sass */
+.separate {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+/* line 141, ../sass/base/_layout.sass */
+.section-padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* line 145, ../sass/base/_layout.sass */
 i {
   display: inline-block;
   height: 22px;
@@ -172,11 +257,11 @@ i {
   position: relative;
 }
 
-/* line 101, ../sass/base/_layout.sass */
+/* line 152, ../sass/base/_layout.sass */
 .date-selector .date {
   padding-right: 5px;
 }
-/* line 103, ../sass/base/_layout.sass */
+/* line 154, ../sass/base/_layout.sass */
 .date-selector .time {
   padding-left: 5px;
 }
@@ -399,16 +484,40 @@ select {
 /* line 43, ../sass/base/_buttons.sass */
 .btn-primary:hover, .btn-primary:focus {
   background-color: #009d72;
+  color: rgba(255, 255, 255, 0.8);
 }
-/* line 46, ../sass/base/_buttons.sass */
+/* line 47, ../sass/base/_buttons.sass */
 .btn-primary:active {
   background-color: #00eaaa;
   border-color: #00D097;
 }
-/* line 49, ../sass/base/_buttons.sass */
+/* line 50, ../sass/base/_buttons.sass */
 .btn-primary:active:hover, .btn-primary:active:focus {
   background-color: #00eaaa;
   border-color: #00D097;
+}
+
+/* line 55, ../sass/base/_buttons.sass */
+.btn-delete {
+  background-color: #D0001F;
+  margin-right: 5px;
+  border: #9d0017;
+  color: #FFFFFF;
+}
+/* line 60, ../sass/base/_buttons.sass */
+.btn-delete:hover, .btn-delete:focus {
+  background-color: #9d0017;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 64, ../sass/base/_buttons.sass */
+.btn-delete:active {
+  background-color: #ea0023;
+  border-color: #D0001F;
+}
+/* line 67, ../sass/base/_buttons.sass */
+.btn-delete:active:hover, .btn-delete:active:focus {
+  background-color: #ea0023;
+  border-color: #D0001F;
 }
 
 /* line 1, ../sass/base/_icons.sass */
@@ -554,4 +663,40 @@ html.no-svg .icon-plus {
     margin-bottom: 0px;
     border-right: 1px solid #E2E2E2;
   }
+}
+/* line 35, ../sass/pages/index.sass */
+.index #video-section {
+  background: #F8F8F8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+/* line 40, ../sass/pages/index.sass */
+.index #contact-section {
+  text-align: center;
+}
+/* line 42, ../sass/pages/index.sass */
+.index #contact-section .btn {
+  margin-top: 30px;
+}
+@media (min-width: 544px) {
+  /* line 40, ../sass/pages/index.sass */
+  .index #contact-section {
+    text-align: left;
+  }
+  /* line 46, ../sass/pages/index.sass */
+  .index #contact-section .btn {
+    float: right;
+    margin-top: -15px;
+  }
+}
+/* line 50, ../sass/pages/index.sass */
+.index .info-quote {
+  background: #FFFFFF;
+  color: #666666;
+  font-style: italic;
+  line-height: 2;
+  font-size: 16px;
+  padding: 20px 30px;
+  font-weight: 200;
+  letter-spacing: 0.3px;
 }
