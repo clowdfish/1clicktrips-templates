@@ -36,8 +36,7 @@
 
 .itinerary-box
   padding-left: 0px
-  background-color: $color-lightest
-  color: $color-darkest
+  color: $color-lightest
   padding-top: 30px
   padding-bottom: 15px
   .appointment-name
@@ -48,7 +47,7 @@
     letter-spacing: 0.5px
   .appointment-location
     font-size: 14px
-    color: $color-dark-gray
+    margin-bottom: 15px
   .card
     +box-shadow-centered
     .card-header
@@ -67,3 +66,36 @@
     color: $color-primary
     font-family: Raleway, "Raleway", sans-serif
     font-weight: 600
+    small
+      color: $color-primary
+      margin-bottom: 0
+      display: block
+    &.price-large
+      font-size: 22px
+  .radio-container
+    text-align: center
+    width: 100%
+    input
+      height: 22px
+      width: 22px
+      margin-left: 2px
+      margin-top: 5px
+      +breakpoint(md)
+        margin-top: 12px
+  .itinerary-table
+    div
+      margin-bottom: 10px
+      font-size: 14px
+      +breakpoint(md)
+        margin-bottom: 0
+        font-size: 16px
+  .calendar-icon
+    +icon-for-button('icon-calendar-white','base/icons/',45px,50%,28px)
+
+  &.open
+    background-color: $color-lightest
+    color: $color-darkest
+    .appointment-location
+      color: $color-dark-gray
+    .calendar-icon
+      +icon-for-button('icon-calendar','base/icons/',45px,50%,28px)
