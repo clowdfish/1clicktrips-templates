@@ -25,6 +25,7 @@
   padding: 0px 15px
   background: $color-secondary
   color: $color-lightest
+  margin-bottom: 30px
   .content-box-title
     font-size: 14px
     color: $color-lightest
@@ -63,15 +64,19 @@
       text-align: left
   .price
     font-size: 18px
-    color: $color-primary
     font-family: Raleway, "Raleway", sans-serif
     font-weight: 600
     small
-      color: $color-primary
       margin-bottom: 0
       display: block
     &.price-large
       font-size: 22px
+  .change-link
+    display: none
+    a
+      font-size: 14px
+      font-family: Raleway, "Raleway", sans-serif
+      font-weight: 600
   .radio-container
     text-align: center
     width: 100%
@@ -90,7 +95,7 @@
         margin-bottom: 0
         font-size: 16px
   .calendar-icon
-    +icon-for-button('icon-calendar-white','base/icons/',45px,50%,28px)
+    +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
 
   &.open
     background-color: $color-lightest
@@ -98,4 +103,11 @@
     .appointment-location
       color: $color-dark-gray
     .calendar-icon
-      +icon-for-button('icon-calendar','base/icons/',45px,50%,28px)
+      +icon-for-button('icon-calendar','base/icons/',45px,15px,28px)
+
+  &.done
+    .calendar-icon
+      +icon-for-button('icon-calendar-green','base/icons/',45px,15px,28px)
+    .change-link
+      display: block
+      cursor: pointer
