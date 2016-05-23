@@ -220,6 +220,35 @@ i {
   padding-left: 5px;
 }
 
+/* line 126, ../sass/base/_layout.sass */
+#progress-bar {
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+/* line 129, ../sass/base/_layout.sass */
+#progress-bar ul {
+  display: table;
+  table-layout: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 136, ../sass/base/_layout.sass */
+#progress-bar ul li {
+  display: table-cell;
+  position: relative;
+  opacity: 0.5;
+  padding: 10px 0px;
+  text-align: center;
+}
+/* line 142, ../sass/base/_layout.sass */
+#progress-bar ul li.active {
+  font-weight: bold;
+  opacity: 1;
+  border-bottom: 3px solid #4B515E;
+}
+
 /* line 1, ../sass/base/_typography.sass */
 body, div, p, a {
   font-family: Helvetica Neue, "Helvetica Neue", Helvetica, sans-serif;
