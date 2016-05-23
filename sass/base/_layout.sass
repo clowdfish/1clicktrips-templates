@@ -122,6 +122,23 @@ i
   width: 22px
   position: relative
 
+.content-box
+  margin-top: 10px
+  padding: 0px 15px
+  background: $color-secondary
+  color: $color-lightest
+  margin-bottom: 30px
+  display: flex
+  flex-flow: column nowrap
+  .content-box-title
+    font-size: 14px
+    color: $color-lightest
+    font-weight: 400
+    letter-spacing: 1px
+    margin-top: 15px
+    margin-bottom: 15px
+
+
 .date-selector
   .date
     padding-right: 5px
@@ -160,3 +177,27 @@ i
         &:before
           display: inline-block
           margin-right: 5px
+
+
+.responsive-table
+  .table-header
+    display: none
+    font-size: 12px
+    text-transform: uppercase
+    b
+      text-wrap: nowrap
+      line-height: 1.2
+    div
+      overflow: hidden
+    +breakpoint(sm)
+      display: block
+  .responsive-table-row
+    padding: 10px 0px
+    border-top: 1px solid $color-gray
+  .mobile-text
+    width: 100%
+    display: block
+    margin-top: 3px
+    margin-bottom: 3px
+    +breakpoint(sm)
+      display: none

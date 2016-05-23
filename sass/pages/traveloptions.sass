@@ -38,10 +38,14 @@
     text-transform: uppercase
     background: none
   .radio-container
-    max-width: 40px
-    text-align: center
-  .table
-    margin-bottom: 0px
+    text-align: right
+    padding-top: 5px
+    input
+      display: inline-block
+    +breakpoint(sm)
+      padding-top: 0
+      input
+        margin-left: 10px
 
 
 .appointment-list
@@ -51,6 +55,40 @@
   li
     +icon-for-button('icon-plane-white','base/icons/',45px,15px,28px)
     color: $color-lightest
+    border-top: 1px solid lighten($color-secondary, 10)
+    padding-top: 15px
+    padding-bottom: 15px
+    margin: 0
+    opacity: 0.5
+    .appointment-name
+      font-family: Raleway, "Raleway", sans-serif
+      font-weight: 600
+    .appointment-time
+      font-weight: 200
+      font-size: 14px
+      letter-spacing: 0.5px
+    .appointment-location
+      font-size: 14px
+      margin-bottom: 15px
+    .appointment-price
+      font-weight: 400
+      font-size: 14px
+      color: $color-bg
+      text-align: right
+      padding-right: 35px
+    &.active
+      background: $color-lightest
+      color: $color-darkest
+      opacity: 1
+      +icon-for-button('icon-plane-green','base/icons/',45px,15px,28px)
+      .appointment-price
+        color: $color-primary
+    &.done
+      opacity: 1
+      +icon-for-button('icon-plane-checked','base/icons/',45px,15px,28px)
+      .appointment-price
+        font-weight: bold
+
 
 .row-flex-wrap
   -webkit-flex-flow: row wrap
