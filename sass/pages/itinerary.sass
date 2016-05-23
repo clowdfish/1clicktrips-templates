@@ -40,6 +40,7 @@
   color: $color-lightest
   padding-top: 30px
   padding-bottom: 15px
+  border-top: 1px solid rgba($color-lightest, 0.2)
   .btn
     font-weight: 600
     text-transform: uppercase
@@ -133,6 +134,24 @@
   .next-apt
     margin-top: 5px
     margin-bottom: 15px
+  .return-checkbox
+    padding-left: 12px
+    label
+      text-transform: none
+      font-weight: 400
+      width: auto
+      input
+        margin-right: 10px
+  &.message
+    background-color: $color-primary
+    color: $color-lightest
+    +icon-for-button('icon-happy','base/icons/',70px,15px,48px)
+    background-position: left 15px top 35px
+    padding-bottom: 30px
+    .btn
+      margin-top: 15px
+    +breakpoint(md)
+      background-position: left 15px top 50%
 
   &.open
     background-color: $color-lightest

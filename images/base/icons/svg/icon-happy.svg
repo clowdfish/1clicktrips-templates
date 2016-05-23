@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-happy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-happy">
+            <g id="Group" transform="translate(2.000000, 2.000000)">
+                <circle id="Oval-112" stroke="#FFFFFF" stroke-width="2" cx="16" cy="16" r="16"></circle>
+                <path d="M14.4561404,26.1754386 C16.7815498,26.1754386 18.6666667,24.2903218 18.6666667,21.9649123 C18.6666667,19.6395028 16.7815498,17.754386 14.4561404,17.754386" id="Oval-112-Copy" stroke="#FFFFFF" transform="translate(16.561404, 21.964912) rotate(-270.000000) translate(-16.561404, -21.964912) "></path>
+                <path d="M21.5087719,13.6842105 C22.3420437,13.6842105 23.0175439,13.0087103 23.0175439,12.1754386 C23.0175439,11.3421669 22.3420437,10.6666667 21.5087719,10.6666667 C20.6755002,10.6666667 20,11.3421669 20,12.1754386 C20,13.0087103 20.6755002,13.6842105 21.5087719,13.6842105 Z" id="Oval-114-Copy" fill="#FFFFFF"></path>
+                <path d="M10.5087719,14.0175439 C11.3420437,14.0175439 12.0175439,13.3420437 12.0175439,12.5087719 C12.0175439,11.6755002 11.3420437,11 10.5087719,11 C9.6755002,11 9,11.6755002 9,12.5087719 C9,13.3420437 9.6755002,14.0175439 10.5087719,14.0175439 Z" id="Oval-114-Copy-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
