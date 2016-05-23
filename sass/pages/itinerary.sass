@@ -40,6 +40,9 @@
   color: $color-lightest
   padding-top: 30px
   padding-bottom: 15px
+  .btn
+    font-weight: 600
+    text-transform: uppercase
   .appointment-name
     font-family: Raleway, "Raleway", sans-serif
   .appointment-time
@@ -96,6 +99,40 @@
         font-size: 16px
   .calendar-icon
     +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
+  .departure-city
+    margin-top: 20px
+    margin-bottom: 20px
+    line-height: 1.4
+    border-top: 1px solid $color-gray
+    border-bottom: 1px solid $color-gray
+    padding: 15px 0px
+    padding-left: 20px
+    a
+      font-size: 14px
+    h6
+      +icon-for-button('icon-arrowlist','base/icons/',25px,10px,10px)
+      background-position: left top 3px
+      text-transform: uppercase
+      color: $color-dark-gray
+      letter-spacing: 0.5px
+      b
+        text-transform: none
+        display: block
+    small
+      line-height: 1
+    &.open
+      padding: 10px
+      border: 1px solid $color-danger
+      +border-radius(3px)
+      h6
+        color: $color-danger
+    #form-change-departurecity
+      margin-top: 10px
+    +breakpoint(md)
+      padding-left: 0
+  .next-apt
+    margin-top: 5px
+    margin-bottom: 15px
 
   &.open
     background-color: $color-lightest
@@ -107,7 +144,7 @@
 
   &.done
     .calendar-icon
-      +icon-for-button('icon-calendar-green','base/icons/',45px,15px,28px)
+      +icon-for-button('icon-calendar-checked','base/icons/',45px,15px,28px)
     .change-link
       display: block
       cursor: pointer
