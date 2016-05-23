@@ -35,35 +35,44 @@ body {
 header {
   background-color: #FFFFFF;
 }
-
 /* line 9, ../sass/base/_layout.sass */
+header .btn {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 12, ../sass/base/_layout.sass */
+header .cta-container {
+  padding-top: 10px;
+}
+
+/* line 14, ../sass/base/_layout.sass */
 #main {
   flex: 1;
 }
 
-/* line 12, ../sass/base/_layout.sass */
+/* line 17, ../sass/base/_layout.sass */
 ol, ul, li {
   margin: 0;
 }
 
-/* line 16, ../sass/base/_layout.sass */
+/* line 21, ../sass/base/_layout.sass */
 #nav a {
   font-family: Raleway, "Raleway", sans-serif;
 }
-/* line 18, ../sass/base/_layout.sass */
+/* line 23, ../sass/base/_layout.sass */
 #nav ul {
   display: table;
   table-layout: fixed;
   height: 100%;
   width: 100%;
 }
-/* line 23, ../sass/base/_layout.sass */
+/* line 28, ../sass/base/_layout.sass */
 #nav ul li {
   display: table-cell;
   height: 56px;
   position: relative;
 }
-/* line 27, ../sass/base/_layout.sass */
+/* line 32, ../sass/base/_layout.sass */
 #nav ul li a {
   width: 100%;
   text-align: center;
@@ -74,19 +83,19 @@ ol, ul, li {
   text-transform: uppercase;
   color: #3C3C3C;
 }
-/* line 37, ../sass/base/_layout.sass */
+/* line 42, ../sass/base/_layout.sass */
 #nav ul li.active a {
   border-bottom: 3px solid #00D097;
 }
 
-/* line 41, ../sass/base/_layout.sass */
+/* line 46, ../sass/base/_layout.sass */
 #logo {
   min-height: 40px;
   padding-top: 15px;
   padding-bottom: 5px;
   margin-left: -6px;
 }
-/* line 46, ../sass/base/_layout.sass */
+/* line 51, ../sass/base/_layout.sass */
 #logo a {
   display: inline-block;
   min-height: 30px;
@@ -102,108 +111,108 @@ html.no-svg #logo a {
   background-image: url("../images/base/logo/png/logo.png");
 }
 @media (min-width: 544px) {
-  /* line 41, ../sass/base/_layout.sass */
+  /* line 46, ../sass/base/_layout.sass */
   #logo {
     text-align: left;
   }
-  /* line 54, ../sass/base/_layout.sass */
+  /* line 59, ../sass/base/_layout.sass */
   #logo a {
     width: 136px;
   }
 }
 
-/* line 58, ../sass/base/_layout.sass */
+/* line 63, ../sass/base/_layout.sass */
 footer {
   background-color: #4B515E;
   color: #FFFFFF;
   padding-top: 40px;
   padding-bottom: 80px;
 }
-/* line 63, ../sass/base/_layout.sass */
+/* line 68, ../sass/base/_layout.sass */
 footer a {
   color: #FFFFFF;
 }
-/* line 65, ../sass/base/_layout.sass */
+/* line 70, ../sass/base/_layout.sass */
 footer a:hover {
   color: #FFFFFF;
 }
-/* line 67, ../sass/base/_layout.sass */
+/* line 72, ../sass/base/_layout.sass */
 footer .footer-info-area {
   text-align: center;
 }
-/* line 69, ../sass/base/_layout.sass */
+/* line 74, ../sass/base/_layout.sass */
 footer .social-media-area {
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 72, ../sass/base/_layout.sass */
+  /* line 77, ../sass/base/_layout.sass */
   footer .footer-info-area {
     text-align: left;
   }
-  /* line 74, ../sass/base/_layout.sass */
+  /* line 79, ../sass/base/_layout.sass */
   footer .social-media-area {
     text-align: right;
   }
 }
 
-/* line 78, ../sass/base/_layout.sass */
+/* line 83, ../sass/base/_layout.sass */
 .card {
   overflow: hidden;
   color: #3C3C3C;
   position: relative;
 }
-/* line 82, ../sass/base/_layout.sass */
+/* line 87, ../sass/base/_layout.sass */
 .card .card-title {
   color: #3C3C3C;
 }
-/* line 84, ../sass/base/_layout.sass */
+/* line 89, ../sass/base/_layout.sass */
 .card label {
   color: #3C3C3C;
   font-size: 12px;
   font-weight: 400;
 }
 
-/* line 89, ../sass/base/_layout.sass */
+/* line 94, ../sass/base/_layout.sass */
 .no-padding {
   padding: 0;
 }
 
-/* line 92, ../sass/base/_layout.sass */
+/* line 97, ../sass/base/_layout.sass */
 .separate {
   display: block;
   height: 40px;
   width: 100%;
 }
 
-/* line 97, ../sass/base/_layout.sass */
+/* line 102, ../sass/base/_layout.sass */
 .section-padding {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-/* line 101, ../sass/base/_layout.sass */
+/* line 106, ../sass/base/_layout.sass */
 .cta-container {
   text-align: center;
 }
-/* line 102, ../sass/base/_layout.sass */
+/* line 107, ../sass/base/_layout.sass */
 .cta-container .btn {
   display: inline-block;
   width: auto;
 }
-/* line 106, ../sass/base/_layout.sass */
+/* line 111, ../sass/base/_layout.sass */
 .cta-container small {
   display: block;
   clear: both;
   margin-top: 5px;
 }
 @media (min-width: 768px) {
-  /* line 101, ../sass/base/_layout.sass */
+  /* line 106, ../sass/base/_layout.sass */
   .cta-container {
     text-align: right;
   }
 }
 
-/* line 114, ../sass/base/_layout.sass */
+/* line 119, ../sass/base/_layout.sass */
 i {
   display: inline-block;
   height: 22px;
@@ -211,21 +220,22 @@ i {
   position: relative;
 }
 
-/* line 121, ../sass/base/_layout.sass */
+/* line 126, ../sass/base/_layout.sass */
 .date-selector .date {
   padding-right: 5px;
 }
-/* line 123, ../sass/base/_layout.sass */
+/* line 128, ../sass/base/_layout.sass */
 .date-selector .time {
   padding-left: 5px;
 }
 
-/* line 126, ../sass/base/_layout.sass */
+/* line 131, ../sass/base/_layout.sass */
 #progress-bar {
   font-family: Raleway, "Raleway", sans-serif;
   text-transform: uppercase;
+  margin-top: 10px;
 }
-/* line 129, ../sass/base/_layout.sass */
+/* line 135, ../sass/base/_layout.sass */
 #progress-bar ul {
   display: table;
   table-layout: fixed;
@@ -234,7 +244,7 @@ i {
   padding: 0;
   margin: 0;
 }
-/* line 136, ../sass/base/_layout.sass */
+/* line 142, ../sass/base/_layout.sass */
 #progress-bar ul li {
   display: table-cell;
   position: relative;
@@ -242,7 +252,7 @@ i {
   padding: 10px 0px;
   text-align: center;
 }
-/* line 142, ../sass/base/_layout.sass */
+/* line 148, ../sass/base/_layout.sass */
 #progress-bar ul li.active {
   font-weight: bold;
   opacity: 1;
