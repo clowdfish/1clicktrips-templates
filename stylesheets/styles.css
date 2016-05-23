@@ -251,12 +251,45 @@ i {
   opacity: 0.5;
   padding: 10px 0px;
   text-align: center;
+  line-height: 1.2;
+  font-size: 14px;
 }
-/* line 148, ../sass/base/_layout.sass */
+/* line 150, ../sass/base/_layout.sass */
 #progress-bar ul li.active {
   font-weight: bold;
   opacity: 1;
   border-bottom: 3px solid #4B515E;
+}
+/* line 154, ../sass/base/_layout.sass */
+#progress-bar ul li.done {
+  opacity: 1;
+  color: #00D097;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(0, 208, 151, 0.5);
+}
+/* line 212, ../sass/base/_mixins.sass */
+#progress-bar ul li.done:before {
+  content: "";
+  position: relative;
+  left: 0;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: auto 100%;
+  background-image: url("../images/base/icons/svg/icon-ok.svg");
+  background-size: 100% auto;
+  background-position: center center;
+}
+/* line 7, ../sass/base/_mixins.sass */
+html.no-svg #progress-bar ul li.done:before {
+  background-image: url("../images/base/icons/png/icon-ok.png");
+}
+/* line 160, ../sass/base/_layout.sass */
+#progress-bar ul li.done:before {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 /* line 1, ../sass/base/_typography.sass */
@@ -1114,4 +1147,31 @@ html.no-svg .itinerary-box.done .calendar-icon {
 .itinerary-box.done .change-link {
   display: block;
   cursor: pointer;
+}
+
+/* SVG with fallback */
+/* Icon inside button */
+/* Icon inside list */
+/* REM font */
+/* Remove Appearance */
+/* Give space for 30 px icon */
+/* Padding remove/add on med screen */
+/* Remove list stylings */
+/* Border Radius cross browser */
+/* Centered Box Shadow */
+/* inset Box Shadow */
+/* Bottom box shadow */
+/* Card styles */
+/* Css Elipsis */
+/* Trip representation vehicles */
+/* Breakpoints */
+/* CSS rotate */
+/* Add before element */
+/* Add after element */
+/* line 5, ../sass/pages/traveloptions.sass */
+#travel-content {
+  background: #FFFFFF;
+  color: #3C3C3C;
+  min-height: 100px;
+  padding: 0;
 }

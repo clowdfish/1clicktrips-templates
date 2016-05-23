@@ -145,7 +145,18 @@ i
       opacity: 0.5
       padding: 10px 0px
       text-align: center
+      line-height: 1.2
+      font-size: 14px
       &.active
         font-weight: bold
         opacity: 1
         border-bottom: 3px solid $color-secondary
+      &.done
+        opacity: 1
+        color: $color-primary
+        font-weight: 600
+        border-bottom: 2px solid rgba($color-primary, 0.5)
+        +before(15px, 15px, relative, 0, 3px, inline-block, true, 'icon-ok', 'base/icons/', 100% auto, center center)
+        &:before
+          display: inline-block
+          margin-right: 5px

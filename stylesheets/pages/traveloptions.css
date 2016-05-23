@@ -1,0 +1,26 @@
+/* SVG with fallback */
+/* Icon inside button */
+/* Icon inside list */
+/* REM font */
+/* Remove Appearance */
+/* Give space for 30 px icon */
+/* Padding remove/add on med screen */
+/* Remove list stylings */
+/* Border Radius cross browser */
+/* Centered Box Shadow */
+/* inset Box Shadow */
+/* Bottom box shadow */
+/* Card styles */
+/* Css Elipsis */
+/* Trip representation vehicles */
+/* Breakpoints */
+/* CSS rotate */
+/* Add before element */
+/* Add after element */
+/* line 5, ../../sass/pages/traveloptions.sass */
+#travel-content {
+  background: #FFFFFF;
+  color: #3C3C3C;
+  min-height: 100px;
+  padding: 0;
+}
