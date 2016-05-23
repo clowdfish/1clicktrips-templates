@@ -18,9 +18,96 @@
 /* Add before element */
 /* Add after element */
 /* line 5, ../../sass/pages/traveloptions.sass */
+#sidebar {
+  flex-direction: column;
+}
+
+/* line 8, ../../sass/pages/traveloptions.sass */
 #travel-content {
-  background: #FFFFFF;
   color: #3C3C3C;
   min-height: 100px;
   padding: 0;
+  position: relative;
+  background: #FFFFFF;
+  padding: 15px 20px;
+  flex-direction: column;
+}
+/* line 16, ../../sass/pages/traveloptions.sass */
+#travel-content h2 {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+/* line 23, ../../sass/pages/traveloptions.sass */
+.travel-card .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 26, ../../sass/pages/traveloptions.sass */
+.travel-card .google-maps {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+/* line 30, ../../sass/pages/traveloptions.sass */
+.travel-card .google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* line 36, ../../sass/pages/traveloptions.sass */
+.travel-card .card-header {
+  font-family: Raleway, "Raleway", sans-serif;
+  text-transform: uppercase;
+  background: none;
+}
+/* line 40, ../../sass/pages/traveloptions.sass */
+.travel-card .radio-container {
+  max-width: 40px;
+  text-align: center;
+}
+/* line 43, ../../sass/pages/traveloptions.sass */
+.travel-card .table {
+  margin-bottom: 0px;
+}
+
+/* line 47, ../../sass/pages/traveloptions.sass */
+.appointment-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 51, ../../sass/pages/traveloptions.sass */
+.appointment-list li {
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  background-position: 5px 15px;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-plane-white.svg");
+  color: #FFFFFF;
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg .appointment-list li {
+  background-image: url("../images/base/icons/png/icon-plane-white.png");
+}
+
+/* line 55, ../../sass/pages/traveloptions.sass */
+.row-flex-wrap {
+  -webkit-flex-flow: row wrap;
+  align-content: flex-start;
+  flex: 0;
+}
+
+/* line 60, ../../sass/pages/traveloptions.sass */
+.row-flex, .row-flex > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 1 auto;
 }
