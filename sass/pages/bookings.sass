@@ -1,0 +1,118 @@
+@import base/_variables
+@import base/_mixins
+@import base/_colors
+
+.booking-box
+  background: $color-lightest
+  color: $color-darkest
+  .booking-content
+    border-left: 1px solid $color-light-gray
+    padding: 0px 15px
+    flex-direction: row
+    flex: 1
+    .hour
+      font-size: 14px
+      color: $color-dark-gray
+      line-height: 1
+      margin: 0
+      padding: 0
+    .connection
+      font-size: 24px
+      font-family: Raleway, "Raleway", sans-serif
+    .booking-item-details
+      *
+        font-family: Raleway, "Raleway", sans-serif
+        padding: 0px 5px
+      span
+        display: block
+        padding: 0px
+        color: $color-dark-gray
+        font-size: 12px
+    .price
+      font-size: 24px
+      font-weight: 600
+      font-family: Raleway, "Raleway", sans-serif
+      margin-top: 15px
+      margin-bottom: 15px
+      small
+        font-size: 14px
+        font-weight: 400
+        +breakpoint(lg)
+          display: none
+      +breakpoint(md)
+        text-align: left
+        padding-left: 12%
+      +breakpoint(lg)
+        text-align: right
+        padding-left: 0
+
+.big-date
+  text-align: center
+  padding-top: 25px
+  padding-bottom: 25px
+  border-bottom: 1px solid $color-light-gray
+  .date-weekday
+    font-size: 14px
+    display: block
+    line-height: 1
+    font-weight: 600
+    margin-bottom: 0
+  .date-day
+    font-weight: 600
+    font-size: 50px
+    display: block
+    line-height: 1
+  .date-month
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 600
+    display: block
+    line-height: 1
+  +breakpoint(sm)
+    .date-weekday
+      font-size: 24px
+      display: block
+      line-height: 1
+      font-weight: 600
+      margin-bottom: 0
+    .date-day
+      font-weight: 600
+      font-size: 100px
+      display: block
+      line-height: 1
+    .date-month
+      font-size: 24px
+      text-transform: uppercase
+      font-weight: 600
+      display: block
+      line-height: 1
+
+.date-links
+  a
+    display: block
+    padding: 10px 15px
+    border-bottom: 1px solid $color-light-gray
+    &:hover
+      background-color: $color-light-gray
+
+.booking-box-item
+  font-family: Raleway, "Raleway", sans-serif
+  display: block
+  flex-direction: row
+  padding: 15px 0px
+  border-bottom: 1px solid $color-gray
+  .plane-icon
+    +icon-for-button('icon-plane-green','base/icons/',45px,50%,28px)
+    background-position: center top 10px
+    min-height: 80px
+  .cta-container
+    margin-top: 25px
+    padding-right: 25px
+    .btn
+      margin-top: 25px
+    +breakpoint(lg)
+      border-top: none
+      padding-right: 15px
+      margin-top: 0
+      .btn
+        margin-top: 0
