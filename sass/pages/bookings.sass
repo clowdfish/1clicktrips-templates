@@ -7,6 +7,7 @@
     border-bottom: 1px solid $color-gray
     +breakpoint(md)
       border-bottom: none
+      background: lighten($color-light-gray, 2)
   background: $color-lightest
   color: $color-darkest
   .booking-content
@@ -15,15 +16,6 @@
     flex: 1
     +breakpoint(md)
       border-left: 1px solid $color-gray
-    .hour
-      font-size: 14px
-      color: $color-dark-gray
-      line-height: 1
-      margin: 0
-      padding: 0
-    .connection
-      font-size: 24px
-      font-family: Raleway, "Raleway", sans-serif
     .booking-item-details
       *
         font-family: Raleway, "Raleway", sans-serif
@@ -33,16 +25,30 @@
         padding: 0px
         color: $color-dark-gray
         font-size: 12px
+    .hour
+      font-size: 14px
+      color: $color-dark-gray
+      line-height: 1
+      margin: 0
+      padding: 0
+    .connection
+      font-size: 24px
+      font-family: Raleway, "Raleway", sans-serif
+      padding: 0
+      margin-bottom: 0
+      line-height: 1.2
+      margin-top: 5px
+      margin-bottom: 10px
     .price
       font-size: 24px
       font-weight: 600
       font-family: Raleway, "Raleway", sans-serif
-      margin-top: 15px
+      margin-top: 8px
       margin-bottom: 15px
       small
         font-size: 14px
         font-weight: 400
-        +breakpoint(lg)
+        +breakpoint(sm)
           display: none
       +breakpoint(md)
         text-align: left
@@ -57,6 +63,7 @@
   padding-top: 25px
   padding-bottom: 25px
   border-right: 1px solid $color-gray
+  background-color: $color-lightest
   .date-weekday
     font-size: 14px
     display: block
@@ -94,12 +101,14 @@
       line-height: 1
   +breakpoint(md)
     border-right: none
+    border-bottom: 1px solid $color-gray
 
 .date-links
   a
     display: block
     padding: 10px 15px
     border-bottom: 1px solid $color-gray
+    background-color: $color-lightest
     &:hover
       background-color: $color-light-gray
 
@@ -107,7 +116,7 @@
   font-family: Raleway, "Raleway", sans-serif
   display: block
   flex-direction: column
-  padding: 15px 0px 20px 0px
+  padding: 25px 0px 30px 0px
   position: relative
   overflow: hidden
   +before(1px, 100%, absolute, 0%, 100%, inline-block)
@@ -128,7 +137,7 @@
     margin-top: 25px
     .btn
       margin-top: 25px
-    +breakpoint(lg)
+    +breakpoint(sm)
       border-top: none
       padding-right: 15px
       margin-top: 0
@@ -145,3 +154,35 @@
       background-position: center top 10px
       opacity: 0.5
       min-height: 80px
+    .price
+      opacity: 0.4
+  &.appointment
+    .icon
+      +icon-for-button('icon-date-green','base/icons/',45px,50%,28px)
+      background-position: center top 10px
+      min-height: 80px
+    .location
+      +icon-for-button('icon-location','base/icons/',30px,2px,18px)
+      margin-bottom: 0
+      a
+        font-size: 14px
+        padding: 0
+        margin: 0
+  &.hotel
+    .icon
+      +icon-for-button('icon-hotel-green','base/icons/',45px,50%,28px)
+      background-position: center top 10px
+      min-height: 80px
+    .nights
+      +icon-for-button('icon-nights','base/icons/',30px,2px,18px)
+      margin-bottom: 0
+    .room
+      +icon-for-button('icon-room','base/icons/',30px,2px,18px)
+      margin-bottom: 0
+    .location
+      +icon-for-button('icon-location','base/icons/',30px,2px,18px)
+      margin-bottom: 0
+      a
+        font-size: 14px
+        padding: 0
+        margin: 0

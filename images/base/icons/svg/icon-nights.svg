@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-nights</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="icon-nights" stroke="#383838">
+            <path d="M24,22.7068792 C22.4077206,24.1323232 20.3048623,24.9991101 17.9995551,24.9991101 C13.0292381,24.9991101 9,20.9698721 9,15.9995551 C9,11.0292381 13.0292381,7 17.9995551,7 C18.7106377,7 19.4024585,7.0824698 20.0659746,7.23836649 C16.9745388,8.11104122 14.6839295,11.2784704 14.6839295,15.0522335 C14.6839295,19.4993592 17.8649069,23.104467 21.7888414,23.104467 C22.5608407,23.104467 23.3040823,22.9649238 24,22.7068792 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
