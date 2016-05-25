@@ -26,7 +26,7 @@ ol, ul, li
   align-content: flex-start
   flex: 0
 
-.row-flex, .row-flex > div[class*='col-']
+.row-flex
   display: -webkit-box
   display: -moz-box
   display: -ms-flexbox
@@ -38,6 +38,8 @@ ol, ul, li
 #nav
   a
     font-family: Raleway, "Raleway", sans-serif
+    &:hover
+      font-weight: 600
   ul
     display: table
     table-layout: fixed
@@ -59,6 +61,8 @@ ol, ul, li
       &.active
         a
           border-bottom: 3px solid $color-primary
+          &:hover
+            font-weight: 400
 
 
 #logo

@@ -80,6 +80,7 @@
       background: $color-lightest
       color: $color-darkest
       opacity: 1
+      cursor: pointer
       +icon-for-button('icon-plane-green','base/icons/',45px,15px,28px)
       .appointment-price
         color: $color-primary
@@ -88,6 +89,9 @@
       +icon-for-button('icon-plane-checked','base/icons/',45px,15px,28px)
       .appointment-price
         font-weight: bold
+      &:hover
+        background-color: rgba($color-lightest, 0.2)
+        cursor: pointer
 .hotel-list
   margin-top: 30px
   margin-bottom: 20px
@@ -131,6 +135,8 @@
   border-top: 1px solid $color-gray
   border-bottom: 1px solid $color-gray
   padding: 10px 0px
+  display: block
+  margin-bottom: 15px
   div
     font-family: Raleway, "Raleway", sans-serif
   .total-price

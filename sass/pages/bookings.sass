@@ -3,13 +3,18 @@
 @import base/_colors
 
 .booking-box
+  .sidebar
+    border-bottom: 1px solid $color-gray
+    +breakpoint(md)
+      border-bottom: none
   background: $color-lightest
   color: $color-darkest
   .booking-content
-    border-left: 1px solid $color-light-gray
     padding: 0px 15px
     flex-direction: row
     flex: 1
+    +breakpoint(md)
+      border-left: 1px solid $color-gray
     .hour
       font-size: 14px
       color: $color-dark-gray
@@ -45,12 +50,13 @@
       +breakpoint(lg)
         text-align: right
         padding-left: 0
+        font-weight: 400
 
 .big-date
   text-align: center
   padding-top: 25px
   padding-bottom: 25px
-  border-bottom: 1px solid $color-light-gray
+  border-right: 1px solid $color-gray
   .date-weekday
     font-size: 14px
     display: block
@@ -86,28 +92,40 @@
       font-weight: 600
       display: block
       line-height: 1
+  +breakpoint(md)
+    border-right: none
 
 .date-links
   a
     display: block
     padding: 10px 15px
-    border-bottom: 1px solid $color-light-gray
+    border-bottom: 1px solid $color-gray
     &:hover
       background-color: $color-light-gray
 
 .booking-box-item
   font-family: Raleway, "Raleway", sans-serif
   display: block
-  flex-direction: row
-  padding: 15px 0px
-  border-bottom: 1px solid $color-gray
-  .plane-icon
-    +icon-for-button('icon-plane-green','base/icons/',45px,50%,28px)
-    background-position: center top 10px
-    min-height: 80px
+  flex-direction: column
+  padding: 15px 0px 20px 0px
+  position: relative
+  overflow: hidden
+  +before(1px, 100%, absolute, 0%, 100%, inline-block)
+  &:before
+    background-color: $color-gray
+    margin-top: -1px
+  &:last-child
+    &:before
+      display: none
+  +breakpoint(sm)
+    &:before
+      left: 7.5%
+
+  .row
+    width: 100%
+    display: block
   .cta-container
     margin-top: 25px
-    padding-right: 25px
     .btn
       margin-top: 25px
     +breakpoint(lg)
@@ -116,3 +134,14 @@
       margin-top: 0
       .btn
         margin-top: 0
+  &.flight
+    .icon
+      +icon-for-button('icon-plane-green','base/icons/',45px,50%,28px)
+      background-position: center top 10px
+      min-height: 80px
+  &.taxi
+    .icon
+      +icon-for-button('icon-taxi','base/icons/',45px,50%,28px)
+      background-position: center top 10px
+      opacity: 0.5
+      min-height: 80px
