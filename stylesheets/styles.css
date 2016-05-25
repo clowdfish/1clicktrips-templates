@@ -1884,3 +1884,50 @@ html.no-svg .booking-box-item.hotel .location {
   padding: 0;
   margin: 0;
 }
+
+/* line 187, ../sass/pages/bookings.sass */
+.top-btn {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  margin: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #E2E2E2;
+}
+/* line 195, ../sass/pages/bookings.sass */
+.top-btn.email-btn {
+  background-repeat: no-repeat;
+  padding-left: 0px;
+  background-position: 5px 50%;
+  background-size: auto 30px;
+  background-image: url("../images/base/icons/svg/icon-mail.svg");
+  background-position: center center;
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .top-btn.email-btn {
+  background-image: url("../images/base/icons/png/icon-mail.png");
+}
+/* line 198, ../sass/pages/bookings.sass */
+.top-btn.print-btn {
+  background-repeat: no-repeat;
+  padding-left: 0px;
+  background-position: 5px 50%;
+  background-size: auto 30px;
+  background-image: url("../images/base/icons/svg/icon-print.svg");
+  background-position: center center;
+}
+/* line 17, ../sass/base/_mixins.sass */
+html.no-svg .top-btn.print-btn {
+  background-image: url("../images/base/icons/png/icon-print.png");
+}
+/* line 201, ../sass/pages/bookings.sass */
+.top-btn:hover, .top-btn:focus {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+}
