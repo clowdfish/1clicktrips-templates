@@ -228,10 +228,6 @@
 .booking-box-item .cta-container {
   margin-top: 25px;
 }
-/* line 138, ../../sass/pages/bookings.sass */
-.booking-box-item .cta-container .btn {
-  margin-top: 25px;
-}
 @media (min-width: 544px) {
   /* line 136, ../../sass/pages/bookings.sass */
   .booking-box-item .cta-container {
@@ -239,12 +235,8 @@
     padding-right: 15px;
     margin-top: 0;
   }
-  /* line 144, ../../sass/pages/bookings.sass */
-  .booking-box-item .cta-container .btn {
-    margin-top: 0;
-  }
 }
-/* line 147, ../../sass/pages/bookings.sass */
+/* line 143, ../../sass/pages/bookings.sass */
 .booking-box-item.flight .icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -258,7 +250,7 @@
 html.no-svg .booking-box-item.flight .icon {
   background-image: url("../images/base/icons/png/icon-plane-green.png");
 }
-/* line 152, ../../sass/pages/bookings.sass */
+/* line 148, ../../sass/pages/bookings.sass */
 .booking-box-item.taxi .icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -273,11 +265,11 @@ html.no-svg .booking-box-item.flight .icon {
 html.no-svg .booking-box-item.taxi .icon {
   background-image: url("../images/base/icons/png/icon-taxi.png");
 }
-/* line 157, ../../sass/pages/bookings.sass */
+/* line 153, ../../sass/pages/bookings.sass */
 .booking-box-item.taxi .price {
   opacity: 0.4;
 }
-/* line 160, ../../sass/pages/bookings.sass */
+/* line 156, ../../sass/pages/bookings.sass */
 .booking-box-item.appointment .icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -291,7 +283,7 @@ html.no-svg .booking-box-item.taxi .icon {
 html.no-svg .booking-box-item.appointment .icon {
   background-image: url("../images/base/icons/png/icon-date-green.png");
 }
-/* line 164, ../../sass/pages/bookings.sass */
+/* line 160, ../../sass/pages/bookings.sass */
 .booking-box-item.appointment .location {
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -304,13 +296,13 @@ html.no-svg .booking-box-item.appointment .icon {
 html.no-svg .booking-box-item.appointment .location {
   background-image: url("../images/base/icons/png/icon-location.png");
 }
-/* line 167, ../../sass/pages/bookings.sass */
+/* line 163, ../../sass/pages/bookings.sass */
 .booking-box-item.appointment .location a {
   font-size: 14px;
   padding: 0;
   margin: 0;
 }
-/* line 172, ../../sass/pages/bookings.sass */
+/* line 168, ../../sass/pages/bookings.sass */
 .booking-box-item.hotel .icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -324,7 +316,7 @@ html.no-svg .booking-box-item.appointment .location {
 html.no-svg .booking-box-item.hotel .icon {
   background-image: url("../images/base/icons/png/icon-hotel-green.png");
 }
-/* line 176, ../../sass/pages/bookings.sass */
+/* line 172, ../../sass/pages/bookings.sass */
 .booking-box-item.hotel .nights {
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -337,7 +329,7 @@ html.no-svg .booking-box-item.hotel .icon {
 html.no-svg .booking-box-item.hotel .nights {
   background-image: url("../images/base/icons/png/icon-nights.png");
 }
-/* line 179, ../../sass/pages/bookings.sass */
+/* line 175, ../../sass/pages/bookings.sass */
 .booking-box-item.hotel .room {
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -350,7 +342,7 @@ html.no-svg .booking-box-item.hotel .nights {
 html.no-svg .booking-box-item.hotel .room {
   background-image: url("../images/base/icons/png/icon-room.png");
 }
-/* line 182, ../../sass/pages/bookings.sass */
+/* line 178, ../../sass/pages/bookings.sass */
 .booking-box-item.hotel .location {
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -363,7 +355,7 @@ html.no-svg .booking-box-item.hotel .room {
 html.no-svg .booking-box-item.hotel .location {
   background-image: url("../images/base/icons/png/icon-location.png");
 }
-/* line 185, ../../sass/pages/bookings.sass */
+/* line 181, ../../sass/pages/bookings.sass */
 .booking-box-item.hotel .location a {
   font-size: 14px;
   padding: 0;
