@@ -41,6 +41,8 @@
     .card-header
       background: $color-lightest
   .itinerary-card
+    .card-block
+      padding: 0px
     div
       font-family: Raleway, "Raleway", sans-serif
     small
@@ -71,16 +73,40 @@
       height: 22px
       width: 22px
       margin-left: 2px
-      margin-top: 5px
-      +breakpoint(md)
-        margin-top: 12px
+  .main-itinerary-table
+    input
+      margin-top: 10px
+    .radio-container
+      text-align: center
+      padding: 0
   .itinerary-table
+    padding: 5px 15px
+    .info
+      margin-bottom: 8px
     div
-      margin-bottom: 10px
       font-size: 14px
       +breakpoint(md)
         margin-bottom: 0
         font-size: 16px
+    &.itinerary-small-table
+      padding-top: 15px
+      padding-bottom: 5px
+      .price
+        font-size: 16px
+      .radio-container
+        height: 15px
+      &:nth-child(odd)
+        background: $color-light-gray
+        border-bottom: 1px solid $color-gray
+      +breakpoint(md)
+        small
+          display: none
+
+
+    +breakpoint(md)
+      padding-top: 5px
+      .price
+        text-align: right
   .calendar-icon
     +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
   .departure-city
@@ -150,3 +176,5 @@
     .change-link
       display: block
       cursor: pointer
+    .itinerary-card
+      padding-top: 5px
