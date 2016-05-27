@@ -69,13 +69,6 @@
     text-align: center
     +breakpoint(md)
       text-align: left
-  .price
-    font-size: 18px
-    font-family: Raleway, "Raleway", sans-serif
-    font-weight: 600
-    small
-      margin-bottom: 0
-      display: block
   .change-link
     display: none
     a
@@ -89,6 +82,15 @@
       height: 22px
       width: 22px
       margin-left: 2px
+  .options
+    background: $color-dark-gray
+    font-size: 12px
+    font-weight: 800
+    padding: 3px 15px
+    text-transform: uppercase
+    color: $color-lightest
+  .border-table
+    border: 2px solid $color-dark-gray
   .main-itinerary-table
     input
       margin-top: 10px
@@ -97,6 +99,10 @@
       padding: 0
   .itinerary-table
     padding: 5px 15px
+    .price
+      font-size: 20px
+      small
+        font-size: 12px
     .info
       margin-bottom: 8px
     div
@@ -109,6 +115,7 @@
       padding-bottom: 5px
       .price
         font-size: 16px
+        text-align: center
       .radio-container
         height: 15px
       &:nth-child(odd)
@@ -206,3 +213,12 @@
       cursor: pointer
     .itinerary-card
       padding-top: 5px
+
+
+.itinerary-table-small-header
+  font-size: 12px
+  text-align: left
+  text-transform: uppercase
+  padding-left: 63px
+  border-top: 1px solid $color-gray
+  border-bottom: 1px solid $color-gray
