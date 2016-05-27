@@ -1427,17 +1427,37 @@ html.no-svg .itinerary-box.done .calendar-icon {
 }
 
 /* line 23, ../sass/pages/traveloptions.sass */
+.travel-card .form-group {
+  padding: 0px 15px;
+  margin: 0;
+}
+/* line 26, ../sass/pages/traveloptions.sass */
+.travel-card label {
+  padding: 10px;
+  margin: 0;
+  border-top: 1px solid #E2E2E2;
+}
+/* line 30, ../sass/pages/traveloptions.sass */
+.travel-card label:hover {
+  background-color: #F8F8F8;
+}
+/* line 32, ../sass/pages/traveloptions.sass */
+.travel-card .card-block {
+  padding: 0;
+}
+/* line 34, ../sass/pages/traveloptions.sass */
 .travel-card .price {
   font-weight: bold;
   font-size: 16px;
+  text-align: right;
 }
-/* line 26, ../sass/pages/traveloptions.sass */
+/* line 38, ../sass/pages/traveloptions.sass */
 .travel-card .google-maps {
   position: relative;
   height: 250px;
   overflow: hidden;
 }
-/* line 30, ../sass/pages/traveloptions.sass */
+/* line 42, ../sass/pages/traveloptions.sass */
 .travel-card .google-maps iframe {
   position: absolute;
   top: 0;
@@ -1445,39 +1465,39 @@ html.no-svg .itinerary-box.done .calendar-icon {
   width: 100% !important;
   height: 100% !important;
 }
-/* line 36, ../sass/pages/traveloptions.sass */
+/* line 48, ../sass/pages/traveloptions.sass */
 .travel-card .card-header {
   font-family: Raleway, "Raleway", sans-serif;
   text-transform: uppercase;
   background: none;
 }
-/* line 40, ../sass/pages/traveloptions.sass */
+/* line 52, ../sass/pages/traveloptions.sass */
 .travel-card .radio-container {
   text-align: right;
   padding-top: 5px;
 }
-/* line 43, ../sass/pages/traveloptions.sass */
+/* line 55, ../sass/pages/traveloptions.sass */
 .travel-card .radio-container input {
   display: inline-block;
 }
 @media (min-width: 544px) {
-  /* line 40, ../sass/pages/traveloptions.sass */
+  /* line 52, ../sass/pages/traveloptions.sass */
   .travel-card .radio-container {
     padding-top: 0;
   }
-  /* line 47, ../sass/pages/traveloptions.sass */
+  /* line 59, ../sass/pages/traveloptions.sass */
   .travel-card .radio-container input {
     margin-left: 10px;
   }
 }
 
-/* line 51, ../sass/pages/traveloptions.sass */
+/* line 63, ../sass/pages/traveloptions.sass */
 .appointment-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 55, ../sass/pages/traveloptions.sass */
+/* line 67, ../sass/pages/traveloptions.sass */
 .appointment-list li {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -1495,23 +1515,23 @@ html.no-svg .itinerary-box.done .calendar-icon {
 html.no-svg .appointment-list li {
   background-image: url("../images/base/icons/png/icon-plane-white.png");
 }
-/* line 63, ../sass/pages/traveloptions.sass */
+/* line 75, ../sass/pages/traveloptions.sass */
 .appointment-list li .appointment-name {
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 600;
 }
-/* line 66, ../sass/pages/traveloptions.sass */
+/* line 78, ../sass/pages/traveloptions.sass */
 .appointment-list li .appointment-time {
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 0.5px;
 }
-/* line 70, ../sass/pages/traveloptions.sass */
+/* line 82, ../sass/pages/traveloptions.sass */
 .appointment-list li .appointment-location {
   font-size: 14px;
   margin-bottom: 15px;
 }
-/* line 73, ../sass/pages/traveloptions.sass */
+/* line 85, ../sass/pages/traveloptions.sass */
 .appointment-list li .appointment-price {
   font-weight: 400;
   font-size: 14px;
@@ -1519,7 +1539,7 @@ html.no-svg .appointment-list li {
   text-align: right;
   padding-right: 35px;
 }
-/* line 79, ../sass/pages/traveloptions.sass */
+/* line 91, ../sass/pages/traveloptions.sass */
 .appointment-list li.active {
   background: #FFFFFF;
   color: #3C3C3C;
@@ -1535,11 +1555,11 @@ html.no-svg .appointment-list li {
 html.no-svg .appointment-list li.active {
   background-image: url("../images/base/icons/png/icon-plane-green.png");
 }
-/* line 85, ../sass/pages/traveloptions.sass */
+/* line 97, ../sass/pages/traveloptions.sass */
 .appointment-list li.active .appointment-price {
   color: #00D097;
 }
-/* line 87, ../sass/pages/traveloptions.sass */
+/* line 99, ../sass/pages/traveloptions.sass */
 .appointment-list li.done {
   opacity: 1;
   background-repeat: no-repeat;
@@ -1552,31 +1572,31 @@ html.no-svg .appointment-list li.active {
 html.no-svg .appointment-list li.done {
   background-image: url("../images/base/icons/png/icon-plane-checked.png");
 }
-/* line 90, ../sass/pages/traveloptions.sass */
+/* line 102, ../sass/pages/traveloptions.sass */
 .appointment-list li.done .appointment-price {
   font-weight: bold;
 }
-/* line 92, ../sass/pages/traveloptions.sass */
+/* line 104, ../sass/pages/traveloptions.sass */
 .appointment-list li.done:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
-/* line 95, ../sass/pages/traveloptions.sass */
+/* line 107, ../sass/pages/traveloptions.sass */
 .hotel-list {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-/* line 98, ../sass/pages/traveloptions.sass */
+/* line 110, ../sass/pages/traveloptions.sass */
 .hotel-list .title {
   font-weight: 400;
   margin-bottom: 15px;
 }
-/* line 101, ../sass/pages/traveloptions.sass */
+/* line 113, ../sass/pages/traveloptions.sass */
 .hotel-list .hotel-name {
   font-weight: 600;
 }
-/* line 103, ../sass/pages/traveloptions.sass */
+/* line 115, ../sass/pages/traveloptions.sass */
 .hotel-list i {
   background-repeat: no-repeat;
   padding-left: 0px;
@@ -1592,16 +1612,16 @@ html.no-svg .appointment-list li.done {
 html.no-svg .hotel-list i {
   background-image: url("../images/base/icons/png/icon-star.png");
 }
-/* line 109, ../sass/pages/traveloptions.sass */
+/* line 121, ../sass/pages/traveloptions.sass */
 .hotel-list .hotel-price {
   white-space: nowrap;
 }
-/* line 111, ../sass/pages/traveloptions.sass */
+/* line 123, ../sass/pages/traveloptions.sass */
 .hotel-list .radio-area {
   text-align: center;
   margin-bottom: 20px;
 }
-/* line 114, ../sass/pages/traveloptions.sass */
+/* line 126, ../sass/pages/traveloptions.sass */
 .hotel-list .hotel-info {
   font-size: 12px;
   color: #666666;
@@ -1609,30 +1629,30 @@ html.no-svg .hotel-list i {
   margin-bottom: 15px;
 }
 
-/* line 120, ../sass/pages/traveloptions.sass */
+/* line 132, ../sass/pages/traveloptions.sass */
 .hotel-cards .card {
   padding-top: 0;
 }
-/* line 122, ../sass/pages/traveloptions.sass */
+/* line 134, ../sass/pages/traveloptions.sass */
 .hotel-cards .card-photo {
   margin-top: -25px;
   height: 200px;
   overflow: hidden;
 }
-/* line 126, ../sass/pages/traveloptions.sass */
+/* line 138, ../sass/pages/traveloptions.sass */
 .hotel-cards .card-photo img {
   width: 100%;
   height: auto;
 }
 @media (min-width: 544px) {
-  /* line 126, ../sass/pages/traveloptions.sass */
+  /* line 138, ../sass/pages/traveloptions.sass */
   .hotel-cards .card-photo img {
     height: 200px;
     width: auto;
   }
 }
 
-/* line 134, ../sass/pages/traveloptions.sass */
+/* line 146, ../sass/pages/traveloptions.sass */
 .total-row {
   border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
@@ -1640,24 +1660,24 @@ html.no-svg .hotel-list i {
   display: block;
   margin-bottom: 15px;
 }
-/* line 140, ../sass/pages/traveloptions.sass */
+/* line 152, ../sass/pages/traveloptions.sass */
 .total-row div {
   font-family: Raleway, "Raleway", sans-serif;
 }
-/* line 142, ../sass/pages/traveloptions.sass */
+/* line 154, ../sass/pages/traveloptions.sass */
 .total-row .total-price {
   color: #00D097;
 }
 
-/* line 145, ../sass/pages/traveloptions.sass */
+/* line 157, ../sass/pages/traveloptions.sass */
 .cta-row {
   margin-top: 20px;
 }
-/* line 147, ../sass/pages/traveloptions.sass */
+/* line 159, ../sass/pages/traveloptions.sass */
 .cta-row .prev {
   text-align: left;
 }
-/* line 149, ../sass/pages/traveloptions.sass */
+/* line 161, ../sass/pages/traveloptions.sass */
 .cta-row .next {
   text-align: right;
 }
