@@ -43,6 +43,24 @@
   .itinerary-card
     .card-block
       padding: 0px
+      &.flight
+        +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
+        background-position: left 15px top 15px
+      &.train
+        +icon-for-button('icon-train','base/icons/',50px,50%,28px)
+        background-position: left 15px top 15px
+      &.car
+        +icon-for-button('icon-train','base/icons/',50px,50%,28px)
+        background-position: left 15px top 15px
+      .flight
+        +icon-for-button('icon-plane','base/icons/',65px,50%,28px)
+        background-position: left 30px top 12px
+      .train
+        +icon-for-button('icon-train','base/icons/',65px,50%,28px)
+        background-position: left 30px top 12px
+      .car
+        +icon-for-button('icon-train','base/icons/',65px,50%,28px)
+        background-position: left 30px top 12px
     div
       font-family: Raleway, "Raleway", sans-serif
     small
@@ -58,8 +76,6 @@
     small
       margin-bottom: 0
       display: block
-    &.price-large
-      font-size: 22px
   .change-link
     display: none
     a
@@ -96,7 +112,7 @@
       .radio-container
         height: 15px
       &:nth-child(odd)
-        background: $color-light-gray
+        background-color: $color-light-gray
         border-bottom: 1px solid $color-gray
       +breakpoint(md)
         small
@@ -109,8 +125,20 @@
         text-align: right
   .calendar-icon
     +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
-  .departure-city
+  .time-before
     margin-top: 20px
+    line-height: 1.4
+    border-top: 1px solid $color-gray
+    padding: 15px 0px
+    margin-bottom: 0
+    h6
+      +icon-for-button('icon-time','base/icons/',25px,18px,18px)
+      background-position: left top
+      text-transform: uppercase
+      color: $color-dark-gray
+      letter-spacing: 0.5px
+  .departure-city
+    margin-top: 10px
     margin-bottom: 20px
     line-height: 1.4
     border-top: 1px solid $color-gray
