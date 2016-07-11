@@ -18,15 +18,53 @@
     font-family: Raleway, "Raleway", sans-serif
 
 
+.itinerary
+  .appointment-list
+    margin: 0
+    padding: 0
+    list-style-type: none
+    li
+      +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
+      color: $color-lightest
+      border-top: 1px solid lighten($color-secondary, 10)
+      padding-top: 15px
+      padding-bottom: 15px
+      margin: 0
+      opacity: 0.5
+      .appointment-name
+        font-family: Raleway, "Raleway", sans-serif
+        font-weight: 600
+      .appointment-time
+        font-weight: 200
+        font-size: 14px
+        letter-spacing: 0.5px
+      .appointment-location
+        font-size: 14px
+        margin-bottom: 15px
+      .appointment-price
+        font-weight: 400
+        font-size: 14px
+        color: $color-bg
+        text-align: right
+        padding-right: 35px
+      &.active
+        background: $color-lightest
+        color: $color-darkest
+        opacity: 1
+        cursor: pointer
+        +icon-for-button('icon-calendar','base/icons/',45px,15px,28px)
+        .appointment-price
+          color: $color-primary
+      &.done
+        opacity: 1
+        +icon-for-button('icon-calendar-checked','base/icons/',45px,15px,28px)
+        .appointment-price
+          font-weight: bold
+        &:hover
+          background-color: rgba($color-lightest, 0.2)
+          cursor: pointer
+
 .itinerary-box
-  padding-left: 0px
-  color: $color-lightest
-  padding-top: 30px
-  padding-bottom: 15px
-  border-top: 1px solid rgba($color-lightest, 0.2)
-  .btn
-    font-weight: 600
-    text-transform: uppercase
   .appointment-name
     font-family: Raleway, "Raleway", sans-serif
   .appointment-time
@@ -41,8 +79,15 @@
     .card-header
       background: $color-lightest
   .itinerary-card
+    &:not(.open)
+      .card-block
+        &:hover
+          background-color: rgba($color-light-gray, 0.6)
     .card-block
       padding: 0px
+      cursor: pointer
+      &:hover
+        background-color: rgba($color-light-gray, 0.6)
       &.flight
         +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
         background-position: left 15px top 15px

@@ -59,88 +59,88 @@
       input
         margin-left: 10px
 
-
-.appointment-list
-  margin: 0
-  padding: 0
-  list-style-type: none
-  li
-    +icon-for-button('icon-plane-white','base/icons/',45px,15px,28px)
-    color: $color-lightest
-    border-top: 1px solid lighten($color-secondary, 10)
-    padding-top: 15px
-    padding-bottom: 15px
+.traveloptions
+  .appointment-list
     margin: 0
-    opacity: 0.5
-    .appointment-name
-      font-family: Raleway, "Raleway", sans-serif
-      font-weight: 600
-    .appointment-time
-      font-weight: 200
-      font-size: 14px
-      letter-spacing: 0.5px
-    .appointment-location
-      font-size: 14px
-      margin-bottom: 15px
-    .appointment-price
-      font-weight: 400
-      font-size: 14px
-      color: $color-bg
-      text-align: right
-      padding-right: 35px
-    &.active
-      background: $color-lightest
-      color: $color-darkest
-      opacity: 1
-      cursor: pointer
-      +icon-for-button('icon-plane-green','base/icons/',45px,15px,28px)
+    padding: 0
+    list-style-type: none
+    li
+      +icon-for-button('icon-plane-white','base/icons/',45px,15px,28px)
+      color: $color-lightest
+      border-top: 1px solid lighten($color-secondary, 10)
+      padding-top: 15px
+      padding-bottom: 15px
+      margin: 0
+      opacity: 0.5
+      .appointment-name
+        font-family: Raleway, "Raleway", sans-serif
+        font-weight: 600
+      .appointment-time
+        font-weight: 200
+        font-size: 14px
+        letter-spacing: 0.5px
+      .appointment-location
+        font-size: 14px
+        margin-bottom: 15px
       .appointment-price
-        color: $color-primary
-    &.done
-      opacity: 1
-      +icon-for-button('icon-plane-checked','base/icons/',45px,15px,28px)
-      .appointment-price
-        font-weight: bold
-      &:hover
-        background-color: rgba($color-lightest, 0.2)
+        font-weight: 400
+        font-size: 14px
+        color: $color-bg
+        text-align: right
+        padding-right: 35px
+      &.active
+        background: $color-lightest
+        color: $color-darkest
+        opacity: 1
         cursor: pointer
-.hotel-list
-  margin-top: 30px
-  margin-bottom: 20px
-  .title
-    font-weight: 400
-    margin-bottom: 15px
-  .hotel-name
-    font-weight: 600
-  i
-    +icon-for-button('icon-star','base/icons/',0px,0px,15px)
-    height: 18px
-    width: 18px
-    background-position: left center
-    margin-top: 3px
-  .hotel-price
-    white-space: nowrap
-  .radio-area
-    text-align: center
+        +icon-for-button('icon-plane-green','base/icons/',45px,15px,28px)
+        .appointment-price
+          color: $color-primary
+      &.done
+        opacity: 1
+        +icon-for-button('icon-plane-checked','base/icons/',45px,15px,28px)
+        .appointment-price
+          font-weight: bold
+        &:hover
+          background-color: rgba($color-lightest, 0.2)
+          cursor: pointer
+  .hotel-list
+    margin-top: 30px
     margin-bottom: 20px
-  .hotel-info
-    font-size: 12px
-    color: $color-dark-gray
-    padding: 0px 20px
-    margin-bottom: 15px
-.hotel-cards
-  .card
-    padding-top: 0
-  .card-photo
-    margin-top: -25px
-    height: 200px
-    overflow: hidden
-    img
-      width: 100%
-      height: auto
-      +breakpoint(sm)
-        height: 200px
-        width: auto
+    .title
+      font-weight: 400
+      margin-bottom: 15px
+    .hotel-name
+      font-weight: 600
+    i
+      +icon-for-button('icon-star','base/icons/',0px,0px,15px)
+      height: 18px
+      width: 18px
+      background-position: left center
+      margin-top: 3px
+    .hotel-price
+      white-space: nowrap
+    .radio-area
+      text-align: center
+      margin-bottom: 20px
+    .hotel-info
+      font-size: 12px
+      color: $color-dark-gray
+      padding: 0px 20px
+      margin-bottom: 15px
+  .hotel-cards
+    .card
+      padding-top: 0
+    .card-photo
+      margin-top: -25px
+      height: 200px
+      overflow: hidden
+      img
+        width: 100%
+        height: auto
+        +breakpoint(sm)
+          height: 200px
+          width: auto
 
 
 .total-row
