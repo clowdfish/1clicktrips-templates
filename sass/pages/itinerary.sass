@@ -33,7 +33,7 @@
       opacity: 0.5
       .appointment-name
         font-family: Raleway, "Raleway", sans-serif
-        font-weight: 600
+        font-weight: 400
       .appointment-time
         font-weight: 200
         font-size: 14px
@@ -57,7 +57,12 @@
           color: $color-primary
       &.done
         opacity: 1
+        font-weight: normal
         +icon-for-button('icon-calendar-checked','base/icons/',45px,15px,28px)
+        &.flight
+          +icon-for-button('icon-plane-white-checked','base/icons/',45px,15px,28px)
+        &.train
+          +icon-for-button('icon-train-white-checked','base/icons/',45px,15px,28px)
         .appointment-price
           font-weight: bold
         &:hover

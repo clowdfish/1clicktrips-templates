@@ -19,7 +19,8 @@
     margin-bottom: 15px
     margin-top: 10px
 
-.travel-card
+.travel-card,
+.hotel-card
   .form-group
     padding: 0px 15px
     margin: 0
@@ -64,17 +65,17 @@
     margin: 0
     padding: 0
     list-style-type: none
-    li
-      +icon-for-button('icon-plane-white','base/icons/',45px,15px,28px)
+    &>li
+      +icon-for-button('icon-trip-white','base/icons/',45px,15px,28px)
       color: $color-lightest
       border-top: 1px solid lighten($color-secondary, 10)
       padding-top: 15px
       padding-bottom: 15px
       margin: 0
       opacity: 0.5
+      cursor: normal
       .appointment-name
         font-family: Raleway, "Raleway", sans-serif
-        font-weight: 600
       .appointment-time
         font-weight: 200
         font-size: 14px
@@ -90,19 +91,61 @@
         padding-right: 35px
       &.active
         background: $color-lightest
+        overflow: hidden
         color: $color-darkest
+        cursor: normal
         opacity: 1
-        cursor: pointer
-        +icon-for-button('icon-plane-green','base/icons/',45px,15px,28px)
+        padding-bottom: 0
+        +icon-for-button('icon-trip-green','base/icons/',45px,15px,28px)
         .appointment-price
           color: $color-primary
       &.done
         opacity: 1
-        +icon-for-button('icon-plane-checked','base/icons/',45px,15px,28px)
+        +icon-for-button('icon-trip-white-checked','base/icons/',45px,15px,28px)
         .appointment-price
           font-weight: bold
         &:hover
           background-color: rgba($color-lightest, 0.2)
+          cursor: pointer
+  ul.steps
+    border-top: 1px solid $color-gray
+    margin: 0px -45px
+    padding: 0
+    list-style-type: none
+    background-color: $color-light-gray
+    li
+      padding: 5px 10px
+      opacity: 0.6
+      cursor: normal
+      border-bottom: 1px solid $color-gray
+      +icon-for-button('icon-trip','base/icons/',45px,8px,17px)
+      &.flight
+        +icon-for-button('icon-plane','base/icons/',45px,8px,17px)
+        &.active
+          +icon-for-button('icon-plane-white','base/icons/',45px,8px,17px)
+        &.done
+          +icon-for-button('icon-plane-checked','base/icons/',45px,8px,17px)
+      &.train
+        +icon-for-button('icon-train','base/icons/',45px,8px,17px)
+        &.active
+          +icon-for-button('icon-train-white','base/icons/',45px,8px,17px)
+        &.done
+          +icon-for-button('icon-train-checked','base/icons/',45px,8px,17px)
+      &.hotel
+        +icon-for-button('icon-hotel','base/icons/',45px,8px,17px)
+        &.active
+          +icon-for-button('icon-hotel-white','base/icons/',45px,8px,17px)
+        &.done
+          +icon-for-button('icon-hotel-checked','base/icons/',45px,8px,17px)
+      &.active
+        background-color: $color-primary
+        color: $color-lightest
+        opacity: 1
+        cursor: normal
+      &.done
+        opacity: 1
+        &:hover
+          background-color: $color-lightest
           cursor: pointer
   .hotel-list
     margin-top: 30px
@@ -112,6 +155,9 @@
       margin-bottom: 15px
     .hotel-name
       font-weight: 600
+      padding-top: 6px
+    .hotel-stars
+      padding-top: 6px
     i
       +icon-for-button('icon-star','base/icons/',0px,0px,15px)
       height: 18px
@@ -123,24 +169,33 @@
     .radio-area
       text-align: center
       margin-bottom: 20px
-    .hotel-info
-      font-size: 12px
-      color: $color-dark-gray
-      padding: 0px 20px
-      margin-bottom: 15px
-  .hotel-cards
-    .card
-      padding-top: 0
     .card-photo
-      margin-top: -25px
-      height: 200px
+      text-align: center
+      max-height: 150px
       overflow: hidden
+      padding: 0
+      background-color: $color-light-gray
+      border-bottom: 1px solid $color-gray
       img
-        width: 100%
+        max-width: 100%
         height: auto
-        +breakpoint(sm)
-          height: 200px
-          width: auto
+      +breakpoint(md)
+        background: none
+        bordeR: none
+        max-height: auto
+        overflow: visible
+    .hotel-info
+      padding: 10px 25px
+      font-size: 1em
+      .location
+        +icon-for-button('icon-location','base/icons/',25px,0px,16px)
+        color: $color-dark-gray
+        font-size: 12px
+        display: block
+        margin-top: 10px
+        margin-bottom: 15px
+
+
 
 
 .total-row
