@@ -129,7 +129,7 @@
   padding-left: 45px;
   background-position: 5px 15px;
   background-size: auto 28px;
-  background-image: url("../images/base/icons/svg/icon-trip-white.svg");
+  background-image: url("../images/base/icons/svg/icon-calendar-checked.svg");
   color: #FFFFFF;
   border-top: 1px solid #62697a;
   padding-top: 15px;
@@ -140,7 +140,7 @@
 }
 /* line 17, ../../sass/base/_mixins.sass */
 html.no-svg .traveloptions .appointment-list > li {
-  background-image: url("../images/base/icons/png/icon-trip-white.png");
+  background-image: url("../images/base/icons/png/icon-calendar-checked.png");
 }
 /* line 77, ../../sass/pages/traveloptions.sass */
 .traveloptions .appointment-list > li .appointment-name {
@@ -446,8 +446,13 @@ html.no-svg .traveloptions .hotel-list i {
 html.no-svg .traveloptions .hotel-list .hotel-info .location {
   background-image: url("../images/base/icons/png/icon-location.png");
 }
+/* line 198, ../../sass/pages/traveloptions.sass */
+.traveloptions .trip-selection {
+  font-size: 12px;
+  opacity: 0.8;
+}
 
-/* line 201, ../../sass/pages/traveloptions.sass */
+/* line 205, ../../sass/pages/traveloptions.sass */
 .total-row {
   border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
@@ -455,24 +460,24 @@ html.no-svg .traveloptions .hotel-list .hotel-info .location {
   display: block;
   margin-bottom: 15px;
 }
-/* line 207, ../../sass/pages/traveloptions.sass */
+/* line 211, ../../sass/pages/traveloptions.sass */
 .total-row div {
   font-family: Raleway, "Raleway", sans-serif;
 }
-/* line 209, ../../sass/pages/traveloptions.sass */
+/* line 213, ../../sass/pages/traveloptions.sass */
 .total-row .total-price {
   color: #00D097;
 }
 
-/* line 212, ../../sass/pages/traveloptions.sass */
+/* line 216, ../../sass/pages/traveloptions.sass */
 .cta-row {
   margin-top: 20px;
 }
-/* line 214, ../../sass/pages/traveloptions.sass */
+/* line 218, ../../sass/pages/traveloptions.sass */
 .cta-row .prev {
   text-align: left;
 }
-/* line 216, ../../sass/pages/traveloptions.sass */
+/* line 220, ../../sass/pages/traveloptions.sass */
 .cta-row .next {
   text-align: right;
 }
