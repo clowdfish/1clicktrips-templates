@@ -49,23 +49,11 @@
             </div>
         </header>
         <div id="main">
-            <div class="container info-bar">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-7 col-md-9">
-                        <b>Choose an itinerary for each of your meetings.</b><br>
-                        Choose between different times and layovers, to suit your needs better. Change departure city for each meeting.
-                    </div>
-                    <div class="col-xs-12 col-sm-5 col-md-3 cta-container">
-                        <a class="btn">Skip this step</a>
-                        <small>Let 1ClickTrips choose the best options</small>
-                    </div>
-                </div>
-            </div>
 
             <div class="container">
                 <div class="content-box itinerary-box">
                     <div class="row row-flex row-flex-wrap">
-                        <div id="sidebar" class="col-xs-12 col-md-4 col-lg-3">
+                        <div id="sidebar" class="col-xs-12 col-md-4 col-lg-4">
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h1 class="content-box-title">ITINERARY SELECTION</h1>
@@ -75,36 +63,45 @@
                                 <!-- Appointment list -->
                                 <ul class="appointment-list">
                                     <li class="appointment flight done">
-                                        <div class="row">
-                                            <div class="appointment-time col-xs-8">
+                                            <div class="appointment-time">
                                                 20.02.16 11PM-12PM
                                             </div>
-                                            <div class="appointment-price col-xs-4">
-                                                199 €
-                                            </div>
-                                        </div>
                                         <div class="appointment-name">
                                             Appointment Name
                                         </div>
                                         <div class="appointment-location">
                                             Appointment Address 123, Berlin, Germany
+                                        </div>
+                                        <div class="row selection-description train">
+                                            <div class="col-xs-9">
+                                            Train Leipzig HBF - Berlin HBF<br>
+                                            Departs: 5:45 am<br>
+                                            </div>
+                                            <div class="col-xs-3 price">
+                                                €79
+                                            </div>
                                         </div>
                                     </li>
 
                                     <li class="active appointment">
-                                        <div class="row">
-                                            <div class="appointment-time col-xs-8">
-                                                20.02.16 11PM-12PM
-                                            </div>
-                                            <div class="appointment-price col-xs-4">
-                                                199 €
-                                            </div>
+                                        <div class="appointment-time">
+                                            20.02.16 11PM-12PM
                                         </div>
                                         <div class="appointment-name">
                                             Appointment Name
                                         </div>
                                         <div class="appointment-location">
                                             Appointment Address 123, Berlin, Germany
+                                        </div>
+                                        <div class="row selection-description flight">
+                                            <div class="col-xs-9">
+                                            ZRH - TXL / Departs: 9:45 am<br>
+                                            Lufthansa, Economy Class<br>
+                                            1 Night hotel
+                                            </div>
+                                            <div class="col-xs-3 price">
+                                                €199
+                                            </div>
                                         </div>
                                     </li>
                                     
@@ -141,7 +138,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <div id="travel-content" class="col-xs-12 col-md-8 col-lg-9">
+                        <div id="travel-content" class="col-xs-12 col-md-8 col-lg-8">
+                        <div class="content-info">
+                            <h3>Choose an itinerary for each of your meetings.</h3>
+                            Choose between different times and layovers, to suit your needs better. Change departure city for each meeting
+                        </div>
+
                             <!--Itinerary card unselected-->
                             <div class="card itinerary-card">
                                 <div class="card-block flight">
@@ -164,7 +166,29 @@
                                 </div>
                             </div>
 
-                    <!--Itinerary card to select-->
+                            <!--Itinerary card selected-->
+                            <div class="card itinerary-card selected">
+                                <div class="card-block flight">
+                                    <div class="row itinerary-table main-itinerary-table">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-4 col-lg-7 info">
+                                                        <small>Route</small>
+                                                        Zürich Hbf to Berlin Hbf<br>
+                                                        + 1 Night Hotel
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-5 info">
+                                                        <div class="price price-large"><small>Starting at</small>199€
+                                                        <small><a>Tap to Expand</a></small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <!--Itinerary card expanded unselected-->
                     <div class="card itinerary-card open">
                         <div class="card-block train">
                             <div class="row itinerary-table main-itinerary-table">
@@ -238,7 +262,7 @@
                                         Deutsche Bahn
                                     </div>
                                     <div class="col-xs-6 col-sm-4 col-lg-2 info">
-                                        <div class="price price-large"><small class="hidden-md-up">Price</small> <a class="btn btn-sm btn-primary">199 €</a>
+                                        <div class="price price-large"><small class="hidden-md-up">Price</small> 199 €
                                         </div>
                                     </div>
                                 </div>
@@ -271,7 +295,7 @@
                                     Lufthansa
                                 </div>
                                 <div class="col-xs-6 col-sm-4 col-lg-2 info">
-                                    <div class="price price-large"><small class="hidden-md-up">Price</small> <a class="btn btn-sm btn-primary">199 €</a></div>
+                                    <div class="price price-large"><small class="hidden-md-up">Price</small> 199 €</div>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +303,124 @@
                 </div>
 
             </div>
-            <!--Itinerary card to select-->
+            <!--Itinerary card expanded unselected-->
+
+                    <!--Itinerary card expanded selected-->
+                    <div class="card itinerary-card open selected">
+                        <div class="card-block train">
+                            <div class="row itinerary-table main-itinerary-table">
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-4 col-lg-7 info">
+                                                <small>Route</small>
+                                                Zürich Hbf to Berlin Hbf<br>
+                                                + 1 Night Hotel
+                                            </div>
+                                            <div class="col-sm-8 col-lg-5 info">
+                                                <div class="price price-large"><small>Starting at</small>199€
+
+                                            <small></small>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-block">
+                        <div class="options">
+                            Select your desired transport schedule
+                        </div>
+                        <div class="row itinerary-table-small-header hidden-md-down">
+                            <div class="col-xs-12">
+                                <div class="row ">
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        Departing
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        Arriving
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        Duration
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        Cabin
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        Provider
+                                    </div>
+                                    <div class="col-sm-4 col-lg-2 info">
+                                        Price
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="row itinerary-table itinerary-small-table train">
+                            <div class="col-xs-12 col-sm-11 col-md-12">
+                                <div class="row ">
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <small>Departing</small>
+                                        9:45 AM
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <small>Arriving</small>
+                                        11:45 AM
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <small>Duration</small>
+                                        2 h
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <small>Cabin</small>
+                                        Economy
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <small>Provider</small>
+                                        Deutsche Bahn
+                                    </div>
+                                    <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                        <div class="price price-large"><small class="hidden-md-up">Price</small> 199 €
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-block">
+                     <div class="row itinerary-table itinerary-small-table train selected">
+                        <div class="col-xs-12 col-sm-11 col-md-12">
+                            <div class="row ">
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <small>Departing</small>
+                                    9:45 AM
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <small>Arriving</small>
+                                    11:45 AM
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <small>Duration</small>
+                                    2 h
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <small>Cabin</small>
+                                    Economy
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <small>Provider</small>
+                                    Lufthansa
+                                </div>
+                                <div class="col-xs-6 col-sm-4 col-lg-2 info">
+                                    <div class="price price-large"><small class="hidden-md-up">Price</small> 199 €</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Itinerary card expanded selected-->
 
 
 
@@ -288,6 +429,7 @@
                                     <a class="btn btn-lg btn-secondary">< Previous</a>
                                 </div>
                                 <div class="col-xs-6 next">
+                                    <a class="btn btn-lg btn-primary disabled" disabled>Next ></a>
                                 </div>
                             </div>
                             <hr>
