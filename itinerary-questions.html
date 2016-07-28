@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/flexbox/css/grid.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,600,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="bower_components/modernizer/modernizr.js"></script>
+</head>
+<body class="itinerary">
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrapper">
+        <header id="header" class="fluid-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                        <div id="logo" class="logo">
+                            <a href="/index.html"></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-sm-push-1 col-md-5 col-md-push-2 cta-container">
+                        <a class="btn btn-secondary btn-sm">Need Help?</a>
+                    </div>
+                </div>
+                <div id="progress-bar">
+                    <ul>
+                        <li class="active">
+                            01.Select Itinerary
+                        </li>
+                        <li>
+                            02. Select Itinerary
+                        </li>
+                        <li>
+                            03.Select Itinerary
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+
+            <div class="container">
+                <div class="content-box itinerary-box">
+                    <div class="row row-flex row-flex-wrap">
+                        <div id="sidebar" class="col-xs-12 col-md-4 col-lg-4">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h1 class="content-box-title">ITINERARY SELECTION</h1>
+                                </div>
+                            </div>
+                                <!-- Appointment list -->
+                                <ul class="appointment-list">
+                                    <li class="row appointment flight done">
+                                            <div class="appointment-time">
+                                                20.02.16 11PM-12PM
+                                            </div>
+                                        <div class="appointment-name">
+                                            Appointment Name
+                                        </div>
+                                        <div class="appointment-location">
+                                            Appointment Address 123, Berlin, Germany
+                                        </div>
+                                        <div class="row selection-description train">
+                                            <div class="col-xs-9">
+                                            Train Leipzig HBF - Berlin HBF<br>
+                                            Departs: 5:45 am<br>
+                                            </div>
+                                            <div class="col-xs-3 appointment-price">
+                                                €79
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="row done appointment">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="appointment-time">
+                                                    20.02.16 11PM-12PM
+                                                </div>
+                                                <div class="appointment-name">
+                                                    Appointment Name
+                                                </div>
+                                                <div class="appointment-location">
+                                                    Appointment Address 123, Berlin, Germany
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row selection-description flight">
+                                            <div class="col-xs-9">
+                                            ZRH - TXL / Departs: 9:45 am<br>
+                                            Lufthansa, Economy Class<br>
+                                            1 Night hotel
+                                            </div>
+                                            <div class="col-xs-3 appointment-price">
+                                                €199
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="row question active">
+                                        <div class="row">
+                                            <div class="col-xs-9 col-sm-12 col-lg-9">
+                                                <div class="appointment-time">
+                                                    20.02.16 11PM-12PM
+                                                </div>
+                                                <div class="appointment-name">
+                                                    No Apppointments
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-12 col-lg-3 text-align-right appointment-price">
+                                                <a class="edit-itinerary-link">ADD</a>
+                                            </div>
+                                    </li>
+                                    
+                                    <li class="row appointment">
+                                        <div class="row">
+                                            <div class="appointment-time col-xs-8">
+                                                20.02.16 11PM-12PM
+                                            </div>
+                                        </div>
+                                        <div class="appointment-name">
+                                            Appointment Name
+                                        </div>
+                                        <div class="appointment-location">
+                                            Appointment Address 123, Berlin, Germany
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="row return">
+                                        <div class="row">
+                                            <div class="appointment-time col-xs-8">
+                                                20.02.16 11PM-12PM
+                                            </div>
+                                        </div>
+                                        <div class="appointment-name">
+                                            Return flight to PMI
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div id="travel-content" class="col-xs-12 col-md-8 col-lg-8">
+                        <div class="content-info">
+                            <h3>What do you wanna do between the 20.02 and the 22.02?</h3>
+                            We've detected you've got two days appointment-free... what would you like 1ClickTrips to schedule for those days?
+                        </div>
+
+                            <!--Itinerary card unselected-->
+                            <div class="card itinerary-card">
+                                <div class="card-block flight">
+                                    <div class="row itinerary-table main-itinerary-table">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-4 col-lg-7 info">
+                                                        <small>Return</small>
+                                                        Fly back to Palma de Mallorca<br>
+                                                        And start next trip for the 22.02 from PMI Airport
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-5 info">
+                                                        <div class="price price-large"><small>Starting at</small>199€
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Itinerary card selected-->
+                            <div class="card itinerary-card selected">
+                                <div class="card-block hotel">
+                                    <div class="row itinerary-table main-itinerary-table">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-4 col-lg-7 info">
+                                                        <small>Hotel</small>
+                                                        Stay two nights in Berlin, Germany<br>
+                                                        Hotel selection will be in the next step.
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-5 info">
+                                                        <div class="price price-large"><small>Starting at</small>199€
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Itinerary card unselected-->
+                            <div class="card itinerary-card">
+                                <div class="card-block appointment">
+                                    <div class="row itinerary-table main-itinerary-table">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-sm-4 col-lg-7 info">
+                                                        <small>Add Appointment</small>
+                                                        Add another appointment during these days
+                                                    </div>
+                                                    <div class="col-sm-8 col-lg-5 info">
+                                                        
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+ 
+
+                            <div class="cta-row row">
+                                <div class="col-xs-6 prev">
+                                    <a class="btn btn-lg btn-secondary">< Previous</a>
+                                </div>
+                                <div class="col-xs-6 next">
+                                    <a class="btn btn-lg btn-primary" >Next ></a>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 footer-info-area">
+                            Footer Info
+                        </div>
+                        <div class="col-xs-12 col-md-6 social-media-area">
+                            Social Media
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    </body>
+    </html>

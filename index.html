@@ -100,10 +100,10 @@
                                         </div>
                                         <div class="card-block">
                                             <div class="row">
-                                                <div class="col-xs-12  pencil-icon">
+                                                <div class="col-xs-12  location-icon">
                                                     <fieldset class="form-group">
-                                                        <label for="appointment1-name">Appointment name</label>
-                                                        <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                                        <label for="appointment1-location">Appointment location</label>
+                                                        <input id="appointment1-location" type="text" placeholder="Type the location of your appointment" class="form-control"/>
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-lg-6 time-icon">
@@ -146,10 +146,10 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-lg-6">
                                                     <div class="row">
-                                                        <div class="col-xs-12 location-icon">
+                                                        <div class="col-xs-12 pencil-icon">
                                                             <fieldset class="form-group ">
-                                                                <label for="appointment1-location">Appointment location</label>
-                                                                <input id="appointment1-location" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                                                <label for="appointment1-name">Appointment name</label>
+                                                                <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
                                                             </fieldset>
                                                         </div>
                                                     </div>
@@ -158,9 +158,12 @@
                                         </div>
                                         <div class="card-footer">
                                             <div class="row">
-                                                <div class="col-xs-12 text-align-right">
+                                                <div class="col-xs-4">
                                                     <a href="#" class="btn btn-delete">Delete</a>
-                                                    <a href="#" class="btn btn-primary">Save</a>
+                                                </div>
+                                                <div class="col-xs-8 text-align-right">
+                                                    <a href="#" class="btn btn-primary">Save and start search</a>
+                                                    <a href="#" class="btn btn-default">Save and add new appointment</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,42 +172,7 @@
 
 
 
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-6">
-
-                                            <!--Drop area for ICS file-->
-                                            <fieldset class="form-group drop-zone">
-                                                <button id="drop-ics-area" class="form-control input-lg drop-button"/><i class="icon-plus"></i>Drop your ICS Calendar File Here</button>
-                                            </fieldset>
-                                            <!--Drop area for ICS file-->
-                                        </div>
-                                        <div class="col-xs-12 col-md-1 text-align-center" style="padding-top: 10px">
-                                            or
-                                        </div>
-                                        <div class="col-xs-12 col-md-5">
-                                            <!--New appointment button-->
-                                            <fieldset class="form-group">
-                                                <button  class="form-control btn btn-lg btn-secondary" >Add next appointment</button>
-                                            </fieldset>
-                                            <!--New appointment button-->
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-6">
-                                            <div class="checkbox">
-                                                <label>
-                                                  <input type="checkbox" checked> Show results including return trip to Palma de Mallorca
-                                              </label>
-                                          </div>
-                                      </div>
-                                      <div class="col-xs-12 col-md-12">
-                                        <!--Submit Button-->
-                                        <fieldset class="form-group">
-                                            <button type="submit" id="search-btn" class="form-control btn btn-lg btn-primary" >Search</button>
-                                        </fieldset>
-                                        <!--Submit Button-->
-                                    </div>
+                                   
                                 </div>
                             </form>
                         </div>

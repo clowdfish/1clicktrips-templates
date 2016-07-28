@@ -20,81 +20,87 @@
 
 .itinerary
   .appointment-list
-    margin: 0
-    padding: 0
-    list-style-type: none
-    li
-      +icon-for-button('icon-calendar-white','base/icons/',45px,15px,28px)
-      color: $color-lightest
-      border-top: 1px solid lighten($color-secondary, 10)
-      padding-top: 10px
-      padding-bottom: 10px
+    ul,
+    li:not(.row)
+      list-style-type: none
       margin: 0
+      padding: 0
+      line-height: 1.2
+    .appointment-name
+      font-weight: 600
+    .appointment-price 
+      text-align: right
+    .appointment-location
+      line-height: 1.1
       opacity: 0.5
-      .appointment-name
-        font-family: Raleway, "Raleway", sans-serif
-        font-weight: 400
-      .appointment-time
-        font-weight: 200
-        font-size: 14px
-        letter-spacing: 0.5px
-      .appointment-location
-        font-size: 14px
-        margin-bottom: 15px
-      .appointment-price
-        font-weight: 400
-        font-size: 14px
-        color: $color-bg
-        text-align: right
-        padding-right: 35px
-      .selection-description
-        font-size: 12px
-        display: block
-        border-top: 1px solid rgba($color-lightest, 0.2)
-        padding-top: 10px
-        color: $color-light-gray
-        opacity: 0.7
-        .price
-          text-align: right
-          font-size: 18px
-          padding-right: 30px
-        &.flight
-          +icon-for-button('icon-plane-white','base/icons/',20px,50%,20px)
-          background-position: left 0px top 15px
-        &.train
-          +icon-for-button('icon-train-white','base/icons/',20px,50%,20px)
-          background-position: left 0px top 15px
-
+      margin-bottom: 10px
+    .selection-description
+      margin-top: 5px
+      padding: 5px 0px 0px 0px
+      border-top: 1px solid rgba($color-light-gray, 0.1)
+      font-size: 13px
+      opacity: 0.8
+      &.flight
+        +icon-for-button('icon-plane-white','base/icons/',20px,50%,22px)
+        background-position: left 5px top 12px
+      &.train
+        +icon-for-button('icon-train-white','base/icons/',20px,50%,22px)
+        background-position: left 5px top 12px
+    li.appointment
+      border-top: 1px solid rgba($color-light-gray, 0.2)
+      list-style-type: none
+      opacity: 0.5
+      padding: 10px 15px
+      +icon-for-button('icon-calendar-white','base/icons/',50px,15px,32px)
       &.active
+        opacity: 1
         background: $color-lightest
         color: $color-darkest
-        opacity: 1
-        cursor: pointer
-        +icon-for-button('icon-calendar','base/icons/',45px,15px,28px)
-        .appointment-price
-          color: $color-primary
+        +icon-for-button('icon-calendar','base/icons/',50px,15px,32px)
         .selection-description
-          color: $color-dark-gray
-          border-top: 1px solid rgba($color-darkest, 0.2)
-          opacity: 1
-          &.flight
-            +icon-for-button('icon-plane','base/icons/',20px,50%,20px)
-            background-position: left 0px top 15px
-          &.train
-            +icon-for-button('icon-train','base/icons/',20px,50%,20px)
-            background-position: left 0px top 15px
-          .price
+          opacity: 0.8
+          .appointment-price
+            color: $color-secondary
             font-weight: bold
-            color: $color-primary
+          border-top: 1px solid $color-gray
+          &.flight
+            +icon-for-button('icon-plane','base/icons/',20px,50%,22px)
+            background-position: left 5px top 12px
+          &.train
+            +icon-for-button('icon-train','base/icons/',20px,50%,22px)
+            background-position: left 5px top 12px
       &.done
         opacity: 1
-        font-weight: normal
-        +icon-for-button('icon-calendar-checked','base/icons/',45px,15px,28px)
-        .appointment-price
-          font-weight: bold
+        +icon-for-button('icon-calendar-checked','base/icons/',50px,15px,32px)
         &:hover
-          background-color: rgba($color-lightest, 0.2)
+          background-color: lighten($color-secondary, 5)
           cursor: pointer
+    li.question
+      border-top: 1px solid rgba($color-light-gray, 0.4)
+      list-style-type: none
+      opacity: 0.5
+      padding: 10px 15px
+      +icon-for-button('icon-question-white','base/icons/',50px,15px,32px)
+      &.active
+        opacity: 1
+        background: $color-lightest
+        color: $color-darkest
+        +icon-for-button('icon-question','base/icons/',50px,15px,32px)
+    li.return
+      border-top: 1px solid rgba($color-light-gray, 0.4)
+      list-style-type: none
+      opacity: 0.5
+      padding: 10px 15px
+      +icon-for-button('icon-return-white','base/icons/',50px,15px,32px)
+      &.active
+        opacity: 1
+        background: $color-lightest
+        color: $color-darkest
+        +icon-for-button('icon-return','base/icons/',50px,15px,32px)
+      &.done
+        opacity: 1
+        +icon-for-button('icon-return-green','base/icons/',50px,15px,32px)
+ 
 .itinerary-box
   .appointment-name
     font-family: Raleway, "Raleway", sans-serif
@@ -104,7 +110,6 @@
     letter-spacing: 0.5px
   .appointment-location
     font-size: 14px
-    margin-bottom: 15px
   .card
     +box-shadow-centered
     .card-header
@@ -117,6 +122,12 @@
     .card-block
       padding: 0px
       cursor: pointer
+      &.appointment
+        +icon-for-button('icon-calendar','base/icons/',50px,50%,28px)
+        background-position: left 15px top 15px
+      &.hotel
+        +icon-for-button('icon-hotel','base/icons/',50px,50%,28px)
+        background-position: left 15px top 15px
       &.flight
         +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
         background-position: left 15px top 15px
@@ -126,6 +137,12 @@
       &.car
         +icon-for-button('icon-train','base/icons/',50px,50%,28px)
         background-position: left 15px top 15px
+      .appointment
+        +icon-for-button('icon-calendar','base/icons/',65px,50%,28px)
+        background-position: left 30px top 12px
+      .hotel
+        +icon-for-button('icon-hotel','base/icons/',65px,50%,28px)
+        background-position: left 30px top 12px
       .flight
         +icon-for-button('icon-plane','base/icons/',65px,50%,28px)
         background-position: left 30px top 12px
@@ -173,8 +190,6 @@
       padding: 0
   .itinerary-table
     padding: 5px 15px
-    &:hover
-      background-color: rgba($color-light-gray, 0.6)
     .price
       font-size: 20px
       small
@@ -189,6 +204,8 @@
     &.itinerary-small-table
       padding-top: 15px
       padding-bottom: 10px
+      &:hover
+        background-color: rgba($color-light-gray, 0.6)
       .info
         font-size: 14px
         line-height: 1em
@@ -293,6 +310,15 @@
     .itinerary-card
       padding-top: 5px
 
+.edit-placeholder
+  padding-right: 30px
+
+.edit-itinerary-link
+  display: block
+  font-size: 14px
+  color: $color-primary
+  text-transform: uppercase
+  font-family: Raleway
 
 .selected
   &.itinerary-card

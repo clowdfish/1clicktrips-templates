@@ -59,10 +59,9 @@
                                     <h1 class="content-box-title">ITINERARY SELECTION</h1>
                                 </div>
                             </div>
-                            <div class="row">
                                 <!-- Appointment list -->
                                 <ul class="appointment-list">
-                                    <li class="appointment flight done">
+                                    <li class="row appointment flight done">
                                             <div class="appointment-time">
                                                 20.02.16 11PM-12PM
                                             </div>
@@ -77,21 +76,28 @@
                                             Train Leipzig HBF - Berlin HBF<br>
                                             Departs: 5:45 am<br>
                                             </div>
-                                            <div class="col-xs-3 price">
+                                            <div class="col-xs-3 appointment-price">
                                                 €79
                                             </div>
                                         </div>
                                     </li>
 
-                                    <li class="active appointment">
-                                        <div class="appointment-time">
-                                            20.02.16 11PM-12PM
-                                        </div>
-                                        <div class="appointment-name">
-                                            Appointment Name
-                                        </div>
-                                        <div class="appointment-location">
-                                            Appointment Address 123, Berlin, Germany
+                                    <li class="row active appointment">
+                                        <div class="row">
+                                            <div class="col-xs-9 col-sm-12 col-lg-9">
+                                                <div class="appointment-time">
+                                                    20.02.16 11PM-12PM
+                                                </div>
+                                                <div class="appointment-name">
+                                                    Appointment Name
+                                                </div>
+                                                <div class="appointment-location">
+                                                    Appointment Address 123, Berlin, Germany
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-12 col-lg-3 text-align-right appointment-price">
+                                                <a class="edit-itinerary-link">CHANGE</a>
+                                            </div>
                                         </div>
                                         <div class="row selection-description flight">
                                             <div class="col-xs-9">
@@ -99,19 +105,25 @@
                                             Lufthansa, Economy Class<br>
                                             1 Night hotel
                                             </div>
-                                            <div class="col-xs-3 price">
+                                            <div class="col-xs-3 appointment-price">
                                                 €199
                                             </div>
                                         </div>
                                     </li>
+
+                                    <li class="row question">
+                                        <div class="appointment-time">
+                                            20.02.16 11PM-12PM
+                                        </div>
+                                        <div class="appointment-name">
+                                            No Appointments
+                                        </div>
+                                    </li>
                                     
-                                    <li class="appointment">
+                                    <li class="row appointment">
                                         <div class="row">
                                             <div class="appointment-time col-xs-8">
                                                 20.02.16 11PM-12PM
-                                            </div>
-                                            <div class="appointment-price col-xs-4">
-                                                199 €
                                             </div>
                                         </div>
                                         <div class="appointment-name">
@@ -122,13 +134,10 @@
                                         </div>
                                     </li>
                                     
-                                    <li class="appointment">
+                                    <li class="row return">
                                         <div class="row">
                                             <div class="appointment-time col-xs-8">
                                                 20.02.16 11PM-12PM
-                                            </div>
-                                            <div class="appointment-price col-xs-4">
-                                                199 €
                                             </div>
                                         </div>
                                         <div class="appointment-name">
@@ -136,7 +145,6 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
                         </div>
                         <div id="travel-content" class="col-xs-12 col-md-8 col-lg-8">
                         <div class="content-info">
