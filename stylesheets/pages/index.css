@@ -196,3 +196,14 @@
     max-width: 80%;
   }
 }
+
+/* line 118, ../../sass/pages/index.sass */
+.departing-from-link {
+  padding-bottom: 8px;
+  display: block;
+}
+/* line 121, ../../sass/pages/index.sass */
+.departing-from-link a {
+  display: inline-block;
+  margin-left: 10px;
+}
