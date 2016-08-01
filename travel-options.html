@@ -79,14 +79,9 @@
                                     </li>
 
                                     <li class="active appointment">
-                                        <div class="row">
-                                            <div class="appointment-time col-xs-8">
+                                            <div class="appointment-time">
                                                 20.02.16 11PM-12PM
                                             </div>
-                                            <div class="appointment-price col-xs-4">
-                                                199 €
-                                            </div>
-                                        </div>
                                         <div class="appointment-name">
                                             Appointment Name
                                         </div>
@@ -94,9 +89,19 @@
                                             Appointment Address 123, Berlin, Germany
                                         </div>
                                         <ul class="row steps">
-                                            <li class="flight active">Flight selection</li>
-                                            <li class="hotel ">Hotel selection</li>
-                                            <li class="other">Activities</li>
+                                            <li class="flight active">
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                ZRH - TXL / Departs: 9:45 am<br>
+                                                Lufthansa, Economy Class<br>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        € 199
+                                                    </div>
+                                                </div>
+
+                                            </li>
+                                            <li class="hotel "><h4>Hotel selection</h4></li>
                                         </ul>
                                     </li>
                                     
@@ -155,7 +160,7 @@
                                         <div class="card-block">
                                             <form class="row">
                                                 <div class="form-group col-xs-12">
-                                                    <label for="option2">
+                                                    <label for="option2" class="upgrade-row selected">
                                                         <div class="row">
                                                             <div class="col-xs-8 col-sm-9">
                                                                 <h6>No Upgrade</h6>
@@ -163,14 +168,13 @@
                                                             <div class="col-xs-12 col-sm-3 text-align-right">
 
                                                                 <p class="price">+0 €</p>
-                                                                <a class="btn btn-sm btn-primary">199 €</a>
                                                             </div>
                                                         </div>
                                                     </label>
                                                 </div>
 
                                                 <div class="form-group col-xs-12">
-                                                    <label for="option2">
+                                                    <label for="option2" class="upgrade-row">
                                                         <div class="row">
                                                             <div class="col-xs-8 col-sm-9">
                                                                 <h6>Upgrade</h6>
@@ -179,7 +183,6 @@
                                                             <div class="col-xs-12 col-sm-3 text-align-right">
 
                                                                 <p class="price">+100 €</p>
-                                                                <a class="btn btn-sm btn-primary">299 €</a>
                                                             </div>
                                                         </div>
                                                     </label>
@@ -187,7 +190,7 @@
 
 
                                                 <div class="form-group col-xs-12">
-                                                    <label for="option2">
+                                                    <label for="option2" class="upgrade-row">
                                                         <div class="row">
                                                             <div class="col-xs-8 col-sm-9">
                                                                 <h6>Upgrade</h6>
@@ -196,7 +199,6 @@
                                                             <div class="col-xs-12 col-sm-3 text-align-right">
 
                                                                 <p class="price">+200 €</p>
-                                                                <a class="btn btn-sm btn-primary">399 €</a>
                                                             </div>
                                                         </div>
                                                     </label>
@@ -207,6 +209,15 @@
 
                                     </div>
 
+                                </div>
+                            </div>
+
+                            <div class="cta-row row">
+                                <div class="col-xs-6 prev">
+                                    <a class="btn btn-lg btn-secondary">< Previous</a>
+                                </div>
+                                <div class="col-xs-6 next">
+                                    <a class="btn btn-lg btn-primary" >Next ></a>
                                 </div>
                             </div>
                         </div>

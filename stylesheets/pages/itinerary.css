@@ -764,14 +764,14 @@ html.no-svg .itinerary-box.done .calendar-icon {
 }
 
 /* line 328, ../../sass/pages/itinerary.sass */
-.selected.itinerary-card {
+.selected.itinerary-card, .selected.travel-card, .selected.upgrade-row, .selected.hotel-card {
   border: 1px solid #00D097;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 333, ../../sass/pages/itinerary.sass */
+/* line 336, ../../sass/pages/itinerary.sass */
 .itinerary-table-small-header {
   font-size: 12px;
   text-align: left;
@@ -781,28 +781,28 @@ html.no-svg .itinerary-box.done .calendar-icon {
   border-bottom: 1px solid #E2E2E2;
 }
 
-/* line 341, ../../sass/pages/itinerary.sass */
+/* line 344, ../../sass/pages/itinerary.sass */
 .cta-sidebar {
   padding: 15px;
   margin-top: 10px;
   border-top: 1px solid rgba(248, 248, 248, 0.2);
   text-align: right;
 }
-/* line 346, ../../sass/pages/itinerary.sass */
+/* line 349, ../../sass/pages/itinerary.sass */
 .cta-sidebar a {
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: #FFFFFF;
 }
-/* line 350, ../../sass/pages/itinerary.sass */
+/* line 353, ../../sass/pages/itinerary.sass */
 .cta-sidebar a:hover {
   background-color: #3d424d;
   cursor: pointer;
   border-color: #FFFFFF;
 }
 
-/* line 356, ../../sass/pages/itinerary.sass */
+/* line 359, ../../sass/pages/itinerary.sass */
 #lightbox-panel {
   position: fixed;
   text-align: center;
@@ -814,7 +814,7 @@ html.no-svg .itinerary-box.done .calendar-icon {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 366, ../../sass/pages/itinerary.sass */
+/* line 369, ../../sass/pages/itinerary.sass */
 #lightbox-panel .card {
   text-align: left;
 }
