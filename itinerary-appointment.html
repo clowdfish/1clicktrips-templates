@@ -283,7 +283,7 @@
                                 </div>
 
                                 <div class="card-block">
-                                   <div class="row itinerary-table itinerary-small-table train">
+                                 <div class="row itinerary-table itinerary-small-table train">
                                     <div class="col-xs-12 col-sm-11 col-md-12">
                                         <div class="row ">
                                             <div class="col-xs-6 col-sm-4 col-lg-2 info">
@@ -400,7 +400,7 @@
                             </div>
 
                             <div class="card-block">
-                               <div class="row itinerary-table itinerary-small-table train selected">
+                             <div class="row itinerary-table itinerary-small-table train selected">
                                 <div class="col-xs-12 col-sm-11 col-md-12">
                                     <div class="row ">
                                         <div class="col-xs-6 col-sm-4 col-lg-2 info">
@@ -448,6 +448,122 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="lightbox-panel">
+        <!-- Here goes the apppointment card !-->
+        <div class="card card-widget card-appointment">
+            <div class="card-header calendar-icon">
+                Edit Appointment 1 of 2
+                <small>Change the details of your appointment to recalculate your itinerary.</small>
+            </div>
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-xs-12  departure-icon">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-7">
+                                    <label for="appointment1-location">Departing From</label>
+                                </div>
+                            </div>
+
+                            <input id="appointment1-location" type="text" value="Zürich, Switzerland" class="form-control"/>
+                        </fieldset>
+                    </div>
+                    <div class="col-xs-12  location-icon">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <label for="appointment1-location">Appointment location</label>
+                                </div>
+                            </div>
+
+                            <input id="appointment1-location" type="text" value="Berlin, Germany" class="form-control"/>
+                        </fieldset>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 time-icon">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 col-lg-6">
+                                <fieldset class="form-group date-selector">
+                                    <label for="appointment1-start">Start</label>
+                                    <div class="row">
+                                        <div class="col-xs-7 date">
+                                            <select id="appointment1-start" class="form-control">
+                                                <option>Wed 12.04</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-5 time">
+                                            <select class="form-control">
+                                                <option>20:00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-xs-12 col-md-6 col-lg-6">
+                                <fieldset class="form-group date-selector">
+                                    <label for="appointment1-end">End</label>
+                                    <div class="row">
+                                        <div class="col-xs-7 date">
+                                            <select id="appointment1-end" class="form-control">
+                                                <option>Wed 12.04</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-5 time">
+                                            <select class="form-control">
+                                                <option>20:00</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-xs-12 pencil-icon">
+                                <fieldset class="form-group ">
+                                    <label for="appointment1-name">Appointment name</label>
+                                    <input id="appointment1-name" type="text" placeholder="Type a name for your appointment" class="form-control"/>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12  options-icon">
+                        <fieldset class="form-group">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <label for="options">Before next appointment</label>
+                                </div>
+                            </div>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Prefer to fly back to my origin point
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked> Prefer to stay in a hotel
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Don't book any flights or hotel in between appointments
+                            </label>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="#" class="btn btn-delete">Delete</a>
+                    </div>
+                    <div class="col-xs-8 text-align-right">
+                        <a href="#" class="btn btn-default">Discard Changes</a>
+                        <a href="#" class="btn btn-primary">Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--New appointment card-->
+
+
     </div>
 
     <footer id="footer">

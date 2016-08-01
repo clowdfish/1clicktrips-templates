@@ -337,3 +337,31 @@
   padding-left: 63px
   border-top: 1px solid $color-gray
   border-bottom: 1px solid $color-gray
+
+.cta-sidebar
+  padding: 15px
+  margin-top: 10px
+  border-top: 1px solid rgba($color-light-gray, 0.2)
+  text-align: right
+  a
+    display: inline-block
+    padding: 5px 10px
+    border: 1px solid rgba($color-lightest, 0.8)
+    &:hover
+      background-color: darken($color-secondary, 6)
+      cursor: pointer
+      border-color: $color-lightest
+    color: $color-lightest
+
+#lightbox-panel
+  position: fixed
+  text-align: center
+  padding: 10%
+  top: 0
+  left: 0
+  z-index: 2000
+  width: 100%
+  height: 100%
+  background-color: rgba(black, 0.6)
+  .card
+    text-align: left

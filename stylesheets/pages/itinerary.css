@@ -780,3 +780,41 @@ html.no-svg .itinerary-box.done .calendar-icon {
   border-top: 1px solid #E2E2E2;
   border-bottom: 1px solid #E2E2E2;
 }
+
+/* line 341, ../../sass/pages/itinerary.sass */
+.cta-sidebar {
+  padding: 15px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(248, 248, 248, 0.2);
+  text-align: right;
+}
+/* line 346, ../../sass/pages/itinerary.sass */
+.cta-sidebar a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #FFFFFF;
+}
+/* line 350, ../../sass/pages/itinerary.sass */
+.cta-sidebar a:hover {
+  background-color: #3d424d;
+  cursor: pointer;
+  border-color: #FFFFFF;
+}
+
+/* line 356, ../../sass/pages/itinerary.sass */
+#lightbox-panel {
+  position: fixed;
+  text-align: center;
+  padding: 10%;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 366, ../../sass/pages/itinerary.sass */
+#lightbox-panel .card {
+  text-align: left;
+}
