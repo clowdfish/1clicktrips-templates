@@ -4,7 +4,6 @@
 
 .booking-box
   .sidebar
-    border-bottom: 1px solid $color-gray
     +breakpoint(md)
       border-bottom: none
       background: lighten($color-light-gray, 2)
@@ -107,7 +106,10 @@
     border-right: none
     border-bottom: 1px solid $color-gray
 
-.date-links
+#date-links
+  border-top: 1px solid $color-gray
+  +breakpoint(md)
+    margin-top: -1px
   a
     display: block
     padding: 10px 15px
@@ -206,3 +208,16 @@
   &:focus
     background-color: lighten($color-bg, 2)
     +box-shadow-centered
+
+#booking-sidebar-appointments
+  border-left: 1px solid $color-gray
+  margin-left: -1px
+  .appointment-name
+    font-size: 13px
+    +icon-for-button('icon-calendar','base/icons/',35px,50%,18px)
+    padding-top: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid $color-gray
+    background-color: $color-lightest
+    color: $color-dark-gray
+    font-style: italic
