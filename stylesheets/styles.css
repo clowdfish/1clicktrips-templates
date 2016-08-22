@@ -531,6 +531,24 @@ select {
   line-height: 38px;
 }
 
+/* line 26, ../sass/base/_forms.sass */
+.form-inline {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  /* line 29, ../sass/base/_forms.sass */
+  .form-inline label {
+    display: inline-block !important;
+    line-height: 60px;
+    vertical-align: top;
+  }
+  /* line 33, ../sass/base/_forms.sass */
+  .form-inline input {
+    width: auto;
+    min-width: 250px;
+  }
+}
+
 /* line 1, ../sass/base/_buttons.sass */
 .btn {
   font-family: Raleway, "Raleway", sans-serif;

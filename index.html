@@ -58,23 +58,6 @@
                             </div>
                             <div id="widget-form" class="col-xs-12">
                                 <form>
-                                    <!--Departure location field-->
-                                    <fieldset class="form-group">
-                                        <label for="departure-location">Departure Location</label>
-                                        <input type="text" id="departure-location" class="form-control input-location input-departure" placeholder="Type a location"/>
-                                    </fieldset>
-                                    <!--Departure location field-->
-
-                                    <!--Departure location card-->
-                                    <div class="card card-widget closed">
-                                        <div class="col-xs-9 location-icon">
-                                            <p>Departing from Palma de Mallorca, Spain</p>
-                                        </div>
-                                        <div class="card-edit col-xs-3 text-align-right">
-                                            <a>edit</a>
-                                        </div>
-                                    </div>
-                                    <!--Departure location card-->
 
                                     <!--Filled appointment location card-->
                                     <div class="card card-widget card-appointment closed">
@@ -82,9 +65,12 @@
                                             <p class="appointment-date">Tuesday 12.08</p>
                                             <p class="appointment-time">11:30 - 15:50</p>
                                         </div>
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-5">
                                             <h4>Appointment name</h4>
                                             <h6>Appointment address goes here, 1024, Berlin</h6>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h6>Departing from <b>Zürich, Switzerland</b></h6>
                                         </div>
                                         <div class="card-edit col-xs-3 col-lg-1 text-align-right">
                                             <a>edit</a>
@@ -100,14 +86,22 @@
                                         </div>
                                         <div class="card-block">
                                             <div class="row">
-                                                <div class="col-xs-12  location-icon">
+                                                <div class="col-xs-6  location-icon">
+                                                    <fieldset class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-xs-12 col-md-7">
+                                                                <label for="appointment1-origin">Departing from</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <input id="appointment1-location" type="text" placeholder="Type the location of your appointment" class="form-control"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-xs-6  location-icon">
                                                     <fieldset class="form-group">
                                                         <div class="row">
                                                             <div class="col-xs-12 col-md-7">
                                                                 <label for="appointment1-location">Appointment location</label>
-                                                            </div>
-                                                            <div class="col-xs-12 col-md-5 text-align-right">
-                                                                <small class="departing-from-link">Departing from Zürich, Switzerland <a>Choose Another</a></small>
                                                             </div>
                                                         </div>
 
@@ -170,13 +164,16 @@
                                                     <a href="#" class="btn btn-delete">Delete</a>
                                                 </div>
                                                 <div class="col-xs-8 text-align-right">
-                                                    <a href="#" class="btn btn-primary">Save and start search</a>
                                                     <a href="#" class="btn btn-default">Save and add new appointment</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--New appointment card-->
+
+                                    <Div class="text-align-right">
+                                                    <a href="#" class="btn btn-lg btn-primary">Save and start search</a>
+                                    </div>
 
 
 
