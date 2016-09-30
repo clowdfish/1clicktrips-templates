@@ -119,43 +119,129 @@
     .card-header
       background: $color-lightest
   .itinerary-card
-    &:not(.open)
-      .card-block
-        &:hover
-          background-color: rgba($color-light-gray, 0.6)
+    padding: 0
     .card-block
       padding: 0px
       cursor: pointer
-      &.appointment
-        +icon-for-button('icon-calendar','base/icons/',50px,50%,28px)
-        background-position: left 15px top 15px
-      &.hotel
-        +icon-for-button('icon-hotel','base/icons/',50px,50%,28px)
-        background-position: left 15px top 15px
-      &.flight
-        +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
-        background-position: left 15px top 15px
-      &.train
-        +icon-for-button('icon-train','base/icons/',50px,50%,28px)
-        background-position: left 15px top 15px
-      &.car
-        +icon-for-button('icon-train','base/icons/',50px,50%,28px)
-        background-position: left 15px top 15px
-      .appointment
-        +icon-for-button('icon-calendar','base/icons/',65px,50%,28px)
-        background-position: left 30px top 12px
-      .hotel
-        +icon-for-button('icon-hotel','base/icons/',65px,50%,28px)
-        background-position: left 30px top 12px
-      .flight
-        +icon-for-button('icon-plane','base/icons/',65px,50%,28px)
-        background-position: left 30px top 12px
-      .train
-        +icon-for-button('icon-train','base/icons/',65px,50%,28px)
-        background-position: left 30px top 12px
-      .car
-        +icon-for-button('icon-train','base/icons/',65px,50%,28px)
-        background-position: left 30px top 12px
+      ul
+        padding: 0
+        margin: 0
+        list-style-type: none
+        +breakpoint(md)
+          display: -webkit-box
+          display: -moz-box
+          display: -ms-flexbox
+          display: -webkit-flex
+          display: flex
+          -webkit-flex-flow: row
+          flex-flow: row
+        li
+          margin: 0
+          padding: 10px 0px
+          list-style-type: none
+          text-align: center
+          +breakpoint(md)
+            width: 100%
+            border-left: 1px solid $color-light-gray
+            &:first-child
+              border-left: none
+      .card-footer-info
+        padding: 10px 20px 10px 30px
+        .before-meeting
+          color: $color-dark-gray
+          +breakpoint(md)
+            text-align: right
+      .card-footer
+        padding: 0
+        background: none
+        .details-button-container
+          border-left: 1px solid $color-light-gray
+          text-align: center
+          padding: 0px
+          padding-right: 15px
+          a
+            display: inline-block
+            width: 100%
+            padding: 10px
+            &:hover
+              background-color: $color-light-gray
+
+
+    &.open
+      .card-footer
+        .details-button-container
+          a
+            background-color: $color-light-gray
+            &:hover
+              background-color: $color-lightest
+
+    .card-details
+      background-color: $color-light-gray
+      border-top: 1px solid $color-gray
+      width: 100%
+      display: block
+      .trip-details-list
+        li
+          padding: 10px
+          padding-top: 0
+          border-top: 1px solid $color-gray
+          &:first-child
+            border-top: none
+          p
+            margin: 0
+            padding: 0
+            &.date
+              color: $color-dark-gray
+              font-family: 'Raleway'
+            &.title
+              font-size: 22px
+              font-weight: 400
+              font-family: 'Raleway'
+            &.alternatives
+              margin-bottom: 5px
+              font-size: 12px
+          .price
+            text-align: right
+            p
+              font-size: 22px
+              font-weight: 400
+              font-family: 'Raleway'
+
+          &.appointment
+            +icon-for-button('icon-calendar','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.hotel
+            +icon-for-button('icon-hotel','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.flight
+            +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.train
+            +icon-for-button('icon-train','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.bus
+            +icon-for-button('icon-bus','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.taxi
+            +icon-for-button('icon-taxi','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+          &.costs
+            +icon-for-button('icon-extracosts','base/icons/',50px,50%,28px)
+            background-position: left 10px top 25px
+    .costs
+      small
+        margin-top: 10px
+
+      .extra-cost
+        border-bottom: 1px solid $color-gray
+        margin-left: 0px
+        padding: 10px 0px
+        .col-xs-8
+          padding: 0px
+      .title
+        font-size: 18px
+      .price
+        font-size: 18px
     div
       font-family: Raleway, "Raleway", sans-serif
     small
