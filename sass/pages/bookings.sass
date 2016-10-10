@@ -114,81 +114,112 @@
     display: block
     padding: 10px 15px
     border-bottom: 1px solid $color-gray
-    background-color: $color-lightest
+    background-color: lighten($color-light-gray, 2)
     &:hover
-      background-color: $color-light-gray
-
-.booking-box-item
-  font-family: Raleway, "Raleway", sans-serif
-  display: block
-  flex-direction: column
-  padding: 25px 0px 30px 0px
-  position: relative
-  overflow: hidden
-  +before(1px, 100%, absolute, 0%, 100%, inline-block)
-  &:before
-    background-color: $color-gray
-    margin-top: -1px
-  &:last-child
-    &:before
-      display: none
-  +breakpoint(sm)
-    &:before
-      left: 7.5%
-
-  .row
-    width: 100%
+      background-color: $color-lightest
+  .separator
     display: block
-  .cta-container
-    margin-top: 25px
-    +breakpoint(sm)
-      border-top: none
-      padding-right: 15px
-      margin-top: 0
-  &.flight
-    .icon
-      +icon-for-button('icon-plane-green','base/icons/',45px,50%,28px)
-      background-position: center top 10px
-      min-height: 80px
-  &.taxi
-    .icon
-      +icon-for-button('icon-taxi','base/icons/',45px,50%,28px)
-      background-position: center top 10px
-      opacity: 0.5
-      min-height: 80px
-    .price
-      opacity: 0.4
-  &.appointment
-    .icon
-      +icon-for-button('icon-date-green','base/icons/',45px,50%,28px)
-      background-position: center top 10px
-      min-height: 80px
-    .location
-      +icon-for-button('icon-location','base/icons/',30px,2px,18px)
-      margin-bottom: 0
-      a
-        font-size: 14px
-        padding: 0
-        margin: 0
-  &.hotel
-    .icon
-      +icon-for-button('icon-hotel-green','base/icons/',45px,50%,28px)
-      background-position: center top 10px
-      min-height: 80px
-    .nights
-      +icon-for-button('icon-nights','base/icons/',30px,2px,18px)
-      margin-bottom: 0
-    .room
-      +icon-for-button('icon-room','base/icons/',30px,2px,18px)
-      margin-bottom: 0
-    .location
-      +icon-for-button('icon-location','base/icons/',30px,2px,18px)
-      margin-bottom: 0
-      a
-        font-size: 14px
-        padding: 0
-        margin: 0
+    padding: 10px 15px
+    font-weight: bold
+    font-size: 12px
+    text-transform: uppercase
+    color: $color-darkest
+    border-bottom: 1px solid $color-gray
+    background-color: darken($color-light-gray, 2)
 
+
+.booking-details-list
+  list-style-type: none
+  margin: 0
+  padding: 0
+  .cta-container
+    .btn
+      width: 100%
+  &>li
+    border-bottom: 1px solid $color-gray
+    margin-bottom: 15px
+    padding-bottom: 15px
+  .appointment
+    +icon-for-button('icon-calendar','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .hotel
+    +icon-for-button('icon-hotel','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .flight
+    +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .train
+    +icon-for-button('icon-train','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .bus
+    +icon-for-button('icon-bus','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .taxi
+    +icon-for-button('icon-taxi','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  .costs
+    +icon-for-button('icon-extracosts','base/icons/',50px,50%,28px)
+    background-position: left 10px top 0px
+  p
+    margin: 0
+    padding: 0
+    &.date
+      color: $color-dark-gray
+      font-family: 'Raleway'
+    &.title
+      font-size: 22px
+      font-weight: 400
+      font-family: 'Raleway'
+      display: block
+      margin-bottom: 10px
+    &.alternatives
+      margin-bottom: 5px
+      font-size: 12px
+
+#bookings-content
+  padding-top: 15px
+
+.booking-row
+  .booking-data
+    opacity: 0.7
+    list-style-type: none
+    border-bottom: none
+    margin: 0
+    padding: 0
+    +breakpoint(md)
+      display: -webkit-box
+      display: -moz-box
+      display: -ms-flexbox
+      display: -webkit-flex
+      display: flex
+      -webkit-flex-flow: row
+      flex-flow: row
+  h5.title
+    margin-top: 15px
+    font-size: 12px
+    margin-bottom: 5px
+    color: $color-dark-gray
+  .extra-costs
+    color: $color-dark-gray
+    margin-bottom: 20px
+    li
+      border-bottom: 1px solid $color-light-gray
+      margin-top: 5px
+      &:last-child
+        border-bottom: none
+    list-style-type: none
+    padding-top:  5px
+    h4
+      font-weight: normal
+      font-size: 14px
+    .price
+      font-size: 14px
+      margin: 0
+      padding: 0
+      padding-right: 5px
+  .cta-container
+    small
+      margin-top: 0px
 
 .top-btn
   display: inline-block

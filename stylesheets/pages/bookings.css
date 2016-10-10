@@ -195,190 +195,221 @@
   display: block;
   padding: 10px 15px;
   border-bottom: 1px solid #E2E2E2;
-  background-color: #FFFFFF;
+  background-color: #fdfdfd;
 }
 /* line 118, ../../sass/pages/bookings.sass */
 #date-links a:hover {
-  background-color: #F8F8F8;
+  background-color: #FFFFFF;
+}
+/* line 120, ../../sass/pages/bookings.sass */
+#date-links .separator {
+  display: block;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  border-bottom: 1px solid #E2E2E2;
+  background-color: #f3f3f3;
 }
 
-/* line 121, ../../sass/pages/bookings.sass */
-.booking-box-item {
-  font-family: Raleway, "Raleway", sans-serif;
-  display: block;
-  flex-direction: column;
-  padding: 25px 0px 30px 0px;
-  position: relative;
-  overflow: hidden;
+/* line 131, ../../sass/pages/bookings.sass */
+.booking-details-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-/* line 212, ../../sass/base/_mixins.sass */
-.booking-box-item:before {
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 100%;
+/* line 136, ../../sass/pages/bookings.sass */
+.booking-details-list .cta-container .btn {
   width: 100%;
-  height: 1px;
 }
-/* line 129, ../../sass/pages/bookings.sass */
-.booking-box-item:before {
-  background-color: #E2E2E2;
-  margin-top: -1px;
-}
-/* line 133, ../../sass/pages/bookings.sass */
-.booking-box-item:last-child:before {
-  display: none;
-}
-@media (min-width: 544px) {
-  /* line 136, ../../sass/pages/bookings.sass */
-  .booking-box-item:before {
-    left: 7.5%;
-  }
-}
-/* line 139, ../../sass/pages/bookings.sass */
-.booking-box-item .row {
-  width: 100%;
-  display: block;
+/* line 138, ../../sass/pages/bookings.sass */
+.booking-details-list > li {
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 /* line 142, ../../sass/pages/bookings.sass */
-.booking-box-item .cta-container {
-  margin-top: 25px;
-}
-@media (min-width: 544px) {
-  /* line 142, ../../sass/pages/bookings.sass */
-  .booking-box-item .cta-container {
-    border-top: none;
-    padding-right: 15px;
-    margin-top: 0;
-  }
-}
-/* line 149, ../../sass/pages/bookings.sass */
-.booking-box-item.flight .icon {
+.booking-details-list .appointment {
   background-repeat: no-repeat;
-  padding-left: 45px;
+  padding-left: 50px;
   background-position: 5px 50%;
   background-size: auto 28px;
-  background-image: url("../images/base/icons/svg/icon-plane-green.svg");
-  background-position: center top 10px;
-  min-height: 80px;
+  background-image: url("../images/base/icons/svg/icon-calendar.svg");
+  background-position: left 10px top 0px;
 }
 /* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.flight .icon {
-  background-image: url("../images/base/icons/png/icon-plane-green.png");
+html.no-svg .booking-details-list .appointment {
+  background-image: url("../images/base/icons/png/icon-calendar.png");
+}
+/* line 145, ../../sass/pages/bookings.sass */
+.booking-details-list .hotel {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-hotel.svg");
+  background-position: left 10px top 0px;
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg .booking-details-list .hotel {
+  background-image: url("../images/base/icons/png/icon-hotel.png");
+}
+/* line 148, ../../sass/pages/bookings.sass */
+.booking-details-list .flight {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-plane.svg");
+  background-position: left 10px top 0px;
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg .booking-details-list .flight {
+  background-image: url("../images/base/icons/png/icon-plane.png");
+}
+/* line 151, ../../sass/pages/bookings.sass */
+.booking-details-list .train {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-train.svg");
+  background-position: left 10px top 0px;
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg .booking-details-list .train {
+  background-image: url("../images/base/icons/png/icon-train.png");
 }
 /* line 154, ../../sass/pages/bookings.sass */
-.booking-box-item.taxi .icon {
+.booking-details-list .bus {
   background-repeat: no-repeat;
-  padding-left: 45px;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-bus.svg");
+  background-position: left 10px top 0px;
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg .booking-details-list .bus {
+  background-image: url("../images/base/icons/png/icon-bus.png");
+}
+/* line 157, ../../sass/pages/bookings.sass */
+.booking-details-list .taxi {
+  background-repeat: no-repeat;
+  padding-left: 50px;
   background-position: 5px 50%;
   background-size: auto 28px;
   background-image: url("../images/base/icons/svg/icon-taxi.svg");
-  background-position: center top 10px;
-  opacity: 0.5;
-  min-height: 80px;
+  background-position: left 10px top 0px;
 }
 /* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.taxi .icon {
+html.no-svg .booking-details-list .taxi {
   background-image: url("../images/base/icons/png/icon-taxi.png");
 }
-/* line 159, ../../sass/pages/bookings.sass */
-.booking-box-item.taxi .price {
-  opacity: 0.4;
-}
-/* line 162, ../../sass/pages/bookings.sass */
-.booking-box-item.appointment .icon {
+/* line 160, ../../sass/pages/bookings.sass */
+.booking-details-list .costs {
   background-repeat: no-repeat;
-  padding-left: 45px;
+  padding-left: 50px;
   background-position: 5px 50%;
   background-size: auto 28px;
-  background-image: url("../images/base/icons/svg/icon-date-green.svg");
-  background-position: center top 10px;
-  min-height: 80px;
+  background-image: url("../images/base/icons/svg/icon-extracosts.svg");
+  background-position: left 10px top 0px;
 }
 /* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.appointment .icon {
-  background-image: url("../images/base/icons/png/icon-date-green.png");
+html.no-svg .booking-details-list .costs {
+  background-image: url("../images/base/icons/png/icon-extracosts.png");
+}
+/* line 163, ../../sass/pages/bookings.sass */
+.booking-details-list p {
+  margin: 0;
+  padding: 0;
 }
 /* line 166, ../../sass/pages/bookings.sass */
-.booking-box-item.appointment .location {
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  background-position: 5px 2px;
-  background-size: auto 18px;
-  background-image: url("../images/base/icons/svg/icon-location.svg");
-  margin-bottom: 0;
-}
-/* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.appointment .location {
-  background-image: url("../images/base/icons/png/icon-location.png");
+.booking-details-list p.date {
+  color: #666666;
+  font-family: "Raleway";
 }
 /* line 169, ../../sass/pages/bookings.sass */
-.booking-box-item.appointment .location a {
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
+.booking-details-list p.title {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Raleway";
+  display: block;
+  margin-bottom: 10px;
 }
-/* line 174, ../../sass/pages/bookings.sass */
-.booking-box-item.hotel .icon {
-  background-repeat: no-repeat;
-  padding-left: 45px;
-  background-position: 5px 50%;
-  background-size: auto 28px;
-  background-image: url("../images/base/icons/svg/icon-hotel-green.svg");
-  background-position: center top 10px;
-  min-height: 80px;
-}
-/* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.hotel .icon {
-  background-image: url("../images/base/icons/png/icon-hotel-green.png");
-}
-/* line 178, ../../sass/pages/bookings.sass */
-.booking-box-item.hotel .nights {
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  background-position: 5px 2px;
-  background-size: auto 18px;
-  background-image: url("../images/base/icons/svg/icon-nights.svg");
-  margin-bottom: 0;
-}
-/* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.hotel .nights {
-  background-image: url("../images/base/icons/png/icon-nights.png");
-}
-/* line 181, ../../sass/pages/bookings.sass */
-.booking-box-item.hotel .room {
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  background-position: 5px 2px;
-  background-size: auto 18px;
-  background-image: url("../images/base/icons/svg/icon-room.svg");
-  margin-bottom: 0;
-}
-/* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.hotel .room {
-  background-image: url("../images/base/icons/png/icon-room.png");
-}
-/* line 184, ../../sass/pages/bookings.sass */
-.booking-box-item.hotel .location {
-  background-repeat: no-repeat;
-  padding-left: 30px;
-  background-position: 5px 2px;
-  background-size: auto 18px;
-  background-image: url("../images/base/icons/svg/icon-location.svg");
-  margin-bottom: 0;
-}
-/* line 17, ../../sass/base/_mixins.sass */
-html.no-svg .booking-box-item.hotel .location {
-  background-image: url("../images/base/icons/png/icon-location.png");
-}
-/* line 187, ../../sass/pages/bookings.sass */
-.booking-box-item.hotel .location a {
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
+/* line 175, ../../sass/pages/bookings.sass */
+.booking-details-list p.alternatives {
+  margin-bottom: 5px;
+  font-size: 12px;
 }
 
-/* line 193, ../../sass/pages/bookings.sass */
+/* line 179, ../../sass/pages/bookings.sass */
+#bookings-content {
+  padding-top: 15px;
+}
+
+/* line 183, ../../sass/pages/bookings.sass */
+.booking-row .booking-data {
+  opacity: 0.7;
+  list-style-type: none;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 183, ../../sass/pages/bookings.sass */
+  .booking-row .booking-data {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+}
+/* line 197, ../../sass/pages/bookings.sass */
+.booking-row h5.title {
+  margin-top: 15px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #666666;
+}
+/* line 202, ../../sass/pages/bookings.sass */
+.booking-row .extra-costs {
+  color: #666666;
+  margin-bottom: 20px;
+  list-style-type: none;
+  padding-top: 5px;
+}
+/* line 205, ../../sass/pages/bookings.sass */
+.booking-row .extra-costs li {
+  border-bottom: 1px solid #F8F8F8;
+  margin-top: 5px;
+}
+/* line 208, ../../sass/pages/bookings.sass */
+.booking-row .extra-costs li:last-child {
+  border-bottom: none;
+}
+/* line 212, ../../sass/pages/bookings.sass */
+.booking-row .extra-costs h4 {
+  font-weight: normal;
+  font-size: 14px;
+}
+/* line 215, ../../sass/pages/bookings.sass */
+.booking-row .extra-costs .price {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
+}
+/* line 221, ../../sass/pages/bookings.sass */
+.booking-row .cta-container small {
+  margin-top: 0px;
+}
+
+/* line 224, ../../sass/pages/bookings.sass */
 .top-btn {
   display: inline-block;
   height: 40px;
@@ -391,7 +422,7 @@ html.no-svg .booking-box-item.hotel .location {
   border-radius: 3px;
   border: 1px solid #E2E2E2;
 }
-/* line 201, ../../sass/pages/bookings.sass */
+/* line 232, ../../sass/pages/bookings.sass */
 .top-btn.email-btn {
   background-repeat: no-repeat;
   padding-left: 0px;
@@ -404,7 +435,7 @@ html.no-svg .booking-box-item.hotel .location {
 html.no-svg .top-btn.email-btn {
   background-image: url("../images/base/icons/png/icon-mail.png");
 }
-/* line 204, ../../sass/pages/bookings.sass */
+/* line 235, ../../sass/pages/bookings.sass */
 .top-btn.print-btn {
   background-repeat: no-repeat;
   padding-left: 0px;
@@ -417,7 +448,7 @@ html.no-svg .top-btn.email-btn {
 html.no-svg .top-btn.print-btn {
   background-image: url("../images/base/icons/png/icon-print.png");
 }
-/* line 207, ../../sass/pages/bookings.sass */
+/* line 238, ../../sass/pages/bookings.sass */
 .top-btn:hover, .top-btn:focus {
   background-color: #f2f2f2;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
@@ -425,12 +456,12 @@ html.no-svg .top-btn.print-btn {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
 }
 
-/* line 212, ../../sass/pages/bookings.sass */
+/* line 243, ../../sass/pages/bookings.sass */
 #booking-sidebar-appointments {
   border-left: 1px solid #E2E2E2;
   margin-left: -1px;
 }
-/* line 215, ../../sass/pages/bookings.sass */
+/* line 246, ../../sass/pages/bookings.sass */
 #booking-sidebar-appointments .appointment-name {
   font-size: 13px;
   background-repeat: no-repeat;
