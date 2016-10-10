@@ -142,7 +142,8 @@
     .done
       border-left: 3px solid $color-primary
     .active
-      border-left: 5px solid $color-gray
+      +breakpoint(md)
+        border-left: 5px solid $color-gray
  
 .itinerary-box
   .appointment-name
@@ -162,6 +163,7 @@
     .card-block
       padding: 0px
       cursor: pointer
+      padding-top: 5px
       ul
         padding: 0
         margin: 0
@@ -176,16 +178,21 @@
           flex-flow: row
         li
           margin: 0
-          padding: 10px 0px
+          padding: 0
           list-style-type: none
           text-align: center
           +breakpoint(md)
+            padding: 10px 0px
             width: 100%
             border-left: 1px solid $color-light-gray
             &:first-child
               border-left: none
       .card-footer-info
         padding: 10px 20px 10px 30px
+        font-size: 12px
+        text-align: left
+        +breakpoint(md)
+          font-size: 14px
         .before-meeting
           color: $color-dark-gray
           +breakpoint(md)
@@ -198,12 +205,15 @@
           text-align: center
           padding: 0px
           padding-right: 15px
+          border-top: 1px solid $color-gray
           a
             display: inline-block
             width: 100%
             padding: 10px
             &:hover
               background-color: $color-light-gray
+          +breakpoint(md)
+            border-top: none
 
 
     &.open
@@ -450,9 +460,9 @@
   font-family: Raleway
 
 #travel-content
-  margin-top: 5px
+  border-top: 2px solid #E2E2E2
   +breakpoint(md)
-    margin-top: 0px
+    border-top: none
 
 .selected
   &.itinerary-card,

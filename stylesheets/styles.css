@@ -1337,53 +1337,56 @@ html.no-svg .itinerary .appointment-list li.return.done {
 .itinerary .appointment-list .done {
   border-left: 3px solid #00D097;
 }
-/* line 144, ../sass/pages/itinerary.sass */
-.itinerary .appointment-list .active {
-  border-left: 5px solid #E2E2E2;
+@media (min-width: 768px) {
+  /* line 144, ../sass/pages/itinerary.sass */
+  .itinerary .appointment-list .active {
+    border-left: 5px solid #E2E2E2;
+  }
 }
 
-/* line 148, ../sass/pages/itinerary.sass */
+/* line 149, ../sass/pages/itinerary.sass */
 .itinerary-box .appointment-name {
   font-family: Raleway, "Raleway", sans-serif;
 }
-/* line 150, ../sass/pages/itinerary.sass */
+/* line 151, ../sass/pages/itinerary.sass */
 .itinerary-box .appointment-time {
   font-weight: 200;
   font-size: 14px;
   letter-spacing: 0.5px;
 }
-/* line 154, ../sass/pages/itinerary.sass */
+/* line 155, ../sass/pages/itinerary.sass */
 .itinerary-box .appointment-location {
   font-size: 14px;
 }
-/* line 156, ../sass/pages/itinerary.sass */
+/* line 157, ../sass/pages/itinerary.sass */
 .itinerary-box .card {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
 }
-/* line 158, ../sass/pages/itinerary.sass */
+/* line 159, ../sass/pages/itinerary.sass */
 .itinerary-box .card .card-header {
   background: #FFFFFF;
 }
-/* line 160, ../sass/pages/itinerary.sass */
+/* line 161, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card {
   padding: 0;
   text-align: center;
 }
-/* line 162, ../sass/pages/itinerary.sass */
+/* line 163, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block {
   padding: 0px;
   cursor: pointer;
+  padding-top: 5px;
 }
-/* line 165, ../sass/pages/itinerary.sass */
+/* line 167, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 @media (min-width: 768px) {
-  /* line 165, ../sass/pages/itinerary.sass */
+  /* line 167, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-card .card-block ul {
     display: -webkit-box;
     display: -moz-box;
@@ -1394,117 +1397,133 @@ html.no-svg .itinerary .appointment-list li.return.done {
     flex-flow: row;
   }
 }
-/* line 177, ../sass/pages/itinerary.sass */
+/* line 179, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block ul li {
   margin: 0;
-  padding: 10px 0px;
+  padding: 0;
   list-style-type: none;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 177, ../sass/pages/itinerary.sass */
+  /* line 179, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-card .card-block ul li {
+    padding: 10px 0px;
     width: 100%;
     border-left: 1px solid #F8F8F8;
   }
-  /* line 185, ../sass/pages/itinerary.sass */
+  /* line 188, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-card .card-block ul li:first-child {
     border-left: none;
   }
 }
-/* line 187, ../sass/pages/itinerary.sass */
+/* line 190, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer-info {
   padding: 10px 20px 10px 30px;
+  font-size: 12px;
+  text-align: left;
 }
-/* line 189, ../sass/pages/itinerary.sass */
+@media (min-width: 768px) {
+  /* line 190, ../sass/pages/itinerary.sass */
+  .itinerary-box .itinerary-card .card-block .card-footer-info {
+    font-size: 14px;
+  }
+}
+/* line 196, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer-info .before-meeting {
   color: #666666;
 }
 @media (min-width: 768px) {
-  /* line 189, ../sass/pages/itinerary.sass */
+  /* line 196, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-card .card-block .card-footer-info .before-meeting {
     text-align: right;
   }
 }
-/* line 193, ../sass/pages/itinerary.sass */
+/* line 200, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer {
   padding: 0;
   background: none;
 }
-/* line 196, ../sass/pages/itinerary.sass */
+/* line 203, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer .details-button-container {
   border-left: 1px solid #F8F8F8;
   text-align: center;
   padding: 0px;
   padding-right: 15px;
+  border-top: 1px solid #E2E2E2;
 }
-/* line 201, ../sass/pages/itinerary.sass */
+/* line 209, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer .details-button-container a {
   display: inline-block;
   width: 100%;
   padding: 10px;
 }
-/* line 205, ../sass/pages/itinerary.sass */
+/* line 213, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-block .card-footer .details-button-container a:hover {
   background-color: #F8F8F8;
 }
-/* line 212, ../sass/pages/itinerary.sass */
+@media (min-width: 768px) {
+  /* line 203, ../sass/pages/itinerary.sass */
+  .itinerary-box .itinerary-card .card-block .card-footer .details-button-container {
+    border-top: none;
+  }
+}
+/* line 222, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card.open .card-footer .details-button-container a {
   background-color: #F8F8F8;
 }
-/* line 214, ../sass/pages/itinerary.sass */
+/* line 224, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card.open .card-footer .details-button-container a:hover {
   background-color: #FFFFFF;
 }
-/* line 217, ../sass/pages/itinerary.sass */
+/* line 227, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details {
   background-color: #F8F8F8;
   border-top: 1px solid #E2E2E2;
   width: 100%;
   display: block;
 }
-/* line 223, ../sass/pages/itinerary.sass */
+/* line 233, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li {
   padding: 10px;
   padding-top: 0;
   border-top: 1px solid #E2E2E2;
 }
-/* line 227, ../sass/pages/itinerary.sass */
+/* line 237, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li:first-child {
   border-top: none;
 }
-/* line 229, ../sass/pages/itinerary.sass */
+/* line 239, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li p {
   margin: 0;
   padding: 0;
 }
-/* line 232, ../sass/pages/itinerary.sass */
+/* line 242, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li p.date {
   color: #666666;
   font-family: "Raleway";
 }
-/* line 235, ../sass/pages/itinerary.sass */
+/* line 245, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li p.title {
   font-size: 22px;
   font-weight: 400;
   font-family: "Raleway";
 }
-/* line 239, ../sass/pages/itinerary.sass */
+/* line 249, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li p.alternatives {
   margin-bottom: 5px;
   font-size: 12px;
 }
-/* line 242, ../sass/pages/itinerary.sass */
+/* line 252, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li .price {
   text-align: right;
 }
-/* line 244, ../sass/pages/itinerary.sass */
+/* line 254, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li .price p {
   font-size: 22px;
   font-weight: 400;
   font-family: "Raleway";
 }
-/* line 249, ../sass/pages/itinerary.sass */
+/* line 259, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.appointment {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1517,7 +1536,7 @@ html.no-svg .itinerary .appointment-list li.return.done {
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.appointment {
   background-image: url("../images/base/icons/png/icon-calendar.png");
 }
-/* line 252, ../sass/pages/itinerary.sass */
+/* line 262, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.hotel {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1530,7 +1549,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.a
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.hotel {
   background-image: url("../images/base/icons/png/icon-hotel.png");
 }
-/* line 255, ../sass/pages/itinerary.sass */
+/* line 265, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.flight {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1543,7 +1562,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.h
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.flight {
   background-image: url("../images/base/icons/png/icon-plane.png");
 }
-/* line 258, ../sass/pages/itinerary.sass */
+/* line 268, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.train {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1556,7 +1575,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.f
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.train {
   background-image: url("../images/base/icons/png/icon-train.png");
 }
-/* line 261, ../sass/pages/itinerary.sass */
+/* line 271, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.bus {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1569,7 +1588,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.t
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.bus {
   background-image: url("../images/base/icons/png/icon-bus.png");
 }
-/* line 264, ../sass/pages/itinerary.sass */
+/* line 274, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.taxi {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1582,7 +1601,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.b
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.taxi {
   background-image: url("../images/base/icons/png/icon-taxi.png");
 }
-/* line 267, ../sass/pages/itinerary.sass */
+/* line 277, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .card-details .trip-details-list li.costs {
   background-repeat: no-repeat;
   padding-left: 50px;
@@ -1595,65 +1614,65 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.t
 html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.costs {
   background-image: url("../images/base/icons/png/icon-extracosts.png");
 }
-/* line 271, ../sass/pages/itinerary.sass */
+/* line 281, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .costs small {
   margin-top: 10px;
 }
-/* line 274, ../sass/pages/itinerary.sass */
+/* line 284, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .costs .extra-cost {
   border-bottom: 1px solid #E2E2E2;
   margin-left: 0px;
   padding: 10px 0px;
 }
-/* line 278, ../sass/pages/itinerary.sass */
+/* line 288, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .costs .extra-cost .col-xs-8 {
   padding: 0px;
 }
-/* line 280, ../sass/pages/itinerary.sass */
+/* line 290, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .costs .title {
   font-size: 18px;
 }
-/* line 282, ../sass/pages/itinerary.sass */
+/* line 292, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card .costs .price {
   font-size: 18px;
 }
-/* line 284, ../sass/pages/itinerary.sass */
+/* line 294, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card div {
   font-family: Raleway, "Raleway", sans-serif;
 }
-/* line 286, ../sass/pages/itinerary.sass */
+/* line 296, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-card small {
   color: #666666;
   display: block;
 }
 @media (min-width: 768px) {
-  /* line 160, ../sass/pages/itinerary.sass */
+  /* line 161, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-card {
     text-align: left;
   }
 }
-/* line 292, ../sass/pages/itinerary.sass */
+/* line 302, ../sass/pages/itinerary.sass */
 .itinerary-box .change-link {
   display: none;
 }
-/* line 294, ../sass/pages/itinerary.sass */
+/* line 304, ../sass/pages/itinerary.sass */
 .itinerary-box .change-link a {
   font-size: 14px;
   font-family: Raleway, "Raleway", sans-serif;
   font-weight: 600;
 }
-/* line 298, ../sass/pages/itinerary.sass */
+/* line 308, ../sass/pages/itinerary.sass */
 .itinerary-box .radio-container {
   text-align: center;
   width: 100%;
 }
-/* line 301, ../sass/pages/itinerary.sass */
+/* line 311, ../sass/pages/itinerary.sass */
 .itinerary-box .radio-container input {
   height: 22px;
   width: 22px;
   margin-left: 2px;
 }
-/* line 305, ../sass/pages/itinerary.sass */
+/* line 315, ../sass/pages/itinerary.sass */
 .itinerary-box .options {
   font-size: 12px;
   font-weight: 500;
@@ -1662,91 +1681,91 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.c
   font-size: 14px;
   text-align: center;
 }
-/* line 312, ../sass/pages/itinerary.sass */
+/* line 322, ../sass/pages/itinerary.sass */
 .itinerary-box .border-table {
   border: 2px solid #666666;
 }
-/* line 315, ../sass/pages/itinerary.sass */
+/* line 325, ../sass/pages/itinerary.sass */
 .itinerary-box .main-itinerary-table input {
   margin-top: 10px;
 }
-/* line 317, ../sass/pages/itinerary.sass */
+/* line 327, ../sass/pages/itinerary.sass */
 .itinerary-box .main-itinerary-table .radio-container {
   text-align: center;
   padding: 0;
 }
-/* line 320, ../sass/pages/itinerary.sass */
+/* line 330, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table {
   padding: 5px 15px;
 }
-/* line 322, ../sass/pages/itinerary.sass */
+/* line 332, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table .price {
   font-size: 20px;
 }
-/* line 324, ../sass/pages/itinerary.sass */
+/* line 334, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table .price small {
   font-size: 12px;
 }
-/* line 326, ../sass/pages/itinerary.sass */
+/* line 336, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table .info {
   margin-bottom: 8px;
 }
-/* line 328, ../sass/pages/itinerary.sass */
+/* line 338, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table div {
   font-size: 14px;
 }
 @media (min-width: 768px) {
-  /* line 328, ../sass/pages/itinerary.sass */
+  /* line 338, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-table div {
     margin-bottom: 0;
     font-size: 16px;
   }
 }
-/* line 333, ../sass/pages/itinerary.sass */
+/* line 343, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.itinerary-small-table {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-/* line 336, ../sass/pages/itinerary.sass */
+/* line 346, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.itinerary-small-table:hover {
   background-color: rgba(248, 248, 248, 0.6);
 }
-/* line 338, ../sass/pages/itinerary.sass */
+/* line 348, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.itinerary-small-table .info {
   font-size: 14px;
   line-height: 1em;
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
-/* line 342, ../sass/pages/itinerary.sass */
+/* line 352, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.itinerary-small-table .price {
   font-size: 16px;
   text-align: center;
 }
-/* line 345, ../sass/pages/itinerary.sass */
+/* line 355, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.itinerary-small-table .radio-container {
   height: 15px;
 }
 @media (min-width: 768px) {
-  /* line 348, ../sass/pages/itinerary.sass */
+  /* line 358, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-table.itinerary-small-table small {
     display: none;
   }
 }
-/* line 350, ../sass/pages/itinerary.sass */
+/* line 360, ../sass/pages/itinerary.sass */
 .itinerary-box .itinerary-table.selected {
   background-color: rgba(0, 208, 151, 0.2) !important;
 }
 @media (min-width: 768px) {
-  /* line 320, ../sass/pages/itinerary.sass */
+  /* line 330, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-table {
     padding-top: 5px;
   }
-  /* line 356, ../sass/pages/itinerary.sass */
+  /* line 366, ../sass/pages/itinerary.sass */
   .itinerary-box .itinerary-table .price {
     text-align: right;
   }
 }
-/* line 358, ../sass/pages/itinerary.sass */
+/* line 368, ../sass/pages/itinerary.sass */
 .itinerary-box .calendar-icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -1758,7 +1777,7 @@ html.no-svg .itinerary-box .itinerary-card .card-details .trip-details-list li.c
 html.no-svg .itinerary-box .calendar-icon {
   background-image: url("../images/base/icons/png/icon-calendar-white.png");
 }
-/* line 360, ../sass/pages/itinerary.sass */
+/* line 370, ../sass/pages/itinerary.sass */
 .itinerary-box .time-before {
   margin-top: 20px;
   line-height: 1.4;
@@ -1766,7 +1785,7 @@ html.no-svg .itinerary-box .calendar-icon {
   padding: 15px 0px;
   margin-bottom: 0;
 }
-/* line 366, ../sass/pages/itinerary.sass */
+/* line 376, ../sass/pages/itinerary.sass */
 .itinerary-box .time-before h6 {
   background-repeat: no-repeat;
   padding-left: 25px;
@@ -1782,7 +1801,7 @@ html.no-svg .itinerary-box .calendar-icon {
 html.no-svg .itinerary-box .time-before h6 {
   background-image: url("../images/base/icons/png/icon-time.png");
 }
-/* line 372, ../sass/pages/itinerary.sass */
+/* line 382, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -1792,11 +1811,11 @@ html.no-svg .itinerary-box .time-before h6 {
   padding: 15px 0px;
   padding-left: 20px;
 }
-/* line 380, ../sass/pages/itinerary.sass */
+/* line 390, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city a {
   font-size: 14px;
 }
-/* line 382, ../sass/pages/itinerary.sass */
+/* line 392, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city h6 {
   background-repeat: no-repeat;
   padding-left: 25px;
@@ -1812,16 +1831,16 @@ html.no-svg .itinerary-box .time-before h6 {
 html.no-svg .itinerary-box .departure-city h6 {
   background-image: url("../images/base/icons/png/icon-arrowlist.png");
 }
-/* line 388, ../sass/pages/itinerary.sass */
+/* line 398, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city h6 b {
   text-transform: none;
   display: block;
 }
-/* line 391, ../sass/pages/itinerary.sass */
+/* line 401, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city small {
   line-height: 1;
 }
-/* line 393, ../sass/pages/itinerary.sass */
+/* line 403, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city.open {
   padding: 10px;
   border: 1px solid #D0001F;
@@ -1830,40 +1849,40 @@ html.no-svg .itinerary-box .departure-city h6 {
   -ms-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 397, ../sass/pages/itinerary.sass */
+/* line 407, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city.open h6 {
   color: #D0001F;
 }
-/* line 399, ../sass/pages/itinerary.sass */
+/* line 409, ../sass/pages/itinerary.sass */
 .itinerary-box .departure-city #form-change-departurecity {
   margin-top: 10px;
 }
 @media (min-width: 768px) {
-  /* line 372, ../sass/pages/itinerary.sass */
+  /* line 382, ../sass/pages/itinerary.sass */
   .itinerary-box .departure-city {
     padding-left: 0;
   }
 }
-/* line 403, ../sass/pages/itinerary.sass */
+/* line 413, ../sass/pages/itinerary.sass */
 .itinerary-box .next-apt {
   margin-top: 5px;
   margin-bottom: 15px;
 }
-/* line 406, ../sass/pages/itinerary.sass */
+/* line 416, ../sass/pages/itinerary.sass */
 .itinerary-box .return-checkbox {
   padding-left: 12px;
 }
-/* line 408, ../sass/pages/itinerary.sass */
+/* line 418, ../sass/pages/itinerary.sass */
 .itinerary-box .return-checkbox label {
   text-transform: none;
   font-weight: 400;
   width: auto;
 }
-/* line 412, ../sass/pages/itinerary.sass */
+/* line 422, ../sass/pages/itinerary.sass */
 .itinerary-box .return-checkbox label input {
   margin-right: 10px;
 }
-/* line 414, ../sass/pages/itinerary.sass */
+/* line 424, ../sass/pages/itinerary.sass */
 .itinerary-box.message {
   background-color: #00D097;
   color: #FFFFFF;
@@ -1879,26 +1898,26 @@ html.no-svg .itinerary-box .departure-city h6 {
 html.no-svg .itinerary-box.message {
   background-image: url("../images/base/icons/png/icon-happy.png");
 }
-/* line 420, ../sass/pages/itinerary.sass */
+/* line 430, ../sass/pages/itinerary.sass */
 .itinerary-box.message .btn {
   margin-top: 15px;
 }
 @media (min-width: 768px) {
-  /* line 414, ../sass/pages/itinerary.sass */
+  /* line 424, ../sass/pages/itinerary.sass */
   .itinerary-box.message {
     background-position: left 15px top 50%;
   }
 }
-/* line 425, ../sass/pages/itinerary.sass */
+/* line 435, ../sass/pages/itinerary.sass */
 .itinerary-box.open {
   background-color: #FFFFFF;
   color: #3C3C3C;
 }
-/* line 428, ../sass/pages/itinerary.sass */
+/* line 438, ../sass/pages/itinerary.sass */
 .itinerary-box.open .appointment-location {
   color: #666666;
 }
-/* line 430, ../sass/pages/itinerary.sass */
+/* line 440, ../sass/pages/itinerary.sass */
 .itinerary-box.open .calendar-icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -1910,7 +1929,7 @@ html.no-svg .itinerary-box.message {
 html.no-svg .itinerary-box.open .calendar-icon {
   background-image: url("../images/base/icons/png/icon-calendar.png");
 }
-/* line 434, ../sass/pages/itinerary.sass */
+/* line 444, ../sass/pages/itinerary.sass */
 .itinerary-box.done .calendar-icon {
   background-repeat: no-repeat;
   padding-left: 45px;
@@ -1922,22 +1941,22 @@ html.no-svg .itinerary-box.open .calendar-icon {
 html.no-svg .itinerary-box.done .calendar-icon {
   background-image: url("../images/base/icons/png/icon-calendar-checked.png");
 }
-/* line 436, ../sass/pages/itinerary.sass */
+/* line 446, ../sass/pages/itinerary.sass */
 .itinerary-box.done .change-link {
   display: block;
   cursor: pointer;
 }
-/* line 439, ../sass/pages/itinerary.sass */
+/* line 449, ../sass/pages/itinerary.sass */
 .itinerary-box.done .itinerary-card {
   padding-top: 5px;
 }
 
-/* line 442, ../sass/pages/itinerary.sass */
+/* line 452, ../sass/pages/itinerary.sass */
 .edit-placeholder {
   padding-right: 30px;
 }
 
-/* line 445, ../sass/pages/itinerary.sass */
+/* line 455, ../sass/pages/itinerary.sass */
 .edit-itinerary-link {
   display: block;
   font-size: 14px;
@@ -1946,18 +1965,18 @@ html.no-svg .itinerary-box.done .calendar-icon {
   font-family: Raleway;
 }
 
-/* line 452, ../sass/pages/itinerary.sass */
+/* line 462, ../sass/pages/itinerary.sass */
 #travel-content {
-  margin-top: 5px;
+  border-top: 2px solid #E2E2E2;
 }
 @media (min-width: 768px) {
-  /* line 452, ../sass/pages/itinerary.sass */
+  /* line 462, ../sass/pages/itinerary.sass */
   #travel-content {
-    margin-top: 0px;
+    border-top: none;
   }
 }
 
-/* line 458, ../sass/pages/itinerary.sass */
+/* line 468, ../sass/pages/itinerary.sass */
 .selected.itinerary-card, .selected.travel-card, .selected.upgrade-row, .selected.hotel-card {
   border: 1px solid #00D097;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
@@ -1965,7 +1984,7 @@ html.no-svg .itinerary-box.done .calendar-icon {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-/* line 466, ../sass/pages/itinerary.sass */
+/* line 476, ../sass/pages/itinerary.sass */
 .itinerary-table-small-header {
   font-size: 12px;
   text-align: left;
@@ -1975,28 +1994,28 @@ html.no-svg .itinerary-box.done .calendar-icon {
   border-bottom: 1px solid #E2E2E2;
 }
 
-/* line 474, ../sass/pages/itinerary.sass */
+/* line 484, ../sass/pages/itinerary.sass */
 .cta-sidebar {
   padding: 15px;
   margin-top: 10px;
   border-top: 1px solid rgba(248, 248, 248, 0.2);
   text-align: right;
 }
-/* line 479, ../sass/pages/itinerary.sass */
+/* line 489, ../sass/pages/itinerary.sass */
 .cta-sidebar a {
   display: inline-block;
   padding: 5px 10px;
   border: 1px solid rgba(255, 255, 255, 0.8);
   color: #FFFFFF;
 }
-/* line 483, ../sass/pages/itinerary.sass */
+/* line 493, ../sass/pages/itinerary.sass */
 .cta-sidebar a:hover {
   background-color: #3d424d;
   cursor: pointer;
   border-color: #FFFFFF;
 }
 
-/* line 489, ../sass/pages/itinerary.sass */
+/* line 499, ../sass/pages/itinerary.sass */
 #lightbox-panel {
   position: fixed;
   text-align: center;
@@ -2008,7 +2027,7 @@ html.no-svg .itinerary-box.done .calendar-icon {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-/* line 499, ../sass/pages/itinerary.sass */
+/* line 509, ../sass/pages/itinerary.sass */
 #lightbox-panel .card {
   text-align: left;
 }
