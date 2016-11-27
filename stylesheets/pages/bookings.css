@@ -480,3 +480,177 @@ html.no-svg .top-btn.print-btn {
 html.no-svg #booking-sidebar-appointments .appointment-name {
   background-image: url("../images/base/icons/png/icon-calendar.png");
 }
+
+/* line 257, ../../sass/pages/bookings.sass */
+ul.booking-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+/* line 261, ../../sass/pages/bookings.sass */
+ul.booking-group li {
+  list-style-type: none;
+}
+/* line 263, ../../sass/pages/bookings.sass */
+ul.booking-group .day {
+  padding: 8px 10px;
+  padding-left: 62px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #666666;
+  letter-spacing: 1.5px;
+  background-color: #EDEDED;
+}
+/* line 272, ../../sass/pages/bookings.sass */
+ul.booking-group .cta {
+  text-align: center;
+  margin-top: 0;
+}
+/* line 275, ../../sass/pages/bookings.sass */
+ul.booking-group .cta .btn {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 272, ../../sass/pages/bookings.sass */
+  ul.booking-group .cta {
+    text-align: right;
+  }
+  /* line 279, ../../sass/pages/bookings.sass */
+  ul.booking-group .cta .btn {
+    width: auto;
+  }
+}
+/* line 281, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+/* line 284, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header .time {
+  color: rgba(102, 102, 102, 0.7);
+  font-size: 1em;
+}
+/* line 287, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header .title {
+  font-size: 1.2em;
+  color: #3C3C3C;
+  padding-left: 9%;
+  min-height: 28px;
+  font-weight: 500;
+  line-height: 1em;
+}
+@media (min-width: 992px) {
+  /* line 287, ../../sass/pages/bookings.sass */
+  ul.booking-group .leg-header .title {
+    padding-left: 40px;
+  }
+}
+/* line 296, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header .title:before {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 28px;
+  width: 28px;
+  content: "";
+}
+/* line 303, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header.walk .title:before {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-walk.svg");
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg ul.booking-group .leg-header.walk .title:before {
+  background-image: url("../images/base/icons/png/icon-walk.png");
+}
+/* line 305, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header.hotel .title:before {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-hotel.svg");
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg ul.booking-group .leg-header.hotel .title:before {
+  background-image: url("../images/base/icons/png/icon-hotel.png");
+}
+/* line 307, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header.plane .title:before {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-plane.svg");
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg ul.booking-group .leg-header.plane .title:before {
+  background-image: url("../images/base/icons/png/icon-plane.png");
+}
+/* line 309, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header.meeting .title:before {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-calendar.svg");
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg ul.booking-group .leg-header.meeting .title:before {
+  background-image: url("../images/base/icons/png/icon-calendar.png");
+}
+/* line 311, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-header.train .title:before {
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  background-position: 5px 50%;
+  background-size: auto 28px;
+  background-image: url("../images/base/icons/svg/icon-train.svg");
+}
+/* line 17, ../../sass/base/_mixins.sass */
+html.no-svg ul.booking-group .leg-header.train .title:before {
+  background-image: url("../images/base/icons/png/icon-train.png");
+}
+/* line 313, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-content {
+  position: relative;
+  padding-bottom: 15px;
+}
+/* line 316, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-content:before {
+  content: "";
+  border-right: 2px dotted rgba(60, 60, 60, 0.4);
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 16.666%;
+}
+@media (min-width: 992px) {
+  /* line 316, ../../sass/pages/bookings.sass */
+  ul.booking-group .leg-content:before {
+    left: 8%;
+  }
+}
+/* line 326, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-content .content {
+  padding-left: 40px;
+}
+/* line 328, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-content .cta {
+  padding-left: 0px;
+}
+/* line 330, ../../sass/pages/bookings.sass */
+ul.booking-group .leg-content .btn {
+  margin-top: 5px;
+  clear: both;
+  padding: 5px 20px;
+}
+/* line 335, ../../sass/pages/bookings.sass */
+ul.booking-group .leg:last-child .leg-content:before {
+  display: none;
+}

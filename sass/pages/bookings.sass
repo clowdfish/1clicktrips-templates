@@ -252,3 +252,89 @@
     background-color: $color-lightest
     color: $color-dark-gray
     font-style: italic
+
+
+ul.booking-group
+  list-style-type: none
+  margin: 0
+  padding: 0px
+  li
+    list-style-type: none
+  .day
+    padding: 8px 10px
+    padding-left: 62px
+    margin-top: 10px
+    margin-bottom: 5px
+    text-transform: uppercase
+    color: $color-dark-gray
+    letter-spacing: 1.5px
+    background-color: $color-bg
+  .cta
+    text-align: center
+    margin-top: 0
+    .btn
+      width: 100%
+    +breakpoint(md)
+      text-align: right
+      .btn
+        width: auto
+  .leg-header
+    padding-top: 10px
+    padding-bottom: 4px
+    .time
+      color: rgba($color-dark-gray, 0.7)
+      font-size: 1em
+    .title
+      font-size: 1.2em
+      color: $color-darkest
+      padding-left: 9%
+      min-height: 28px
+      font-weight: 500
+      line-height: 1em
+      +breakpoint(lg)
+        padding-left: 40px
+      &:before
+        position: absolute
+        left: -5px
+        top: 0
+        height: 28px
+        width: 28px
+        content: ''
+    &.walk .title:before
+      +icon-for-button('icon-walk','base/icons/',50px,50%,28px)
+    &.hotel .title:before
+      +icon-for-button('icon-hotel','base/icons/',50px,50%,28px)
+    &.plane .title:before
+      +icon-for-button('icon-plane','base/icons/',50px,50%,28px)
+    &.meeting .title:before
+      +icon-for-button('icon-calendar','base/icons/',50px,50%,28px)
+    &.train .title:before
+      +icon-for-button('icon-train','base/icons/',50px,50%,28px)
+  .leg-content
+    position: relative
+    padding-bottom: 15px
+    &:before
+      content: ''
+      border-right: 2px dotted rgba($color-darkest, 0.4)
+      height: 100%
+      position: absolute
+      margin: 0
+      padding: 0
+      left: 16.666%
+      +breakpoint(lg)
+        left: 8%
+    .content
+      padding-left: 40px
+    .cta
+      padding-left: 0px
+    .btn
+      margin-top: 5px
+      clear: both
+      padding: 5px 20px
+  .leg:last-child
+    .leg-content:before
+      display: none
+
+
+
+
